@@ -1,19 +1,19 @@
 //
-//  ViewController.swift
+//  FirstViewController.swift
 //  AutoLayout
 //
-//  Created by Nguyễn Đình Việt on 13/05/2022.
+//  Created by Nguyễn Đình Việt on 16/05/2022.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var LogincollectionView: UICollectionView!
     @IBOutlet weak var myPage: UIPageControl!
     
-    var currentPage: Int = 0
+    var counter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,19 +29,13 @@ class ViewController: UIViewController {
         LogincollectionView.backgroundView?.backgroundColor = UIColor.clear
         LogincollectionView.backgroundColor = UIColor.clear
         
-        myPage.currentPage = 0
         myPage.numberOfPages = arrLogin.count
-        
-        print(view.frame.width)
-        print(view.frame.height)
-        print(LogincollectionView.frame.height)
-        print(LogincollectionView.frame.width)
-        print(LogincollectionView.bounds.height)
-        print(LogincollectionView.bounds.width)
-
+        myPage.currentPage = 0
     }
-    
     @IBAction func loginButton(_ sender: Any) {
+        let loginVC = LoginViewController()
+        loginVC.modalPresentationStyle = .fullScreen
+        present(loginVC, animated: true)
     }
     @IBAction func registerButton(_ sender: Any) {
         
@@ -49,7 +43,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrLogin.count
     }
@@ -60,12 +54,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         myPage.currentPage = indexPath.row
         return cell
     }
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-    }
 }
-extension ViewController: UICollectionViewDelegateFlowLayout{
+extension FirstViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: LogincollectionView.frame.width, height: LogincollectionView.frame.height)
     }
 }
+

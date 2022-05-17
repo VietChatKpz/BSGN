@@ -2,7 +2,7 @@
 //  OTPViewController.swift
 //  AutoLayout
 //
-//  Created by Nguyễn Đình Việt on 13/05/2022.
+//  Created by Nguyễn Đình Việt on 16/05/2022.
 //
 
 import UIKit
@@ -33,7 +33,8 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         otp4TextField.addTarget(self, action: #selector(self.textdidChange(textfield:)), for: UIControl.Event.editingChanged)
         otp5TextField.addTarget(self, action: #selector(self.textdidChange(textfield:)), for: UIControl.Event.editingChanged)
         otp6TextField.addTarget(self, action: #selector(self.textdidChange(textfield:)), for: UIControl.Event.editingChanged)
-
+        
+        otp1TextField.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -88,3 +89,4 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
     }
     
 }
+
