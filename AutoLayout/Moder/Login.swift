@@ -15,7 +15,7 @@ struct Login{
 }
 
 let arrLogin: [Login] = [
-    Login(image: "Intro1", label1: "Bác sĩ sẵn lòng chăm sóc khi bạn cần", label2: "Chọn chuyên khoa, bác sĩ phù hợp và được thăm khám trong không gian thoải mái tại nhà"),
-    Login(image: "Intro2", label1: "Bác sĩ sẵn lòng chăm sóc khi bạn cần", label2: "Chọn chuyên khoa, bác sĩ phù hợp và được thăm khám trong không gian thoải mái tại nhà"),
-    Login(image: "Intro3", label1: "Bác sĩ sẵn lòng chăm sóc khi bạn cần", label2: "Chọn chuyên khoa, bác sĩ phù hợp và được thăm khám trong không gian thoải mái tại nhà")
+    Login(image: "Healthtracker", label1: "Bác sĩ sẵn lòng chăm sóc khi bạn cần", label2: "Chọn chuyên khoa, bác sĩ phù hợp và được thăm khám trong không gian thoải mái tại nhà"),
+    Login(image: "Healthtracker2", label1: "Bác sĩ sẵn lòng chăm sóc khi bạn cần", label2: "Chọn chuyên khoa, bác sĩ phù hợp và được thăm khám trong không gian thoải mái tại nhà"),
+    Login(image: "Healthtracker3", label1: "Bác sĩ sẵn lòng chăm sóc khi bạn cần", label2: "Chọn chuyên khoa, bác sĩ phù hợp và được thăm khám trong không gian thoải mái tại nhà")
 ]

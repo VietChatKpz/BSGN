@@ -19,6 +19,8 @@
                 <outlet property="otp4TextField" destination="hSh-1I-Q2i" id="Qjg-VU-Gz5"/>
                 <outlet property="otp5TextField" destination="zhq-Ub-epb" id="ncX-LJ-PwT"/>
                 <outlet property="otp6TextField" destination="mjQ-zQ-GNS" id="Oec-Rg-NK3"/>
+                <outlet property="phoneLabel" destination="giM-zR-Tj6" id="tjx-bg-Jp2"/>
+                <outlet property="resetLabel" destination="l1u-0E-ff2" id="wyo-7p-1fr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -58,7 +60,7 @@
                             <color key="textColor" red="0.14117647059999999" green="0.1647058824" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vui lòng nhập mã gồm 4 chữ số đã được gửi đến bạn vào số điện thoại +84 356 461 831" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giM-zR-Tj6">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vui lòng nhập mã gồm 4 chữ số đã được gửi đến bạn vào số điện thoại" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giM-zR-Tj6">
                             <rect key="frame" x="24" y="110" width="380" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="ka7-y2-nLG"/>
@@ -67,12 +69,12 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SCY-tU-peT">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SCY-tU-peT">
                             <rect key="frame" x="40" y="170" width="44.666666666666657" height="38.333333333333343"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="SCY-tU-peT" secondAttribute="height" multiplier="7:6" id="NOR-vK-KgA"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -80,12 +82,12 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iqh-qa-I9J">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iqh-qa-I9J">
                             <rect key="frame" x="100.66666666666667" y="170" width="44.666666666666671" height="38.333333333333343"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="Iqh-qa-I9J" secondAttribute="height" multiplier="7:6" id="UVd-50-L9u"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -93,12 +95,12 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSh-1I-Q2i">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSh-1I-Q2i">
                             <rect key="frame" x="222" y="170" width="44.666666666666686" height="38.333333333333343"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="hSh-1I-Q2i" secondAttribute="height" multiplier="7:6" id="374-dZ-ifl"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -106,12 +108,12 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zhq-Ub-epb">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zhq-Ub-epb">
                             <rect key="frame" x="282.66666666666669" y="170" width="44.666666666666686" height="38.333333333333343"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="zhq-Ub-epb" secondAttribute="height" multiplier="7:6" id="l7k-ZB-oK0"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -119,12 +121,12 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjQ-zQ-GNS">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjQ-zQ-GNS">
                             <rect key="frame" x="343.33333333333331" y="170" width="44.666666666666686" height="38.333333333333343"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="mjQ-zQ-GNS" secondAttribute="height" multiplier="7:6" id="2De-lN-HF4"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -150,12 +152,12 @@
                                 <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="2sw-Hy-A5E"/>
                             </connections>
                         </button>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g4s-6a-xTT">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g4s-6a-xTT">
                             <rect key="frame" x="161.33333333333334" y="170" width="44.666666666666657" height="38.333333333333343"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="g4s-6a-xTT" secondAttribute="height" multiplier="7:6" id="AM1-FG-85Z"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -171,35 +173,43 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập sai mã xác thực" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ay-sP-MNe">
-                            <rect key="frame" x="24" y="224.33333333333334" width="380" height="14.666666666666657"/>
+                            <rect key="frame" x="24" y="224.33333333333334" width="380" height="14.333333333333343"/>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <color key="textColor" red="0.98823529409999999" green="0.14117647059999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80A-wk-maX">
-                            <rect key="frame" x="124" y="271" width="180" height="32"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="32" id="ANZ-mZ-LyK"/>
-                                <constraint firstAttribute="width" constant="180" id="BKm-Fd-AGp"/>
-                            </constraints>
+                            <rect key="frame" x="124" y="270.66666666666669" width="180" height="32"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Gửi lại mã sau 60s">
-                                <color key="titleColor" red="0.17254901959999999" green="0.52549019610000003" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.85098039215686272" green="0.85882352941176465" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="18"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="secondButton:" destination="-1" eventType="touchUpInside" id="7aZ-HP-8xl"/>
+                            </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gửi lại mã sau" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1u-0E-ff2">
+                            <rect key="frame" x="124" y="270.66666666666669" width="180" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="180" id="jtK-op-1q6"/>
+                                <constraint firstAttribute="height" constant="32" id="mQx-yC-YOo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" red="0.85098039215686272" green="0.85882352941176465" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="6ay-sP-MNe" firstAttribute="top" secondItem="g4s-6a-xTT" secondAttribute="bottom" constant="16" id="0Vg-Ys-Ur5"/>
                         <constraint firstItem="mjQ-zQ-GNS" firstAttribute="width" secondItem="zhq-Ub-epb" secondAttribute="width" id="3GK-x9-JA1"/>
                         <constraint firstItem="Pij-FZ-G9Q" firstAttribute="centerX" secondItem="1c1-vk-x3L" secondAttribute="centerX" id="4sq-jo-IRY"/>
-                        <constraint firstItem="80A-wk-maX" firstAttribute="top" secondItem="6ay-sP-MNe" secondAttribute="bottom" constant="32" id="5SY-Mw-l4l"/>
                         <constraint firstItem="zhq-Ub-epb" firstAttribute="leading" secondItem="hSh-1I-Q2i" secondAttribute="trailing" constant="16" id="5hE-Wu-7FV"/>
                         <constraint firstItem="Iqh-qa-I9J" firstAttribute="top" secondItem="giM-zR-Tj6" secondAttribute="bottom" constant="20" id="6KU-wq-dvT"/>
                         <constraint firstItem="zhq-Ub-epb" firstAttribute="width" secondItem="hSh-1I-Q2i" secondAttribute="width" id="9rv-mC-74k"/>
@@ -212,22 +222,29 @@
                         <constraint firstItem="SCY-tU-peT" firstAttribute="top" secondItem="giM-zR-Tj6" secondAttribute="bottom" constant="20" id="N1G-B4-NmL"/>
                         <constraint firstItem="6ay-sP-MNe" firstAttribute="leading" secondItem="1c1-vk-x3L" secondAttribute="leading" constant="24" id="NB7-zx-EPe"/>
                         <constraint firstItem="TVx-k2-51R" firstAttribute="leading" secondItem="1c1-vk-x3L" secondAttribute="leading" id="NBy-3q-n7v"/>
+                        <constraint firstItem="80A-wk-maX" firstAttribute="top" secondItem="l1u-0E-ff2" secondAttribute="bottom" constant="-32" id="OTB-zO-E82"/>
+                        <constraint firstItem="l1u-0E-ff2" firstAttribute="centerX" secondItem="1c1-vk-x3L" secondAttribute="centerX" id="RXq-YB-guZ"/>
                         <constraint firstAttribute="trailing" secondItem="TVx-k2-51R" secondAttribute="trailing" id="S9w-Gm-ws6"/>
                         <constraint firstItem="TVx-k2-51R" firstAttribute="top" secondItem="Pij-FZ-G9Q" secondAttribute="bottom" constant="12" id="SMM-k8-tQ7"/>
                         <constraint firstItem="Iqh-qa-I9J" firstAttribute="leading" secondItem="SCY-tU-peT" secondAttribute="trailing" constant="16" id="TgS-lA-bT5"/>
                         <constraint firstAttribute="trailing" secondItem="YIf-4k-SXh" secondAttribute="trailing" constant="24" id="VkF-i2-M0v"/>
                         <constraint firstAttribute="trailing" secondItem="6ay-sP-MNe" secondAttribute="trailing" constant="24" id="WVD-2b-RW7"/>
+                        <constraint firstItem="80A-wk-maX" firstAttribute="centerX" secondItem="1c1-vk-x3L" secondAttribute="centerX" id="aaW-Gs-vd9"/>
                         <constraint firstItem="mjQ-zQ-GNS" firstAttribute="leading" secondItem="zhq-Ub-epb" secondAttribute="trailing" constant="16" id="aie-uE-MKK"/>
-                        <constraint firstItem="80A-wk-maX" firstAttribute="centerX" secondItem="1c1-vk-x3L" secondAttribute="centerX" id="cLv-PR-LOL"/>
+                        <constraint firstItem="80A-wk-maX" firstAttribute="trailing" secondItem="l1u-0E-ff2" secondAttribute="trailing" id="dV9-Qe-Kod"/>
+                        <constraint firstItem="l1u-0E-ff2" firstAttribute="top" secondItem="6ay-sP-MNe" secondAttribute="bottom" constant="32" id="eAQ-il-gMZ"/>
                         <constraint firstItem="Iqh-qa-I9J" firstAttribute="width" secondItem="SCY-tU-peT" secondAttribute="width" id="eL2-aU-gAM"/>
                         <constraint firstItem="hSh-1I-Q2i" firstAttribute="leading" secondItem="g4s-6a-xTT" secondAttribute="trailing" constant="16" id="efC-WQ-KhN"/>
                         <constraint firstItem="N4i-Jc-Oqg" firstAttribute="leading" secondItem="1c1-vk-x3L" secondAttribute="leading" constant="16" id="epL-Lg-yba"/>
                         <constraint firstItem="giM-zR-Tj6" firstAttribute="centerX" secondItem="1c1-vk-x3L" secondAttribute="centerX" id="fVS-jM-Cwo"/>
+                        <constraint firstItem="80A-wk-maX" firstAttribute="top" secondItem="l1u-0E-ff2" secondAttribute="top" id="g6z-ZN-cfg"/>
                         <constraint firstItem="N4i-Jc-Oqg" firstAttribute="top" secondItem="1c1-vk-x3L" secondAttribute="top" constant="50" id="hYJ-og-aVy"/>
                         <constraint firstAttribute="bottom" secondItem="YIf-4k-SXh" secondAttribute="bottom" constant="50" id="ks4-sq-snf"/>
                         <constraint firstItem="Pij-FZ-G9Q" firstAttribute="top" secondItem="1c1-vk-x3L" secondAttribute="top" constant="56" id="lQW-ZC-GOf"/>
+                        <constraint firstItem="80A-wk-maX" firstAttribute="bottom" secondItem="l1u-0E-ff2" secondAttribute="bottom" id="lkH-Fp-pzS"/>
                         <constraint firstAttribute="trailing" secondItem="giM-zR-Tj6" secondAttribute="trailing" constant="24" id="mXI-QL-p2N"/>
                         <constraint firstItem="hSh-1I-Q2i" firstAttribute="top" secondItem="giM-zR-Tj6" secondAttribute="bottom" constant="20" id="n61-Ny-mnI"/>
+                        <constraint firstItem="80A-wk-maX" firstAttribute="leading" secondItem="l1u-0E-ff2" secondAttribute="leading" id="oLc-pW-sIq"/>
                         <constraint firstItem="g4s-6a-xTT" firstAttribute="width" secondItem="Iqh-qa-I9J" secondAttribute="width" id="pe1-11-mfq"/>
                         <constraint firstItem="giM-zR-Tj6" firstAttribute="top" secondItem="TVx-k2-51R" secondAttribute="bottom" constant="20" id="shU-Ek-8CB"/>
                         <constraint firstItem="zhq-Ub-epb" firstAttribute="top" secondItem="giM-zR-Tj6" secondAttribute="bottom" constant="20" id="uLq-lh-mIf"/>

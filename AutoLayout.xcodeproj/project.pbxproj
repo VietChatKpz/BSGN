@@ -14,6 +14,7 @@
 		9009BF0E2831F8AC0080A0D9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009BF0C2831F8AC0080A0D9 /* LoginViewController.xib */; };
 		9009BF112831F91B0080A0D9 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009BF0F2831F91B0080A0D9 /* OTPViewController.swift */; };
 		9009BF122831F91B0080A0D9 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009BF102831F91B0080A0D9 /* OTPViewController.xib */; };
+		903B61202834DA0800E72DBA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B611F2834DA0800E72DBA /* Service.swift */; };
 		907AA5B728333DDD00BFB8FF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907AA5B628333DDD00BFB8FF /* Home.swift */; };
 		909099492832320B0065A318 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909099472832320B0065A318 /* HomeViewController.swift */; };
 		9090994A2832320B0065A318 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909099482832320B0065A318 /* HomeViewController.xib */; };
@@ -40,6 +41,7 @@
 		9009BF0C2831F8AC0080A0D9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		9009BF0F2831F91B0080A0D9 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		9009BF102831F91B0080A0D9 /* OTPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
+		903B611F2834DA0800E72DBA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		907AA5B628333DDD00BFB8FF /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		909099472832320B0065A318 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		909099482832320B0065A318 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				90BF9A44282E0C810057C9BA /* Login.swift */,
 				907AA5B628333DDD00BFB8FF /* Home.swift */,
+				903B611F2834DA0800E72DBA /* Service.swift */,
 			);
 			path = Moder;
 			sourceTree = "<group>";
@@ -121,6 +124,14 @@
 			path = OTP;
 			sourceTree = "<group>";
 		};
+		907AA5B82833A31A00BFB8FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				90BF9A2C282DF9FA0057C9BA /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		90909946283231F90065A318 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +168,7 @@
 		90BF9A2B282DF9FA0057C9BA /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
-				90BF9A2C282DF9FA0057C9BA /* AppDelegate.swift */,
+				907AA5B82833A31A00BFB8FF /* App */,
 				9009BF132831F9550080A0D9 /* Moder */,
 				9009BF142831F96B0080A0D9 /* Screens */,
 				90BF9A35282DF9FC0057C9BA /* Assets.xcassets */,
@@ -311,6 +322,7 @@
 				90BF9A42282E0A4F0057C9BA /* LoginCollectionViewCell.swift in Sources */,
 				907AA5B728333DDD00BFB8FF /* Home.swift in Sources */,
 				9090995128324BD60065A318 /* PromoCollectionViewCell.swift in Sources */,
+				903B61202834DA0800E72DBA /* Service.swift in Sources */,
 				9090994D28324BC00065A318 /* NewsCollectionViewCell.swift in Sources */,
 				90BF9A45282E0C810057C9BA /* Login.swift in Sources */,
 				9009BF092831F68C0080A0D9 /* FirstViewController.swift in Sources */,

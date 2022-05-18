@@ -27,19 +27,20 @@ class LoginViewController: UIViewController {
     }
     @IBAction func nextAction(_ sender: Any) {
         let input = phoneTextField.text!
-        input.components(separatedBy: " ")
         let index = input.index(input.startIndex, offsetBy: 0)
         
         if (String(input[index]) == "0" && phoneTextField.text?.count == 10) || (String(input[index]) != "0" && phoneTextField.text?.count == 9) {
             let otpVC = OTPViewController()
             otpVC.modalPresentationStyle = .fullScreen
             present(otpVC, animated: true)
+            
+            otpVC.text = phoneTextField?.text ?? ""
         }
     }
 }
 
 extension LoginViewController: UITextFieldDelegate {
-    
+        
     func textFieldDidChangeSelection(_ textField: UITextField) {        
         if phoneTextField.text == "" {
             viewPhone?.layer.borderColor = UIColor(red: 0.93, green: 0.94, blue: 0.96, alpha: 1.00).cgColor

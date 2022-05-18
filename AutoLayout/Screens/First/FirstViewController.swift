@@ -12,16 +12,13 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var LogincollectionView: UICollectionView!
     @IBOutlet weak var myPage: UIPageControl!
-    
-    var counter = 0
-    
+            
     override func viewDidLoad() {
         super.viewDidLoad()
 
         registerButton.layer.borderColor = UIColor(red: 0.14, green: 0.16, blue: 0.38, alpha: 1.00).cgColor
         registerButton.layer.borderWidth = 1.0
         
-        LogincollectionView.frame = view.bounds
         LogincollectionView.delegate = self
         LogincollectionView.dataSource = self
         LogincollectionView.register(UINib(nibName: "LoginCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "LoginCell")
@@ -29,9 +26,10 @@ class FirstViewController: UIViewController {
         LogincollectionView.backgroundView?.backgroundColor = UIColor.clear
         LogincollectionView.backgroundColor = UIColor.clear
         
-        myPage.numberOfPages = arrLogin.count
         myPage.currentPage = 0
+        myPage.numberOfPages = arrLogin.count
     }
+
     @IBAction func loginButton(_ sender: Any) {
         let loginVC = LoginViewController()
         loginVC.modalPresentationStyle = .fullScreen
@@ -51,13 +49,28 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = LogincollectionView.dequeueReusableCell(withReuseIdentifier: "LoginCell", for: indexPath) as! LoginCollectionViewCell
         cell.setUp(with: arrLogin[indexPath.row])
-        myPage.currentPage = indexPath.row
+//        myPage.currentPage = indexPath.row
+//        print(indexPath.row)
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+//        myPage.currentPage = indexPath.row
+//        print(indexPath.row)
     }
 }
 extension FirstViewController: UICollectionViewDelegateFlowLayout{
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: LogincollectionView.frame.width, height: LogincollectionView.frame.height)
     }
+    
+//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+//        var currentPage = Int(scrollView.contentOffset.x/UIScreen.main.bounds.width)
+//
+//        currentPage = min(currentPage, arrLogin.count - 1)
+//        currentPage = max(currentPage, 0)
+//
+//        self.currentPage = currentPage
+//    }
 }
 

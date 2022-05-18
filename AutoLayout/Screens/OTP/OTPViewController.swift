@@ -19,12 +19,18 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var maButton: UIButton!
     @IBOutlet weak var falseLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var resetLabel: UILabel!
+    
+    var text = String()
+    var second: Int = 60
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         maButton.layer.borderWidth = 1.0
-        maButton.layer.borderColor = UIColor(red: 0.17, green: 0.53, blue: 0.40, alpha: 1.00).cgColor
+        maButton.layer.borderColor = UIColor(red: 0.85, green: 0.86, blue: 0.88, alpha: 1.00).cgColor
         falseLabel.isHidden = true
         
         otp1TextField.addTarget(self, action: #selector(self.textdidChange(textfield:)), for: UIControl.Event.editingChanged)
@@ -37,9 +43,27 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         otp1TextField.delegate = self
     }
     
+    func createTime() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+    }
+    
+    @objc func fireTimer() {
+        
+        second = second - 1
+        resetLabel.text = "Gửi lại sau " + "\(second)s"
+        if second == 0 {
+            timer.invalidate()
+            resetLabel.text = "Gửi lại"
+            resetLabel.textColor = UIColor(red: 0.17, green: 0.53, blue: 0.40, alpha: 1.00)
+            maButton.layer.borderColor = UIColor(red: 0.17, green: 0.53, blue: 0.40, alpha: 1.00).cgColor
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         otp1TextField.becomeFirstResponder()
+        phoneLabel.text = "Vui lòng nhập mã gồm 4 chữ số đã được gửi đến bạn vào số điện thoại" + " " + "+84" + " " + "\(text)"
+        createTime()
     }
     
     @objc func textdidChange(textfield: UITextField){
@@ -73,6 +97,22 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
             
         }
     }
+    @IBAction func secondButton(_ sender: Any) {
+        if resetLabel.text == "Gửi lại" {
+            createTime()
+            second = 60
+            resetLabel.textColor = UIColor(red: 0.85, green: 0.86, blue: 0.88, alpha: 1.00)
+            maButton.layer.borderColor = UIColor(red: 0.85, green: 0.86, blue: 0.88, alpha: 1.00).cgColor
+            otp1TextField.becomeFirstResponder()
+            falseLabel.isHidden = true
+            otp1TextField.text = ""
+            otp2TextField.text = ""
+            otp3TextField.text = ""
+            otp4TextField.text = ""
+            otp5TextField.text = ""
+            otp6TextField.text = ""
+        }
+    }
     
     @IBAction func backAction(_ sender: Any) {
         dismiss(animated: true)
@@ -83,6 +123,9 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         }
         if otp1 == "1", otp2 == "1", otp3 == "1", otp4 == "1", otp5 == "1", otp6 == "1" {
             falseLabel.isHidden = true
+            let vc = HomeViewController()
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
         }else{
             falseLabel.isHidden = false
         }
