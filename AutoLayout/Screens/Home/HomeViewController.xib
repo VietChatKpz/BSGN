@@ -99,7 +99,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dKg-uC-8Pq">
-                                                    <rect key="frame" x="16" y="58" width="412" height="220"/>
+                                                    <rect key="frame" x="0.0" y="58" width="428" height="220"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="220" id="Ll5-wx-RQu"/>
@@ -137,7 +137,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ggQ-kU-a0j">
-                                                    <rect key="frame" x="16" y="352" width="412" height="220"/>
+                                                    <rect key="frame" x="0.0" y="352" width="428" height="220"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="220" id="rtQ-kF-fbp"/>
@@ -155,7 +155,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </collectionView>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="aI4-yh-0Xy">
-                                                    <rect key="frame" x="16" y="646" width="412" height="185"/>
+                                                    <rect key="frame" x="0.0" y="646" width="428" height="185"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="185" id="5xW-27-5iJ"/>
@@ -229,10 +229,10 @@
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstItem="dKg-uC-8Pq" firstAttribute="leading" secondItem="EqZ-ts-CIA" secondAttribute="leading" constant="16" id="1Sy-Nc-Ffw"/>
+                                                <constraint firstItem="dKg-uC-8Pq" firstAttribute="leading" secondItem="EqZ-ts-CIA" secondAttribute="leading" id="1Sy-Nc-Ffw"/>
                                                 <constraint firstItem="BkC-V2-Frg" firstAttribute="width" secondItem="BkC-V2-Frg" secondAttribute="height" id="8vR-RD-Yd7"/>
                                                 <constraint firstAttribute="trailing" secondItem="p1G-kA-sdm" secondAttribute="trailing" constant="16" id="Acu-vK-hhJ"/>
-                                                <constraint firstItem="aI4-yh-0Xy" firstAttribute="leading" secondItem="EqZ-ts-CIA" secondAttribute="leading" constant="16" id="FQW-zx-St9"/>
+                                                <constraint firstItem="aI4-yh-0Xy" firstAttribute="leading" secondItem="EqZ-ts-CIA" secondAttribute="leading" id="FQW-zx-St9"/>
                                                 <constraint firstAttribute="trailing" secondItem="aI4-yh-0Xy" secondAttribute="trailing" id="Gz6-0N-DBF"/>
                                                 <constraint firstItem="jyF-LJ-MHN" firstAttribute="bottom" secondItem="Txo-1P-oKx" secondAttribute="bottom" id="H42-mR-k1S"/>
                                                 <constraint firstItem="AMC-cY-FUt" firstAttribute="top" secondItem="ggQ-kU-a0j" secondAttribute="bottom" constant="28" id="HHS-Af-gD9"/>
@@ -240,7 +240,7 @@
                                                 <constraint firstItem="ggQ-kU-a0j" firstAttribute="top" secondItem="Lw1-Dp-b0C" secondAttribute="bottom" constant="16" id="LkW-ld-eNE"/>
                                                 <constraint firstItem="ztP-VB-odo" firstAttribute="leading" secondItem="eLf-9x-6Ee" secondAttribute="trailing" constant="-4" id="M8w-gA-hJ3"/>
                                                 <constraint firstItem="Lw1-Dp-b0C" firstAttribute="leading" secondItem="EqZ-ts-CIA" secondAttribute="leading" constant="16" id="MF0-gS-OOK"/>
-                                                <constraint firstItem="ggQ-kU-a0j" firstAttribute="leading" secondItem="EqZ-ts-CIA" secondAttribute="leading" constant="16" id="ODz-79-Orl"/>
+                                                <constraint firstItem="ggQ-kU-a0j" firstAttribute="leading" secondItem="EqZ-ts-CIA" secondAttribute="leading" id="ODz-79-Orl"/>
                                                 <constraint firstItem="AMC-cY-FUt" firstAttribute="leading" secondItem="EqZ-ts-CIA" secondAttribute="leading" constant="16" id="Pho-U0-N57"/>
                                                 <constraint firstItem="BkC-V2-Frg" firstAttribute="leading" secondItem="c6a-pq-dXx" secondAttribute="trailing" constant="-4" id="RhT-CS-1xG"/>
                                                 <constraint firstItem="p1G-kA-sdm" firstAttribute="leading" secondItem="jyF-LJ-MHN" secondAttribute="trailing" constant="-4" id="UAS-vB-MvK"/>

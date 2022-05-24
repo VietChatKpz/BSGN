@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideKeyBoard()
         phoneTextField.keyboardType = .numberPad
         viewPhone?.layer.borderWidth = 1.0
         viewPhone?.layer.borderColor = UIColor(red: 0.93, green: 0.94, blue: 0.96, alpha: 1.00).cgColor

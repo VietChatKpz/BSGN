@@ -15,6 +15,7 @@
 		9009BF112831F91B0080A0D9 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009BF0F2831F91B0080A0D9 /* OTPViewController.swift */; };
 		9009BF122831F91B0080A0D9 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009BF102831F91B0080A0D9 /* OTPViewController.xib */; };
 		903B61202834DA0800E72DBA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B611F2834DA0800E72DBA /* Service.swift */; };
+		903B61232834F55400E72DBA /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B61222834F55400E72DBA /* Extention.swift */; };
 		907AA5B728333DDD00BFB8FF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907AA5B628333DDD00BFB8FF /* Home.swift */; };
 		909099492832320B0065A318 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909099472832320B0065A318 /* HomeViewController.swift */; };
 		9090994A2832320B0065A318 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909099482832320B0065A318 /* HomeViewController.xib */; };
@@ -30,6 +31,8 @@
 		90BF9A42282E0A4F0057C9BA /* LoginCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BF9A40282E0A4F0057C9BA /* LoginCollectionViewCell.swift */; };
 		90BF9A43282E0A4F0057C9BA /* LoginCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BF9A41282E0A4F0057C9BA /* LoginCollectionViewCell.xib */; };
 		90BF9A45282E0C810057C9BA /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BF9A44282E0C810057C9BA /* Login.swift */; };
+		90CC0F1C283CBBBD00CB29BE /* ExtentionOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F1B283CBBBD00CB29BE /* ExtentionOTP.swift */; };
+		90CC0F1E283CBD1900CB29BE /* ExtentionOTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F1D283CBD1900CB29BE /* ExtentionOTPTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,7 @@
 		9009BF0F2831F91B0080A0D9 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		9009BF102831F91B0080A0D9 /* OTPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
 		903B611F2834DA0800E72DBA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		903B61222834F55400E72DBA /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		907AA5B628333DDD00BFB8FF /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		909099472832320B0065A318 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		909099482832320B0065A318 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		90BF9A40282E0A4F0057C9BA /* LoginCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCollectionViewCell.swift; sourceTree = "<group>"; };
 		90BF9A41282E0A4F0057C9BA /* LoginCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginCollectionViewCell.xib; sourceTree = "<group>"; };
 		90BF9A44282E0C810057C9BA /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		90CC0F1B283CBBBD00CB29BE /* ExtentionOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionOTP.swift; sourceTree = "<group>"; };
+		90CC0F1D283CBD1900CB29BE /* ExtentionOTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionOTPTextField.swift; sourceTree = "<group>"; };
 		E171CCB9DEBC95CE621DFADA /* Pods-AutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayout.debug.xcconfig"; path = "Target Support Files/Pods-AutoLayout/Pods-AutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +130,16 @@
 			path = OTP;
 			sourceTree = "<group>";
 		};
+		903B61212834F54200E72DBA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				903B61222834F55400E72DBA /* Extention.swift */,
+				90CC0F1B283CBBBD00CB29BE /* ExtentionOTP.swift */,
+				90CC0F1D283CBD1900CB29BE /* ExtentionOTPTextField.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		907AA5B82833A31A00BFB8FF /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +184,7 @@
 		90BF9A2B282DF9FA0057C9BA /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				903B61212834F54200E72DBA /* Helper */,
 				907AA5B82833A31A00BFB8FF /* App */,
 				9009BF132831F9550080A0D9 /* Moder */,
 				9009BF142831F96B0080A0D9 /* Screens */,
@@ -317,9 +334,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90CC0F1E283CBD1900CB29BE /* ExtentionOTPTextField.swift in Sources */,
+				90CC0F1C283CBBBD00CB29BE /* ExtentionOTP.swift in Sources */,
 				9009BF112831F91B0080A0D9 /* OTPViewController.swift in Sources */,
 				9009BF0D2831F8AC0080A0D9 /* LoginViewController.swift in Sources */,
 				90BF9A42282E0A4F0057C9BA /* LoginCollectionViewCell.swift in Sources */,
+				903B61232834F55400E72DBA /* Extention.swift in Sources */,
 				907AA5B728333DDD00BFB8FF /* Home.swift in Sources */,
 				9090995128324BD60065A318 /* PromoCollectionViewCell.swift in Sources */,
 				903B61202834DA0800E72DBA /* Service.swift in Sources */,
@@ -475,7 +495,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,7 +524,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

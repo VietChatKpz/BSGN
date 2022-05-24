@@ -42,35 +42,27 @@ class FirstViewController: UIViewController {
 }
 
 extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrLogin.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = LogincollectionView.dequeueReusableCell(withReuseIdentifier: "LoginCell", for: indexPath) as! LoginCollectionViewCell
+        
         cell.setUp(with: arrLogin[indexPath.row])
-//        myPage.currentPage = indexPath.row
-//        print(indexPath.row)
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        myPage.currentPage = indexPath.row
-//        print(indexPath.row)
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        myPage.currentPage = indexPath.row
     }
+    
 }
 extension FirstViewController: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: LogincollectionView.frame.width, height: LogincollectionView.frame.height)
     }
-    
-//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//        var currentPage = Int(scrollView.contentOffset.x/UIScreen.main.bounds.width)
-//
-//        currentPage = min(currentPage, arrLogin.count - 1)
-//        currentPage = max(currentPage, 0)
-//
-//        self.currentPage = currentPage
-//    }
 }
 

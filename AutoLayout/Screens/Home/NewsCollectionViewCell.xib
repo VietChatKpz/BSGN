@@ -96,6 +96,9 @@
                 <constraint firstItem="MH7-r5-VF1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QQQ-fW-GrM"/>
             </constraints>
             <size key="customSize" width="290" height="244"/>
+            <connections>
+                <outlet property="newsView" destination="MH7-r5-VF1" id="41V-41-k8m"/>
+            </connections>
             <point key="canvasLocation" x="314.49275362318843" y="136.60714285714286"/>
         </collectionViewCell>
     </objects>

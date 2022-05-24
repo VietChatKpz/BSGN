@@ -27,6 +27,10 @@ class HomeViewController: UIViewController {
         introduceCollectionView.delegate = self
         introduceCollectionView.dataSource = self
         introduceCollectionView.register(UINib(nibName: "IntroduceCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "IntroCell")
+        
+        newsCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        promoCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        introduceCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
     }
 }
 
@@ -54,9 +58,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == introduceCollectionView {
-            return CGSize(width: 121, height: introduceCollectionView.bounds.height)
+            return CGSize(width: 121/185*introduceCollectionView.bounds.height, height: introduceCollectionView.bounds.height)
         }else {
-            return CGSize(width: 258, height: newsCollectionView.bounds.height)
+            return CGSize(width: 258/220*newsCollectionView.bounds.height, height: newsCollectionView.bounds.height)
         }
     }
 }
