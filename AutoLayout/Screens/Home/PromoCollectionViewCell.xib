@@ -96,6 +96,12 @@
                 <constraint firstAttribute="trailing" secondItem="Eqk-Q0-dvg" secondAttribute="trailing" id="tFQ-Im-Pww"/>
             </constraints>
             <size key="customSize" width="285" height="250"/>
+            <connections>
+                <outlet property="dateLabel" destination="4Yd-xh-pf4" id="CYp-lc-Fpk"/>
+                <outlet property="nameLabel" destination="SQC-jg-dfq" id="3E4-oU-GQz"/>
+                <outlet property="promoImage" destination="iMo-PT-UR5" id="Z8R-SC-RuW"/>
+                <outlet property="titleLabel" destination="bD1-Wk-kSB" id="ghT-bd-cOh"/>
+            </connections>
             <point key="canvasLocation" x="312.31884057971018" y="170.08928571428569"/>
         </collectionViewCell>
     </objects>

@@ -97,7 +97,10 @@
             </constraints>
             <size key="customSize" width="290" height="244"/>
             <connections>
-                <outlet property="newsView" destination="MH7-r5-VF1" id="41V-41-k8m"/>
+                <outlet property="dateLabel" destination="rCQ-CV-d9z" id="oF8-RI-f5b"/>
+                <outlet property="nameLabel" destination="NPN-WW-nfN" id="Agi-BY-yMA"/>
+                <outlet property="newImage" destination="d8X-s6-nSt" id="eOK-x0-aaG"/>
+                <outlet property="titleLabel" destination="kII-Dh-Irz" id="t6K-vJ-gB9"/>
             </connections>
             <point key="canvasLocation" x="314.49275362318843" y="136.60714285714286"/>
         </collectionViewCell>

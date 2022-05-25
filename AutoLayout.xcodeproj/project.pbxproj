@@ -31,8 +31,20 @@
 		90BF9A42282E0A4F0057C9BA /* LoginCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BF9A40282E0A4F0057C9BA /* LoginCollectionViewCell.swift */; };
 		90BF9A43282E0A4F0057C9BA /* LoginCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BF9A41282E0A4F0057C9BA /* LoginCollectionViewCell.xib */; };
 		90BF9A45282E0C810057C9BA /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BF9A44282E0C810057C9BA /* Login.swift */; };
+		90C69A6C283DCB2400CD3286 /* APIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C69A6B283DCB2400CD3286 /* APIUtilities.swift */; };
+		90C69A70283DD83F00CD3286 /* PatientNewFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C69A6F283DD83F00CD3286 /* PatientNewFeedModel.swift */; };
+		90C69A72283DD9AC00CD3286 /* PatientNewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C69A71283DD9AC00CD3286 /* PatientNewModel.swift */; };
+		90C69A74283DD9BA00CD3286 /* PatientPromoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C69A73283DD9BA00CD3286 /* PatientPromoModel.swift */; };
+		90C69A76283DD9C900CD3286 /* PatientIntroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C69A75283DD9C900CD3286 /* PatientIntroModel.swift */; };
+		90C69A78283E1B6A00CD3286 /* Ultilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C69A77283E1B6A00CD3286 /* Ultilities.swift */; };
 		90CC0F1C283CBBBD00CB29BE /* ExtentionOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F1B283CBBBD00CB29BE /* ExtentionOTP.swift */; };
 		90CC0F1E283CBD1900CB29BE /* ExtentionOTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F1D283CBD1900CB29BE /* ExtentionOTPTextField.swift */; };
+		90CC0F25283CEB2B00CB29BE /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F23283CEB2B00CB29BE /* NewsViewController.swift */; };
+		90CC0F26283CEB2B00CB29BE /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CC0F24283CEB2B00CB29BE /* NewsViewController.xib */; };
+		90CC0F29283CEB3800CB29BE /* PromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F27283CEB3800CB29BE /* PromoViewController.swift */; };
+		90CC0F2A283CEB3800CB29BE /* PromoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CC0F28283CEB3800CB29BE /* PromoViewController.xib */; };
+		90CC0F2D283CEB4400CB29BE /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F2B283CEB4400CB29BE /* IntroViewController.swift */; };
+		90CC0F2E283CEB4400CB29BE /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CC0F2C283CEB4400CB29BE /* IntroViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,8 +75,20 @@
 		90BF9A40282E0A4F0057C9BA /* LoginCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCollectionViewCell.swift; sourceTree = "<group>"; };
 		90BF9A41282E0A4F0057C9BA /* LoginCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginCollectionViewCell.xib; sourceTree = "<group>"; };
 		90BF9A44282E0C810057C9BA /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		90C69A6B283DCB2400CD3286 /* APIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUtilities.swift; sourceTree = "<group>"; };
+		90C69A6F283DD83F00CD3286 /* PatientNewFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientNewFeedModel.swift; sourceTree = "<group>"; };
+		90C69A71283DD9AC00CD3286 /* PatientNewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientNewModel.swift; sourceTree = "<group>"; };
+		90C69A73283DD9BA00CD3286 /* PatientPromoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientPromoModel.swift; sourceTree = "<group>"; };
+		90C69A75283DD9C900CD3286 /* PatientIntroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientIntroModel.swift; sourceTree = "<group>"; };
+		90C69A77283E1B6A00CD3286 /* Ultilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultilities.swift; sourceTree = "<group>"; };
 		90CC0F1B283CBBBD00CB29BE /* ExtentionOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionOTP.swift; sourceTree = "<group>"; };
 		90CC0F1D283CBD1900CB29BE /* ExtentionOTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionOTPTextField.swift; sourceTree = "<group>"; };
+		90CC0F23283CEB2B00CB29BE /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		90CC0F24283CEB2B00CB29BE /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		90CC0F27283CEB3800CB29BE /* PromoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoViewController.swift; sourceTree = "<group>"; };
+		90CC0F28283CEB3800CB29BE /* PromoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoViewController.xib; sourceTree = "<group>"; };
+		90CC0F2B283CEB4400CB29BE /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		90CC0F2C283CEB4400CB29BE /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		E171CCB9DEBC95CE621DFADA /* Pods-AutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayout.debug.xcconfig"; path = "Target Support Files/Pods-AutoLayout/Pods-AutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +107,7 @@
 		9009BF132831F9550080A0D9 /* Moder */ = {
 			isa = PBXGroup;
 			children = (
+				90C69A6D283DD81A00CD3286 /* Remote */,
 				90BF9A44282E0C810057C9BA /* Login.swift */,
 				907AA5B628333DDD00BFB8FF /* Home.swift */,
 				903B611F2834DA0800E72DBA /* Service.swift */,
@@ -93,6 +118,7 @@
 		9009BF142831F96B0080A0D9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				90CC0F1F283CEAE000CB29BE /* SeeHome */,
 				90909946283231F90065A318 /* Home */,
 				9009BF172831F9A90080A0D9 /* OTP */,
 				9009BF162831F99A0080A0D9 /* Login */,
@@ -133,9 +159,8 @@
 		903B61212834F54200E72DBA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				903B61222834F55400E72DBA /* Extention.swift */,
-				90CC0F1B283CBBBD00CB29BE /* ExtentionOTP.swift */,
-				90CC0F1D283CBD1900CB29BE /* ExtentionOTPTextField.swift */,
+				90C69A6A283DCAF500CD3286 /* Extention */,
+				90C69A69283DCAEE00CD3286 /* Utilities */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -184,8 +209,8 @@
 		90BF9A2B282DF9FA0057C9BA /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
-				903B61212834F54200E72DBA /* Helper */,
 				907AA5B82833A31A00BFB8FF /* App */,
+				903B61212834F54200E72DBA /* Helper */,
 				9009BF132831F9550080A0D9 /* Moder */,
 				9009BF142831F96B0080A0D9 /* Screens */,
 				90BF9A35282DF9FC0057C9BA /* Assets.xcassets */,
@@ -193,6 +218,81 @@
 				90BF9A3A282DF9FC0057C9BA /* Info.plist */,
 			);
 			path = AutoLayout;
+			sourceTree = "<group>";
+		};
+		90C69A69283DCAEE00CD3286 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				90C69A6B283DCB2400CD3286 /* APIUtilities.swift */,
+				90C69A77283E1B6A00CD3286 /* Ultilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		90C69A6A283DCAF500CD3286 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				903B61222834F55400E72DBA /* Extention.swift */,
+				90CC0F1B283CBBBD00CB29BE /* ExtentionOTP.swift */,
+				90CC0F1D283CBD1900CB29BE /* ExtentionOTPTextField.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		90C69A6D283DD81A00CD3286 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				90C69A6E283DD82400CD3286 /* PatientNewFeedModel */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		90C69A6E283DD82400CD3286 /* PatientNewFeedModel */ = {
+			isa = PBXGroup;
+			children = (
+				90C69A6F283DD83F00CD3286 /* PatientNewFeedModel.swift */,
+				90C69A71283DD9AC00CD3286 /* PatientNewModel.swift */,
+				90C69A73283DD9BA00CD3286 /* PatientPromoModel.swift */,
+				90C69A75283DD9C900CD3286 /* PatientIntroModel.swift */,
+			);
+			path = PatientNewFeedModel;
+			sourceTree = "<group>";
+		};
+		90CC0F1F283CEAE000CB29BE /* SeeHome */ = {
+			isa = PBXGroup;
+			children = (
+				90CC0F22283CEB1400CB29BE /* Intro */,
+				90CC0F21283CEB0B00CB29BE /* Promo */,
+				90CC0F20283CEAFC00CB29BE /* News */,
+			);
+			path = SeeHome;
+			sourceTree = "<group>";
+		};
+		90CC0F20283CEAFC00CB29BE /* News */ = {
+			isa = PBXGroup;
+			children = (
+				90CC0F23283CEB2B00CB29BE /* NewsViewController.swift */,
+				90CC0F24283CEB2B00CB29BE /* NewsViewController.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		90CC0F21283CEB0B00CB29BE /* Promo */ = {
+			isa = PBXGroup;
+			children = (
+				90CC0F27283CEB3800CB29BE /* PromoViewController.swift */,
+				90CC0F28283CEB3800CB29BE /* PromoViewController.xib */,
+			);
+			path = Promo;
+			sourceTree = "<group>";
+		};
+		90CC0F22283CEB1400CB29BE /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				90CC0F2B283CEB4400CB29BE /* IntroViewController.swift */,
+				90CC0F2C283CEB4400CB29BE /* IntroViewController.xib */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 		C436A1C1D867BFC5D789277D /* Pods */ = {
@@ -272,8 +372,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90CC0F2A283CEB3800CB29BE /* PromoViewController.xib in Resources */,
 				90BF9A43282E0A4F0057C9BA /* LoginCollectionViewCell.xib in Resources */,
 				9009BF0A2831F68C0080A0D9 /* FirstViewController.xib in Resources */,
+				90CC0F26283CEB2B00CB29BE /* NewsViewController.xib in Resources */,
 				9009BF0E2831F8AC0080A0D9 /* LoginViewController.xib in Resources */,
 				90BF9A39282DF9FC0057C9BA /* LaunchScreen.storyboard in Resources */,
 				9009BF122831F91B0080A0D9 /* OTPViewController.xib in Resources */,
@@ -281,6 +383,7 @@
 				90BF9A36282DF9FC0057C9BA /* Assets.xcassets in Resources */,
 				9090994E28324BC00065A318 /* NewsCollectionViewCell.xib in Resources */,
 				9090995628324BE70065A318 /* IntroduceCollectionViewCell.xib in Resources */,
+				90CC0F2E283CEB4400CB29BE /* IntroViewController.xib in Resources */,
 				9090995228324BD60065A318 /* PromoCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,14 +437,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C69A70283DD83F00CD3286 /* PatientNewFeedModel.swift in Sources */,
 				90CC0F1E283CBD1900CB29BE /* ExtentionOTPTextField.swift in Sources */,
+				90C69A76283DD9C900CD3286 /* PatientIntroModel.swift in Sources */,
+				90C69A78283E1B6A00CD3286 /* Ultilities.swift in Sources */,
 				90CC0F1C283CBBBD00CB29BE /* ExtentionOTP.swift in Sources */,
 				9009BF112831F91B0080A0D9 /* OTPViewController.swift in Sources */,
 				9009BF0D2831F8AC0080A0D9 /* LoginViewController.swift in Sources */,
 				90BF9A42282E0A4F0057C9BA /* LoginCollectionViewCell.swift in Sources */,
+				90C69A6C283DCB2400CD3286 /* APIUtilities.swift in Sources */,
 				903B61232834F55400E72DBA /* Extention.swift in Sources */,
+				90C69A72283DD9AC00CD3286 /* PatientNewModel.swift in Sources */,
 				907AA5B728333DDD00BFB8FF /* Home.swift in Sources */,
+				90CC0F29283CEB3800CB29BE /* PromoViewController.swift in Sources */,
 				9090995128324BD60065A318 /* PromoCollectionViewCell.swift in Sources */,
+				90CC0F2D283CEB4400CB29BE /* IntroViewController.swift in Sources */,
 				903B61202834DA0800E72DBA /* Service.swift in Sources */,
 				9090994D28324BC00065A318 /* NewsCollectionViewCell.swift in Sources */,
 				90BF9A45282E0C810057C9BA /* Login.swift in Sources */,
@@ -349,6 +459,8 @@
 				909099492832320B0065A318 /* HomeViewController.swift in Sources */,
 				9090995528324BE70065A318 /* IntroduceCollectionViewCell.swift in Sources */,
 				90BF9A2D282DF9FA0057C9BA /* AppDelegate.swift in Sources */,
+				90CC0F25283CEB2B00CB29BE /* NewsViewController.swift in Sources */,
+				90C69A74283DD9BA00CD3286 /* PatientPromoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

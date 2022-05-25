@@ -9,23 +9,30 @@ import UIKit
 
 class NewsCollectionViewCell: UICollectionViewCell {
 
-//    var shadows = UIView()
-    @IBOutlet weak var newsView: UIView!
+    @IBOutlet weak var newImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-
-//        shadows.frame = newsView.frame
-//        shadows.clipsToBounds = false
-//        newsView.addSubview(shadows)
-//        
-//        newsView.layer.shadowRadius = 20
-//        newsView.layer.shadowOffset = CGSize(width: 0, height: 4)
-//        newsView.layer.shadowOpacity = 1
-//        newsView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
-//        newsView.layer.shadowPath = UIBezierPath(roundedRect: shadows.bounds, cornerRadius: 8).cgPath
-
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//
+//    }
+    func configViews(news: PatientNewModel?) {
+        let imageURL = news?.picture
+        let title = news?.title
+        let name = news?.category_name
+        let date = news?.created_at
         
+        configViews(imageURLStr: imageURL, title: title, name: name, date: date)
+    }
+    
+    //B1:
+    private func configViews(imageURLStr: String?, title: String?, name: String?, date: String?){
+        Ultilities.loadImage(newImage, strURL: imageURLStr ?? "", placeHolder: nil)
+        titleLabel.text = title ?? ""
+        nameLabel.text = name ?? ""
+        dateLabel.text = date ?? ""
     }
 
 }

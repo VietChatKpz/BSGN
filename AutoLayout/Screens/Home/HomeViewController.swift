@@ -9,9 +9,18 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var homeScrollView: UIScrollView!
     @IBOutlet weak var newsCollectionView: UICollectionView!
     @IBOutlet weak var promoCollectionView: UICollectionView!
     @IBOutlet weak var introduceCollectionView: UICollectionView!
+    
+    lazy var refreshControl: UIRefreshControl = {
+        let rfc = UIRefreshControl()
+        
+        return rfc
+    }()
+    
+    var newFeed: PatientNewFeedModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,25 +40,76 @@ class HomeViewController: UIViewController {
         newsCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         promoCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         introduceCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        
+        self.refreshControl.addTarget(self, action: #selector(fetchPatientNewFeed), for: .valueChanged)
+        
+    }
+    
+    @objc func fetchPatientNewFeed() {
+//        self.showLoaderView()
+        APIUtilities.requestHomePatientFeed { [weak self] patientNewFeed, error in
+            guard let self = self else { return}
+//            self.dismissLoaderView()
+            self.refreshControl.endRefreshing()
+
+            guard let patientNewFeed = patientNewFeed, error == nil else {
+                return
+            }
+
+            self.newFeed = patientNewFeed
+
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return}
+
+                self.newsCollectionView.reloadData()
+                self.promoCollectionView.reloadData()
+                self.introduceCollectionView.reloadData()
+            }
+        }
+    }
+    
+    @IBAction func newsOnPress(_ sender: Any) {
+        
+    }
+    @IBAction func promoOnPress(_ sender: Any) {
+        
+    }
+    @IBAction func introOnPress(_ sender: Any) {
+        
     }
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        if collectionView == newsCollectionView {
+            return newFeed?.newList?.count ?? 0
+        }else if collectionView == promoCollectionView {
+            return newFeed?.promoList?.count ?? 0
+        }else{
+            return newFeed?.introList?.count ?? 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == newsCollectionView {
             let cell = newsCollectionView.dequeueReusableCell(withReuseIdentifier: "NewsCell", for: indexPath) as! NewsCollectionViewCell
             
+            let news = newFeed?.newList?[indexPath.row]
+            print(news)
+            cell.configViews(news: news)
             return cell
         }
         else if collectionView == promoCollectionView {
             let cell = promoCollectionView.dequeueReusableCell(withReuseIdentifier: "PromoCell", for: indexPath) as! PromoCollectionViewCell
+            
+            let promos = newFeed?.promoList?[indexPath.row]
+            cell.configViews(promos: promos)
             return cell
         }else {
             let cell = introduceCollectionView.dequeueReusableCell(withReuseIdentifier: "IntroCell", for: indexPath) as! IntroduceCollectionViewCell
+            
+            let intros = newFeed?.introList?[indexPath.row]
+            cell.configViews(intros: intros)
             return cell
         }
     }

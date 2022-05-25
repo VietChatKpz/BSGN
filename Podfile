@@ -6,7 +6,7 @@ target 'AutoLayout' do
   use_frameworks!
 
 pod 'Alamofire'
-
+pod 'SDWebImage'
   # Pods for AutoLayout
 
 end

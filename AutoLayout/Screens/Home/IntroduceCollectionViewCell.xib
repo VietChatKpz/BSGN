@@ -100,7 +100,11 @@
             </constraints>
             <size key="customSize" width="286" height="388"/>
             <connections>
+                <outlet property="introImage" destination="gti-os-GhS" id="A4O-hD-gK5"/>
                 <outlet property="introView" destination="Guo-KO-Lsj" id="wuN-3e-Myy"/>
+                <outlet property="majorLabel" destination="Atz-qU-HL1" id="WWv-yg-p1P"/>
+                <outlet property="nameLabel" destination="UhR-VA-eZc" id="MCg-Ew-pw2"/>
+                <outlet property="rateLabel" destination="LJa-Gc-LcY" id="Wgd-x7-me3"/>
             </connections>
             <point key="canvasLocation" x="308.69565217391306" y="216.29464285714286"/>
         </collectionViewCell>
