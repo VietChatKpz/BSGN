@@ -73,7 +73,7 @@ class PatientIntroModel {
                 let jsonValue = wrapValue
                 self.phone = jsonValue
             }
-            if key == "avartar", let wrapValue = value as? String{
+            if key == "avatar", let wrapValue = value as? String{
                 let jsonValue = wrapValue
                 self.avatar = jsonValue
             }

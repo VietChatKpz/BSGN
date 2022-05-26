@@ -45,6 +45,9 @@
 		90CC0F2A283CEB3800CB29BE /* PromoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CC0F28283CEB3800CB29BE /* PromoViewController.xib */; };
 		90CC0F2D283CEB4400CB29BE /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F2B283CEB4400CB29BE /* IntroViewController.swift */; };
 		90CC0F2E283CEB4400CB29BE /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CC0F2C283CEB4400CB29BE /* IntroViewController.xib */; };
+		90F27624283F3002006689EB /* PromoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F27622283F3002006689EB /* PromoTableViewCell.swift */; };
+		90F27625283F3002006689EB /* PromoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F27623283F3002006689EB /* PromoTableViewCell.xib */; };
+		90F27628283F32A3006689EB /* PromoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F27627283F32A3006689EB /* PromoAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +92,9 @@
 		90CC0F28283CEB3800CB29BE /* PromoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoViewController.xib; sourceTree = "<group>"; };
 		90CC0F2B283CEB4400CB29BE /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		90CC0F2C283CEB4400CB29BE /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+		90F27622283F3002006689EB /* PromoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTableViewCell.swift; sourceTree = "<group>"; };
+		90F27623283F3002006689EB /* PromoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoTableViewCell.xib; sourceTree = "<group>"; };
+		90F27627283F32A3006689EB /* PromoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoAPI.swift; sourceTree = "<group>"; };
 		E171CCB9DEBC95CE621DFADA /* Pods-AutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayout.debug.xcconfig"; path = "Target Support Files/Pods-AutoLayout/Pods-AutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +248,7 @@
 		90C69A6D283DD81A00CD3286 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				90F27626283F3276006689EB /* API */,
 				90C69A6E283DD82400CD3286 /* PatientNewFeedModel */,
 			);
 			path = Remote;
@@ -282,6 +289,8 @@
 			children = (
 				90CC0F27283CEB3800CB29BE /* PromoViewController.swift */,
 				90CC0F28283CEB3800CB29BE /* PromoViewController.xib */,
+				90F27622283F3002006689EB /* PromoTableViewCell.swift */,
+				90F27623283F3002006689EB /* PromoTableViewCell.xib */,
 			);
 			path = Promo;
 			sourceTree = "<group>";
@@ -293,6 +302,14 @@
 				90CC0F2C283CEB4400CB29BE /* IntroViewController.xib */,
 			);
 			path = Intro;
+			sourceTree = "<group>";
+		};
+		90F27626283F3276006689EB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				90F27627283F32A3006689EB /* PromoAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		C436A1C1D867BFC5D789277D /* Pods */ = {
@@ -385,6 +402,7 @@
 				9090995628324BE70065A318 /* IntroduceCollectionViewCell.xib in Resources */,
 				90CC0F2E283CEB4400CB29BE /* IntroViewController.xib in Resources */,
 				9090995228324BD60065A318 /* PromoCollectionViewCell.xib in Resources */,
+				90F27625283F3002006689EB /* PromoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +463,9 @@
 				9009BF112831F91B0080A0D9 /* OTPViewController.swift in Sources */,
 				9009BF0D2831F8AC0080A0D9 /* LoginViewController.swift in Sources */,
 				90BF9A42282E0A4F0057C9BA /* LoginCollectionViewCell.swift in Sources */,
+				90F27624283F3002006689EB /* PromoTableViewCell.swift in Sources */,
 				90C69A6C283DCB2400CD3286 /* APIUtilities.swift in Sources */,
+				90F27628283F32A3006689EB /* PromoAPI.swift in Sources */,
 				903B61232834F55400E72DBA /* Extention.swift in Sources */,
 				90C69A72283DD9AC00CD3286 /* PatientNewModel.swift in Sources */,
 				907AA5B728333DDD00BFB8FF /* Home.swift in Sources */,

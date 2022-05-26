@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
                   
     }
     @IBAction func backAction(_ sender: Any) {
-        dismiss(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func nextAction(_ sender: Any) {
         let input = phoneTextField.text!
@@ -32,9 +32,7 @@ class LoginViewController: UIViewController {
         
         if (String(input[index]) == "0" && phoneTextField.text?.count == 10) || (String(input[index]) != "0" && phoneTextField.text?.count == 9) {
             let otpVC = OTPViewController()
-            otpVC.modalPresentationStyle = .fullScreen
-            present(otpVC, animated: true)
-            
+            navigationController?.pushViewController(otpVC, animated: true)
             otpVC.text = phoneTextField?.text ?? ""
         }
     }

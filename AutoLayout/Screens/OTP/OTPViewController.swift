@@ -72,15 +72,14 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func backAction(_ sender: Any) {
-        dismiss(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func nextAction(_ sender: Any) {
 //        print("Final OTP : ",otpStackView.getOTP())
         if otpStackView.getOTP() == "111111" {
             falseLabel.isHidden = true
             let vc = HomeViewController()
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
+            navigationController?.pushViewController(vc, animated: true)
         }
         else {
             falseLabel.isHidden = false
@@ -92,7 +91,6 @@ extension OTPViewController: OTPDelegate {
 
     func didChangeValidity() {
         nextButton.backgroundColor = UIColor(red: 0.17, green: 0.53, blue: 0.40, alpha: 1.00)
-//        testButton.isHidden = !isValid
     }
 
 }

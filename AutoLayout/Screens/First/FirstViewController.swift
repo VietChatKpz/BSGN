@@ -32,8 +32,9 @@ class FirstViewController: UIViewController {
 
     @IBAction func loginButton(_ sender: Any) {
         let loginVC = LoginViewController()
-        loginVC.modalPresentationStyle = .fullScreen
-        present(loginVC, animated: true)
+//        loginVC.modalPresentationStyle = .fullScreen
+//        present(loginVC, animated: true)
+        self.navigationController?.pushViewController(loginVC, animated: true)
     }
     @IBAction func registerButton(_ sender: Any) {
         

@@ -9,6 +9,7 @@ import UIKit
 
 class NewsCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var newsView: UIView!
     @IBOutlet weak var newImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -33,6 +34,8 @@ class NewsCollectionViewCell: UICollectionViewCell {
         titleLabel.text = title ?? ""
         nameLabel.text = name ?? ""
         dateLabel.text = date ?? ""
+
     }
+    
 
 }

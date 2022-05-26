@@ -41,13 +41,15 @@ class HomeViewController: UIViewController {
         promoCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         introduceCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         
+        homeScrollView.refreshControl = refreshControl
         self.refreshControl.addTarget(self, action: #selector(fetchPatientNewFeed), for: .valueChanged)
+        fetchPatientNewFeed()
         
     }
     
     @objc func fetchPatientNewFeed() {
 //        self.showLoaderView()
-        APIUtilities.requestHomePatientFeed { [weak self] patientNewFeed, error in
+        APIUtilities.requestHomePatientFeed{ [weak self] patientNewFeed, error in
             guard let self = self else { return}
 //            self.dismissLoaderView()
             self.refreshControl.endRefreshing()
@@ -72,6 +74,8 @@ class HomeViewController: UIViewController {
         
     }
     @IBAction func promoOnPress(_ sender: Any) {
+        let vc = PromoViewController()
+        navigationController?.pushViewController(vc, animated: true)
         
     }
     @IBAction func introOnPress(_ sender: Any) {

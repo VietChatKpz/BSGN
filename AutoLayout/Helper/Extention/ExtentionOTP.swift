@@ -77,7 +77,7 @@ class OTPStackView: UIStackView {
         textField.backgroundColor = textBackgroundColor
         textField.textAlignment = .center
         textField.adjustsFontSizeToFitWidth = false
-        textField.font = UIFont(name: "Kefa", size: 40)
+//        textField.font = UIFont(name: "Kefa", size: 40)
         textField.textColor = UIColor(red: 0.02, green: 0.05, blue: 0.13, alpha: 1.00)
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 2
@@ -137,7 +137,7 @@ class OTPStackView: UIStackView {
 extension OTPStackView: UITextFieldDelegate {
         
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        
+
         let shoudEdit = textFieldsCollection.first(where: { $0.text?.isEmpty == true}) ?? textField
         
         if shoudEdit == textField {

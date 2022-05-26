@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqE-Fb-9WB">
-                    <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="892"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="Jyz-gZ-Fce">
                             <rect key="frame" x="0.0" y="0.0" width="428" height="214"/>
@@ -164,7 +164,7 @@
                     <constraints>
                         <constraint firstItem="GIC-uM-Vu3" firstAttribute="top" secondItem="yqE-Fb-9WB" secondAttribute="top" constant="50" id="0TP-vP-FBY"/>
                         <constraint firstAttribute="trailing" secondItem="mQU-s1-EJ3" secondAttribute="trailing" constant="22" id="3yB-qQ-Kq5"/>
-                        <constraint firstAttribute="bottom" secondItem="mQU-s1-EJ3" secondAttribute="bottom" constant="50" id="4Hs-x1-1cP"/>
+                        <constraint firstAttribute="bottom" secondItem="mQU-s1-EJ3" secondAttribute="bottom" constant="16" id="AV8-kU-1Wd"/>
                         <constraint firstItem="Jyz-gZ-Fce" firstAttribute="top" secondItem="yqE-Fb-9WB" secondAttribute="top" id="CG5-Hy-yFs"/>
                         <constraint firstItem="SAh-3M-pvs" firstAttribute="leading" secondItem="jGe-6y-flb" secondAttribute="trailing" constant="8" id="HTx-3k-LLP"/>
                         <constraint firstItem="q9O-Xw-yPO" firstAttribute="leading" secondItem="yqE-Fb-9WB" secondAttribute="leading" constant="22" id="Pfs-9x-cUg"/>
@@ -191,7 +191,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="yqE-Fb-9WB" secondAttribute="bottom" id="bdf-UU-043"/>
+                <constraint firstItem="yqE-Fb-9WB" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="UR0-VF-w9o"/>
                 <constraint firstItem="yqE-Fb-9WB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nao-Yq-yup"/>
                 <constraint firstItem="yqE-Fb-9WB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sgh-n3-1fU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yqE-Fb-9WB" secondAttribute="trailing" id="xN8-5Y-Q4N"/>

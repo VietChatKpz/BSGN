@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MH7-r5-VF1">
                         <rect key="frame" x="0.0" y="0.0" width="290" height="244"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="d8X-s6-nSt">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="d8X-s6-nSt">
                                 <rect key="frame" x="0.0" y="0.0" width="290" height="150.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="d8X-s6-nSt" secondAttribute="height" multiplier="258:134" id="aBZ-t7-Zap"/>
@@ -84,6 +84,7 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="8"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
@@ -100,6 +101,7 @@
                 <outlet property="dateLabel" destination="rCQ-CV-d9z" id="oF8-RI-f5b"/>
                 <outlet property="nameLabel" destination="NPN-WW-nfN" id="Agi-BY-yMA"/>
                 <outlet property="newImage" destination="d8X-s6-nSt" id="eOK-x0-aaG"/>
+                <outlet property="newsView" destination="MH7-r5-VF1" id="BGH-g5-gLb"/>
                 <outlet property="titleLabel" destination="kII-Dh-Irz" id="t6K-vJ-gB9"/>
             </connections>
             <point key="canvasLocation" x="314.49275362318843" y="136.60714285714286"/>
