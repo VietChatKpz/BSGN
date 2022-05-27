@@ -12,12 +12,20 @@ class PromoTableViewCell: UITableViewCell {
     @IBOutlet weak var promoImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabe: UILabel!
+    @IBOutlet weak var clickButton: UIButton!
+    
+//    var checkAction: (() -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction))
     }
 
+//    @objc func tapAction(){
+//        checkAction?()
+//    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -36,4 +44,7 @@ class PromoTableViewCell: UITableViewCell {
         dateLabe.text = date ?? ""
     }
     
+    @IBAction func clickOnPress(_ sender: Any) {
+        
+    }
 }

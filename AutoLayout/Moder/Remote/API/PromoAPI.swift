@@ -27,6 +27,7 @@ class promoAPI {
     var type_name: String?
     var amount_text: String?
     var is_bookmark: Bool?
+    var isSelected: Bool?
     
     convenience init(id: Int?,
                       category_id: Int?,
@@ -45,7 +46,8 @@ class promoAPI {
                       link: String?,
                       type_name: String?,
                       amount_text: String?,
-                      is_bookmark: Bool?) {
+                      is_bookmark: Bool?,
+                      isSelected: Bool?) {
         
         self.init()
         self.id = id
@@ -66,6 +68,7 @@ class promoAPI {
         self.type_name = type_name
         self.amount_text = amount_text
         self.is_bookmark = is_bookmark
+        self.isSelected = isSelected
     }
     
     convenience init(json: [String: Any]) {

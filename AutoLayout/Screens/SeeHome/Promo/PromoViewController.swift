@@ -33,7 +33,7 @@ class PromoViewController: UIViewController {
     
     @objc func fetchPatientNewFeed() {
 //        self.showLoaderView()
-        APIUtilities.requestHomePatientFeed { [weak self] patientNewFeed, error in
+        APIUtilities.requestHomePatientFeed(APIURL: "/hdhuy179/ef03ed850ad56f0136fe3c5916b3280b/raw/Training_Intern_BasicApp_Promotion") { [weak self] patientNewFeed, error in
             guard let self = self else { return}
 //            self.dismissLoaderView()
             self.refreshControl.endRefreshing()
@@ -68,6 +68,13 @@ extension PromoViewController: UITableViewDelegate, UITableViewDataSource {
         
         let promo = newFeed?.promoItems?[indexPath.row]
         cell.configPromo(promo: promo)
+        
+//        cell.checkAction = {[weak self] in
+//            guard let strongSelf = self else { return }
+//
+////            strongSelf.newFeed?.promoItems?[indexPath.row].isSelected = !strongSelf.newFeed?.promoItems?[indexPath.row].isSelected
+//            strongSelf.promoTableView.reloadData()
+//        }
         
         return cell
     }

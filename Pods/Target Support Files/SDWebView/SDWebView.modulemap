@@ -1,0 +1,6 @@
+framework module SDWebView {
+  umbrella header "SDWebView-umbrella.h"
+
+  export *
+  module * { export * }
+}
