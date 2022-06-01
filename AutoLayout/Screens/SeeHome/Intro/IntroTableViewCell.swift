@@ -13,6 +13,7 @@ class IntroTableViewCell: UITableViewCell {
     @IBOutlet weak var introImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var majorLabel: UILabel!
+    @IBOutlet weak var starLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,14 +34,17 @@ class IntroTableViewCell: UITableViewCell {
         let imageURL = intro?.avatar
         let name = (intro?.user_type_name ?? "") + " " + (intro?.full_name ?? "")
         let major = "Chuyên nghành: " + (intro?.majors_name ?? "")
+//        let star = (intro?.ratio_star ?? "") + " " + "(" + (intro?.number_of_reviews ?? "") + " đánh giá )"
         
-        configIntro(imageURL: imageURL, name: name, major: major)
+//        configIntro(imageURL: imageURL, name: name, major: major)
+        configIntro(imageURL: imageURL, name: name, major: major, star: "")
     }
     
-    private func configIntro(imageURL: String?, name: String?, major: String?){
+    private func configIntro(imageURL: String?, name: String?, major: String?, star: String?){
         Ultilities.loadImage(introImageView, strURL: imageURL ?? "", placeHolder: nil)
         nameLabel.text = name ?? ""
         majorLabel.text = major ?? ""
+        starLabel.text = star ?? ""
     }
     
 }

@@ -23,6 +23,7 @@ class IntroViewController: UIViewController {
         introTableView.delegate = self
         introTableView.dataSource = self
         introTableView.register(UINib(nibName: "IntroTableViewCell", bundle: nil), forCellReuseIdentifier: "IntroCell")
+        introTableView.separatorStyle = .none
         
         introTableView.refreshControl = refreshControl
         self.refreshControl.addTarget(self, action: #selector(fetchPatientNewFeed), for: .valueChanged)
@@ -68,10 +69,7 @@ extension IntroViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 102
-    }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
+        return 118
     }
     
 }

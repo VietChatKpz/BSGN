@@ -26,9 +26,8 @@ class IntroduceCollectionViewCell: UICollectionViewCell {
         let imageURL = intros?.avatar
         let name = intros?.name
         let major = intros?.majors_name
-//        let star = intros?.ratio_star
-//        let numberOfReviews = intros?.number_of_reviews
-        
+//        let star = (intros?.ratio_star ?? "") + " " + "(" + (intros?.number_of_reviews ?? "") + ")"
+
         configViews(imageURLStr: imageURL, name: name, major: major)
     }
     
@@ -36,6 +35,7 @@ class IntroduceCollectionViewCell: UICollectionViewCell {
         Ultilities.loadImage(introImage, strURL: imageURLStr ?? "", placeHolder: nil)
         nameLabel.text = name ?? " "
         majorLabel.text = major ?? " "
+//        rateLabel.text = star ?? " "
         
         introView.layer.borderWidth = 1.0
         introView.layer.borderColor = UIColor(red: 0.93, green: 0.94, blue: 0.96, alpha: 1.00).cgColor

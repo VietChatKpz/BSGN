@@ -13,12 +13,14 @@ class PatientNewFeedModel: NSObject, JsonInitObject {
     var introList: [PatientIntroModel]?
     var promoItems: [promoAPI]?
     var introItem: [introAPI]?
+    var newItem: [newAPI]?
     
     convenience init(newList: [PatientNewModel]?,
                               promoList: [PatientPromoModel]?,
                               introList: [PatientIntroModel]?,
                               promoItems: [promoAPI]?,
-                              introItems: [introAPI]?) {
+                              introItems: [introAPI]?,
+                              newItem: [newAPI]?) {
         
         self.init()
         self.newList = newList
@@ -26,6 +28,7 @@ class PatientNewFeedModel: NSObject, JsonInitObject {
         self.introList = introList
         self.promoItems = promoItems
         self.introItem = introItems
+        self.newItem = newItem
     }
     
     required convenience init(json: [String : Any]) {
@@ -51,6 +54,10 @@ class PatientNewFeedModel: NSObject, JsonInitObject {
             if key == "items", let wrapValue = value as? [[String: Any]] {
                 let jsonValue = wrapValue.map({ introAPI(json: $0)})
                 self.introItem = jsonValue
+            }
+            if key == "items", let wrapValue = value as? [[String: Any]] {
+                let jsonValue = wrapValue.map({ newAPI(json: $0)})
+                self.newItem = jsonValue
             }
         }
     }

@@ -34,9 +34,15 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         
         otpContainerView.addSubview(otpStackView)
         otpStackView.delegate = self
-        otpStackView.heightAnchor.constraint(equalTo: otpContainerView.heightAnchor).isActive = true
-        otpStackView.centerXAnchor.constraint(equalTo: otpContainerView.centerXAnchor).isActive = true
-        otpStackView.centerYAnchor.constraint(equalTo: otpContainerView.centerYAnchor).isActive = true
+//        otpStackView.heightAnchor.constraint(equalTo: otpContainerView.heightAnchor).isActive = true
+//        otpStackView.widthAnchor.constraint(equalTo: otpContainerView.widthAnchor).isActive = true
+//        otpStackView.centerXAnchor.constraint(equalTo: otpContainerView.centerXAnchor).isActive = true
+//        otpStackView.centerYAnchor.constraint(equalTo: otpContainerView.centerYAnchor).isActive = true
+        otpStackView.topAnchor.constraint(equalTo: otpContainerView.topAnchor).isActive = true
+        otpStackView.leftAnchor.constraint(equalTo: otpContainerView.leftAnchor).isActive = true
+        otpStackView.rightAnchor.constraint(equalTo: otpContainerView.rightAnchor).isActive = true
+        otpStackView.bottomAnchor.constraint(equalTo: otpContainerView.bottomAnchor).isActive = true
+        
     }
     
     func createTime() {

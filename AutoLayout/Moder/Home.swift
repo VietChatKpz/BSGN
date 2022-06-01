@@ -20,3 +20,7 @@ struct articleList: Decodable {
 //Promotions: https://gist.githubusercontent.com/hdhuy179/ef03ed850ad56f0136fe3c5916b3280b/raw/Training_Intern_BasicApp_Promotion
 //PromotionDetails: https://gist.github.com/hdhuy179/ef03ed850ad56f0136fe3c5916b3280b/raw/1
 //Doctors: https://gist.githubusercontent.com/hdhuy179/9ac0a89969b46fb67bc7d1a8b94d180e/raw
+
+//API:
+//UserInfo: https://gist.githubusercontent.com/hdhuy179/7883b8f11ea4b25cf6d3822c67049606/raw/Training_Intern_BasicApp_UserInfo
+//Location: https://gist.githubusercontent.com/hdhuy179/7883b8f11ea4b25cf6d3822c67049606/raw?province_code={id}&district_code={id}&ward_code={id}

@@ -36,6 +36,4 @@ class NewsCollectionViewCell: UICollectionViewCell {
         dateLabel.text = date ?? ""
 
     }
-    
-
 }

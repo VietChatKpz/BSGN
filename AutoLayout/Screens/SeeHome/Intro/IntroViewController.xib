@@ -37,11 +37,11 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bác sĩ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKP-CU-eMi">
-                                    <rect key="frame" x="183" y="12" width="48" height="20"/>
+                                    <rect key="frame" x="181.5" y="12" width="51" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="ewz-VH-Pz8"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="textColor" red="0.14117647058823529" green="0.16470588235294117" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -56,7 +56,7 @@
                                 <constraint firstItem="QKP-CU-eMi" firstAttribute="centerX" secondItem="NyF-O8-zKV" secondAttribute="centerX" id="sAK-so-jrr"/>
                             </constraints>
                         </view>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Yer-uJ-RAx">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Yer-uJ-RAx">
                             <rect key="frame" x="16" y="89" width="382" height="773"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>

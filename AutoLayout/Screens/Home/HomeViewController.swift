@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var newsCollectionView: UICollectionView!
     @IBOutlet weak var promoCollectionView: UICollectionView!
     @IBOutlet weak var introduceCollectionView: UICollectionView!
+    @IBOutlet weak var avatarView: UIView!
     
     lazy var refreshControl: UIRefreshControl = {
         let rfc = UIRefreshControl()
@@ -21,6 +22,7 @@ class HomeViewController: UIViewController {
     }()
     
     var newFeed: PatientNewFeedModel?
+    var news: PatientNewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +42,8 @@ class HomeViewController: UIViewController {
         newsCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         promoCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         introduceCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        
+        avatarView.backgroundColor = UIColor.clear
         
         homeScrollView.refreshControl = refreshControl
         self.refreshControl.addTarget(self, action: #selector(fetchPatientNewFeed), for: .valueChanged)
@@ -84,6 +88,10 @@ class HomeViewController: UIViewController {
         let vc = IntroViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
+    @IBAction func avatarOnPress(_ sender: Any) {
+        let vc = UserViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -102,7 +110,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cell = newsCollectionView.dequeueReusableCell(withReuseIdentifier: "NewsCell", for: indexPath) as! NewsCollectionViewCell
             
             let news = newFeed?.newList?[indexPath.row]
-            print(news)
+//            print(news)
             cell.configViews(news: news)
             return cell
         }
@@ -118,6 +126,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let intros = newFeed?.introList?[indexPath.row]
             cell.configViews(intros: intros)
             return cell
+        }
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == newsCollectionView {
+            let vc = DetailsViewController()
+            navigationController?.pushViewController(vc, animated: true)
+            vc.linkURL = newFeed?.newList?[indexPath.row].link ?? ""
+        }else if collectionView == promoCollectionView {
+            let vc = DetailsViewController()
+            navigationController?.pushViewController(vc, animated: true)
+            vc.linkURL = newFeed?.promoList?[indexPath.row].link ?? ""
+        }else{
         }
     }
 }

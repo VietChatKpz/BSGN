@@ -19,22 +19,21 @@ class PromoCollectionViewCell: UICollectionViewCell {
 //        // Initialization code
 //    }
 
-        func configViews(promos: PatientPromoModel?) {
-            let imageURL = promos?.picture
-            let title = promos?.name
-            let name = promos?.category_name
-            let date = promos?.created_at
-    
-            configViews(imageURLStr: imageURL, title: title, name: name, date: date)
-        }
-        
-        //B1:
-        private func configViews(imageURLStr: String?, title: String?, name: String?, date: String?){
-            Ultilities.loadImage(promoImage, strURL: imageURLStr ?? "", placeHolder: nil)
-            titleLabel.text = title ?? ""
-            nameLabel.text = name ?? ""
-            dateLabel.text = date ?? ""
-        }
+    func configViews(promos: PatientPromoModel?) {
+        let imageURL = promos?.picture
+        let title = promos?.name
+        let name = promos?.category_name
+        let date = promos?.created_at
 
+        configViews(imageURLStr: imageURL, title: title, name: name, date: date)
+    }
+    
+    //B1:
+    private func configViews(imageURLStr: String?, title: String?, name: String?, date: String?){
+        Ultilities.loadImage(promoImage, strURL: imageURLStr ?? "", placeHolder: nil)
+        titleLabel.text = title ?? ""
+        nameLabel.text = name ?? ""
+        dateLabel.text = date ?? ""
+    }
     
 }

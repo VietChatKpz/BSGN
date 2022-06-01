@@ -25,10 +25,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="428" height="892"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2t-Oj-qOk">
-                            <rect key="frame" x="0.0" y="778" width="428" height="114"/>
+                            <rect key="frame" x="0.0" y="812" width="428" height="80"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-Do-wBr">
-                                    <rect key="frame" x="16" y="50" width="190" height="48"/>
+                                    <rect key="frame" x="16" y="16" width="190" height="48"/>
                                     <color key="backgroundColor" red="0.17254901959999999" green="0.52549019610000003" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="48" id="SKC-mu-Eep"/>
@@ -47,7 +47,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrq-c2-3zs">
-                                    <rect key="frame" x="222" y="50" width="190" height="48"/>
+                                    <rect key="frame" x="222" y="16" width="190" height="48"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="48" id="cyM-74-dw8"/>
@@ -71,7 +71,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="Yrq-c2-3zs" secondAttribute="trailing" constant="16" id="20h-C3-T7m"/>
-                                <constraint firstAttribute="height" constant="114" id="Ix5-VX-CuH"/>
+                                <constraint firstItem="GN7-Do-wBr" firstAttribute="top" secondItem="d2t-Oj-qOk" secondAttribute="top" constant="16" id="3pS-UJ-1Gg"/>
                                 <constraint firstItem="GN7-Do-wBr" firstAttribute="leading" secondItem="d2t-Oj-qOk" secondAttribute="leading" constant="16" id="LYI-Uw-oq8"/>
                                 <constraint firstAttribute="bottom" secondItem="GN7-Do-wBr" secondAttribute="bottom" constant="16" id="UKR-O0-ph7"/>
                                 <constraint firstItem="Yrq-c2-3zs" firstAttribute="bottom" secondItem="GN7-Do-wBr" secondAttribute="bottom" id="Y6Q-6M-MpE"/>
@@ -81,10 +81,10 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAv-5C-j1O">
-                            <rect key="frame" x="0.0" y="0.0" width="428" height="778"/>
+                            <rect key="frame" x="0.0" y="0.0" width="428" height="812"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 414" translatesAutoresizingMaskIntoConstraints="NO" id="Zkp-V0-fTd">
-                                    <rect key="frame" x="0.0" y="0.0" width="428" height="778"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="428" height="812"/>
                                 </imageView>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ZIh-Gi-M7F">
                                     <rect key="frame" x="0.0" y="0.0" width="428" height="592"/>

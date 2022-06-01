@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsViewController" customModule="AutoLayout" customModuleProvider="target">
             <connections>
+                <outlet property="newTableView" destination="PEO-T9-6QB" id="s3Y-n1-OZc"/>
+                <outlet property="newView" destination="Dza-cU-dcM" id="qts-IF-P9g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -57,10 +59,28 @@
                                 <constraint firstItem="DP5-cp-2FN" firstAttribute="centerY" secondItem="Dza-cU-dcM" secondAttribute="centerY" id="lhW-CO-RX5"/>
                             </constraints>
                         </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PEO-T9-6QB">
+                            <rect key="frame" x="0.0" y="89" width="398" height="773"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4HW-P1-Jrz">
+                            <rect key="frame" x="0.0" y="88" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.93333333333333335" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="cip-ly-UYK"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="PEO-T9-6QB" firstAttribute="leading" secondItem="l4q-3M-pQW" secondAttribute="leading" id="9AN-Bo-VwK"/>
+                        <constraint firstAttribute="bottom" secondItem="PEO-T9-6QB" secondAttribute="bottom" id="A9Q-Th-xn0"/>
+                        <constraint firstItem="PEO-T9-6QB" firstAttribute="top" secondItem="4HW-P1-Jrz" secondAttribute="bottom" id="CHJ-dz-RLN"/>
                         <constraint firstItem="Dza-cU-dcM" firstAttribute="top" secondItem="l4q-3M-pQW" secondAttribute="top" constant="44" id="LZM-aP-dem"/>
+                        <constraint firstAttribute="trailing" secondItem="PEO-T9-6QB" secondAttribute="trailing" constant="16" id="S0B-w7-JCd"/>
+                        <constraint firstItem="4HW-P1-Jrz" firstAttribute="top" secondItem="Dza-cU-dcM" secondAttribute="bottom" id="T2c-ma-q1K"/>
+                        <constraint firstItem="4HW-P1-Jrz" firstAttribute="leading" secondItem="l4q-3M-pQW" secondAttribute="leading" id="TZr-dp-0Mr"/>
+                        <constraint firstAttribute="trailing" secondItem="4HW-P1-Jrz" secondAttribute="trailing" id="ecV-FC-GTk"/>
                         <constraint firstItem="Dza-cU-dcM" firstAttribute="leading" secondItem="l4q-3M-pQW" secondAttribute="leading" id="h6B-by-hJl"/>
                         <constraint firstAttribute="trailing" secondItem="Dza-cU-dcM" secondAttribute="trailing" id="tum-lY-cem"/>
                     </constraints>
@@ -74,7 +94,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="l4q-3M-pQW" secondAttribute="bottom" id="TBl-Ba-nFh"/>
                 <constraint firstItem="l4q-3M-pQW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="q1i-Jb-QbT"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="96"/>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
         </view>
     </objects>
     <resources>

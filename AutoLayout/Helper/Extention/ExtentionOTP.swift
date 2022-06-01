@@ -49,7 +49,7 @@ class OTPStackView: UIStackView {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.contentMode = .center
         self.distribution = .fillEqually
-        self.spacing = 5
+        self.spacing = 16
     }
     
     //Adding each OTPfield to stack view
@@ -73,7 +73,7 @@ class OTPStackView: UIStackView {
         self.addArrangedSubview(textField)
         textField.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         textField.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
-        textField.widthAnchor.constraint(equalToConstant: 40).isActive = true
+//        textField.widthAnchor.constraint(equalToConstant: 36).isActive = true
         textField.backgroundColor = textBackgroundColor
         textField.textAlignment = .center
         textField.adjustsFontSizeToFitWidth = false
