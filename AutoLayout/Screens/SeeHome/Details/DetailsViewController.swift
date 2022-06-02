@@ -10,29 +10,20 @@ import WebKit
 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var copyButton: UIButton!
     @IBOutlet weak var webView: WKWebView!
     
     var linkURL = ""
+    var copyURL = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let urlStr = linkURL ?? ""
+        let urlStr = linkURL 
         let request = URLRequest(url: URL(string: urlStr)!)
         self.webView.load(request)
         
-//        self.webView.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading),options: .new, context: nil)
     }
-//    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-//        if keyPath == "loading"{
-//            if webView.isLoading {
-//                activityIndicator.startAnimating()
-//                activityIndicator.isHidden = false
-//            }else {
-//                activityIndicator.stopAnimating()
-//            }
-//        }
-//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -41,5 +32,10 @@ class DetailsViewController: UIViewController {
     @IBAction func backAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    @IBAction func copyOnPress(_ sender: Any) {
+        copyURL = linkURL
+        UIPasteboard.general.string = copyURL
+    }
+    
 }
 

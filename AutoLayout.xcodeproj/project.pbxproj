@@ -8,13 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		4F021CBA418911B444F3426A /* Pods_AutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7FD750F57B6392E5134C76 /* Pods_AutoLayout.framework */; };
+		900142FD28470AD000AF6E68 /* NunitoSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142EE28470AD000AF6E68 /* NunitoSans-LightItalic.ttf */; };
+		900142FE28470AD000AF6E68 /* NunitoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142EF28470AD000AF6E68 /* NunitoSans-BoldItalic.ttf */; };
+		900142FF28470AD000AF6E68 /* NunitoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142F028470AD000AF6E68 /* NunitoSans-ExtraLight.ttf */; };
+		9001430028470AD000AF6E68 /* NunitoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142F128470AD000AF6E68 /* NunitoSans-Light.ttf */; };
+		9001430128470AD000AF6E68 /* NunitoSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142F228470AD000AF6E68 /* NunitoSans-BlackItalic.ttf */; };
+		9001430228470AD000AF6E68 /* NunitoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142F328470AD000AF6E68 /* NunitoSans-ExtraBold.ttf */; };
+		9001430328470AD000AF6E68 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142F428470AD000AF6E68 /* NunitoSans-Regular.ttf */; };
+		9001430428470AD000AF6E68 /* NunitoSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142F528470AD000AF6E68 /* NunitoSans-SemiBoldItalic.ttf */; };
+		9001430528470AD000AF6E68 /* NunitoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142F628470AD000AF6E68 /* NunitoSans-Italic.ttf */; };
+		9001430628470AD000AF6E68 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 900142F728470AD000AF6E68 /* OFL.txt */; };
+		9001430728470AD000AF6E68 /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142F828470AD000AF6E68 /* NunitoSans-Bold.ttf */; };
+		9001430828470AD000AF6E68 /* NunitoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142F928470AD000AF6E68 /* NunitoSans-SemiBold.ttf */; };
+		9001430928470AD000AF6E68 /* NunitoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142FA28470AD000AF6E68 /* NunitoSans-Black.ttf */; };
+		9001430A28470AD000AF6E68 /* NunitoSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142FB28470AD000AF6E68 /* NunitoSans-ExtraBoldItalic.ttf */; };
+		9001430B28470AD000AF6E68 /* NunitoSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900142FC28470AD000AF6E68 /* NunitoSans-ExtraLightItalic.ttf */; };
+		9001434A2847134600AF6E68 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900143412847134600AF6E68 /* Inter-Medium.ttf */; };
+		9001434B2847134600AF6E68 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900143422847134600AF6E68 /* Inter-Light.ttf */; };
+		9001434C2847134600AF6E68 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900143432847134600AF6E68 /* Inter-Thin.ttf */; };
+		9001434D2847134600AF6E68 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900143442847134600AF6E68 /* Inter-Bold.ttf */; };
+		9001434E2847134600AF6E68 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900143452847134600AF6E68 /* Inter-Regular.ttf */; };
+		9001434F2847134600AF6E68 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900143462847134600AF6E68 /* Inter-ExtraBold.ttf */; };
+		900143502847134600AF6E68 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900143472847134600AF6E68 /* Inter-ExtraLight.ttf */; };
+		900143512847134600AF6E68 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900143482847134600AF6E68 /* Inter-Black.ttf */; };
+		900143522847134600AF6E68 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900143492847134600AF6E68 /* Inter-SemiBold.ttf */; };
+		9001435428471D5E00AF6E68 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9001435328471D5E00AF6E68 /* Fonts.swift */; };
+		900143562847560700AF6E68 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900143552847560700AF6E68 /* UserAPI.swift */; };
+		900143582847708100AF6E68 /* PhoneNumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900143572847708100AF6E68 /* PhoneNumberModel.swift */; };
+		9001435A2847710B00AF6E68 /* ExtentionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900143592847710B00AF6E68 /* ExtentionString.swift */; };
 		9009BF092831F68C0080A0D9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009BF072831F68C0080A0D9 /* FirstViewController.swift */; };
 		9009BF0A2831F68C0080A0D9 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009BF082831F68C0080A0D9 /* FirstViewController.xib */; };
 		9009BF0D2831F8AC0080A0D9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009BF0B2831F8AC0080A0D9 /* LoginViewController.swift */; };
 		9009BF0E2831F8AC0080A0D9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009BF0C2831F8AC0080A0D9 /* LoginViewController.xib */; };
 		9009BF112831F91B0080A0D9 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009BF0F2831F91B0080A0D9 /* OTPViewController.swift */; };
 		9009BF122831F91B0080A0D9 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009BF102831F91B0080A0D9 /* OTPViewController.xib */; };
-		903B61202834DA0800E72DBA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B611F2834DA0800E72DBA /* Service.swift */; };
 		903B61232834F55400E72DBA /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B61222834F55400E72DBA /* Extention.swift */; };
 		907AA5B728333DDD00BFB8FF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907AA5B628333DDD00BFB8FF /* Home.swift */; };
 		908ACBD228420325006E8E56 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908ACBD028420325006E8E56 /* UserViewController.swift */; };
@@ -63,13 +90,40 @@
 /* Begin PBXFileReference section */
 		3F7524CA283CC600BC59A30D /* Pods-AutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayout.release.xcconfig"; path = "Target Support Files/Pods-AutoLayout/Pods-AutoLayout.release.xcconfig"; sourceTree = "<group>"; };
 		7B7FD750F57B6392E5134C76 /* Pods_AutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900142EE28470AD000AF6E68 /* NunitoSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		900142EF28470AD000AF6E68 /* NunitoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		900142F028470AD000AF6E68 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		900142F128470AD000AF6E68 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
+		900142F228470AD000AF6E68 /* NunitoSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		900142F328470AD000AF6E68 /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		900142F428470AD000AF6E68 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		900142F528470AD000AF6E68 /* NunitoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		900142F628470AD000AF6E68 /* NunitoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic.ttf"; sourceTree = "<group>"; };
+		900142F728470AD000AF6E68 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		900142F828470AD000AF6E68 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		900142F928470AD000AF6E68 /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		900142FA28470AD000AF6E68 /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Black.ttf"; sourceTree = "<group>"; };
+		900142FB28470AD000AF6E68 /* NunitoSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		900142FC28470AD000AF6E68 /* NunitoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		900143412847134600AF6E68 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		900143422847134600AF6E68 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		900143432847134600AF6E68 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		900143442847134600AF6E68 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		900143452847134600AF6E68 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		900143462847134600AF6E68 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		900143472847134600AF6E68 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		900143482847134600AF6E68 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		900143492847134600AF6E68 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		9001435328471D5E00AF6E68 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		900143552847560700AF6E68 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		900143572847708100AF6E68 /* PhoneNumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberModel.swift; sourceTree = "<group>"; };
+		900143592847710B00AF6E68 /* ExtentionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionString.swift; sourceTree = "<group>"; };
 		9009BF072831F68C0080A0D9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		9009BF082831F68C0080A0D9 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		9009BF0B2831F8AC0080A0D9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9009BF0C2831F8AC0080A0D9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		9009BF0F2831F91B0080A0D9 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		9009BF102831F91B0080A0D9 /* OTPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
-		903B611F2834DA0800E72DBA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		903B61222834F55400E72DBA /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		907AA5B628333DDD00BFB8FF /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		908ACBD028420325006E8E56 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
@@ -130,13 +184,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		900142EC28470ABD00AF6E68 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				900143402847134600AF6E68 /* Inter */,
+				900142ED28470AD000AF6E68 /* Nunito_Sans */,
+				9001435328471D5E00AF6E68 /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		900142ED28470AD000AF6E68 /* Nunito_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				900142EE28470AD000AF6E68 /* NunitoSans-LightItalic.ttf */,
+				900142EF28470AD000AF6E68 /* NunitoSans-BoldItalic.ttf */,
+				900142F028470AD000AF6E68 /* NunitoSans-ExtraLight.ttf */,
+				900142F128470AD000AF6E68 /* NunitoSans-Light.ttf */,
+				900142F228470AD000AF6E68 /* NunitoSans-BlackItalic.ttf */,
+				900142F328470AD000AF6E68 /* NunitoSans-ExtraBold.ttf */,
+				900142F428470AD000AF6E68 /* NunitoSans-Regular.ttf */,
+				900142F528470AD000AF6E68 /* NunitoSans-SemiBoldItalic.ttf */,
+				900142F628470AD000AF6E68 /* NunitoSans-Italic.ttf */,
+				900142F728470AD000AF6E68 /* OFL.txt */,
+				900142F828470AD000AF6E68 /* NunitoSans-Bold.ttf */,
+				900142F928470AD000AF6E68 /* NunitoSans-SemiBold.ttf */,
+				900142FA28470AD000AF6E68 /* NunitoSans-Black.ttf */,
+				900142FB28470AD000AF6E68 /* NunitoSans-ExtraBoldItalic.ttf */,
+				900142FC28470AD000AF6E68 /* NunitoSans-ExtraLightItalic.ttf */,
+			);
+			path = Nunito_Sans;
+			sourceTree = "<group>";
+		};
+		900143402847134600AF6E68 /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				900143412847134600AF6E68 /* Inter-Medium.ttf */,
+				900143422847134600AF6E68 /* Inter-Light.ttf */,
+				900143432847134600AF6E68 /* Inter-Thin.ttf */,
+				900143442847134600AF6E68 /* Inter-Bold.ttf */,
+				900143452847134600AF6E68 /* Inter-Regular.ttf */,
+				900143462847134600AF6E68 /* Inter-ExtraBold.ttf */,
+				900143472847134600AF6E68 /* Inter-ExtraLight.ttf */,
+				900143482847134600AF6E68 /* Inter-Black.ttf */,
+				900143492847134600AF6E68 /* Inter-SemiBold.ttf */,
+			);
+			path = Inter;
+			sourceTree = "<group>";
+		};
 		9009BF132831F9550080A0D9 /* Moder */ = {
 			isa = PBXGroup;
 			children = (
 				90C69A6D283DD81A00CD3286 /* Remote */,
 				90BF9A44282E0C810057C9BA /* Login.swift */,
 				907AA5B628333DDD00BFB8FF /* Home.swift */,
-				903B611F2834DA0800E72DBA /* Service.swift */,
 			);
 			path = Moder;
 			sourceTree = "<group>";
@@ -185,6 +286,7 @@
 		903B61212834F54200E72DBA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				900142EC28470ABD00AF6E68 /* Fonts */,
 				90C69A6A283DCAF500CD3286 /* Extention */,
 				90C69A69283DCAEE00CD3286 /* Utilities */,
 			);
@@ -279,6 +381,8 @@
 				903B61222834F55400E72DBA /* Extention.swift */,
 				90CC0F1B283CBBBD00CB29BE /* ExtentionOTP.swift */,
 				90CC0F1D283CBD1900CB29BE /* ExtentionOTPTextField.swift */,
+				900143572847708100AF6E68 /* PhoneNumberModel.swift */,
+				900143592847710B00AF6E68 /* ExtentionString.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -354,6 +458,7 @@
 				90F27627283F32A3006689EB /* PromoAPI.swift */,
 				90F27629283F7A60006689EB /* NewAPI.swift */,
 				90F2762B283F8223006689EB /* IntroAPI.swift */,
+				900143552847560700AF6E68 /* UserAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -436,23 +541,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				90CC0F2A283CEB3800CB29BE /* PromoViewController.xib in Resources */,
+				9001430128470AD000AF6E68 /* NunitoSans-BlackItalic.ttf in Resources */,
+				9001430328470AD000AF6E68 /* NunitoSans-Regular.ttf in Resources */,
 				90BF9A43282E0A4F0057C9BA /* LoginCollectionViewCell.xib in Resources */,
 				9009BF0A2831F68C0080A0D9 /* FirstViewController.xib in Resources */,
 				90CC0F26283CEB2B00CB29BE /* NewsViewController.xib in Resources */,
+				900143522847134600AF6E68 /* Inter-SemiBold.ttf in Resources */,
+				9001434D2847134600AF6E68 /* Inter-Bold.ttf in Resources */,
 				9009BF0E2831F8AC0080A0D9 /* LoginViewController.xib in Resources */,
 				908ACBD328420325006E8E56 /* UserViewController.xib in Resources */,
+				9001434A2847134600AF6E68 /* Inter-Medium.ttf in Resources */,
 				90BF9A39282DF9FC0057C9BA /* LaunchScreen.storyboard in Resources */,
+				900143502847134600AF6E68 /* Inter-ExtraLight.ttf in Resources */,
 				90B567ED2845BCE300BAA893 /* NewTableViewCell.xib in Resources */,
 				9009BF122831F91B0080A0D9 /* OTPViewController.xib in Resources */,
+				9001430028470AD000AF6E68 /* NunitoSans-Light.ttf in Resources */,
+				9001434F2847134600AF6E68 /* Inter-ExtraBold.ttf in Resources */,
 				9090994A2832320B0065A318 /* HomeViewController.xib in Resources */,
+				9001430B28470AD000AF6E68 /* NunitoSans-ExtraLightItalic.ttf in Resources */,
 				90BF9A36282DF9FC0057C9BA /* Assets.xcassets in Resources */,
+				9001430628470AD000AF6E68 /* OFL.txt in Resources */,
+				9001430828470AD000AF6E68 /* NunitoSans-SemiBold.ttf in Resources */,
 				90F27630283F859F006689EB /* IntroTableViewCell.xib in Resources */,
+				9001430928470AD000AF6E68 /* NunitoSans-Black.ttf in Resources */,
+				9001434C2847134600AF6E68 /* Inter-Thin.ttf in Resources */,
+				9001434E2847134600AF6E68 /* Inter-Regular.ttf in Resources */,
+				9001434B2847134600AF6E68 /* Inter-Light.ttf in Resources */,
 				9090994E28324BC00065A318 /* NewsCollectionViewCell.xib in Resources */,
 				9090995628324BE70065A318 /* IntroduceCollectionViewCell.xib in Resources */,
+				9001430A28470AD000AF6E68 /* NunitoSans-ExtraBoldItalic.ttf in Resources */,
+				9001430428470AD000AF6E68 /* NunitoSans-SemiBoldItalic.ttf in Resources */,
+				9001430228470AD000AF6E68 /* NunitoSans-ExtraBold.ttf in Resources */,
+				900142FD28470AD000AF6E68 /* NunitoSans-LightItalic.ttf in Resources */,
+				900142FE28470AD000AF6E68 /* NunitoSans-BoldItalic.ttf in Resources */,
+				9001430528470AD000AF6E68 /* NunitoSans-Italic.ttf in Resources */,
 				90CC0F2E283CEB4400CB29BE /* IntroViewController.xib in Resources */,
+				900143512847134600AF6E68 /* Inter-Black.ttf in Resources */,
 				9090995228324BD60065A318 /* PromoCollectionViewCell.xib in Resources */,
 				90F27625283F3002006689EB /* PromoTableViewCell.xib in Resources */,
 				90AD2C9D2845FECA00414C56 /* DetailsViewController.xib in Resources */,
+				9001430728470AD000AF6E68 /* NunitoSans-Bold.ttf in Resources */,
+				900142FF28470AD000AF6E68 /* NunitoSans-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +636,7 @@
 			files = (
 				90C69A70283DD83F00CD3286 /* PatientNewFeedModel.swift in Sources */,
 				908ACBD228420325006E8E56 /* UserViewController.swift in Sources */,
+				900143562847560700AF6E68 /* UserAPI.swift in Sources */,
 				90CC0F1E283CBD1900CB29BE /* ExtentionOTPTextField.swift in Sources */,
 				90C69A76283DD9C900CD3286 /* PatientIntroModel.swift in Sources */,
 				90C69A78283E1B6A00CD3286 /* Ultilities.swift in Sources */,
@@ -523,9 +653,10 @@
 				907AA5B728333DDD00BFB8FF /* Home.swift in Sources */,
 				90F2762F283F859F006689EB /* IntroTableViewCell.swift in Sources */,
 				90CC0F29283CEB3800CB29BE /* PromoViewController.swift in Sources */,
+				9001435A2847710B00AF6E68 /* ExtentionString.swift in Sources */,
 				9090995128324BD60065A318 /* PromoCollectionViewCell.swift in Sources */,
+				9001435428471D5E00AF6E68 /* Fonts.swift in Sources */,
 				90CC0F2D283CEB4400CB29BE /* IntroViewController.swift in Sources */,
-				903B61202834DA0800E72DBA /* Service.swift in Sources */,
 				9090994D28324BC00065A318 /* NewsCollectionViewCell.swift in Sources */,
 				90BF9A45282E0C810057C9BA /* Login.swift in Sources */,
 				9009BF092831F68C0080A0D9 /* FirstViewController.swift in Sources */,
@@ -533,6 +664,7 @@
 				90F2762C283F8223006689EB /* IntroAPI.swift in Sources */,
 				9090995528324BE70065A318 /* IntroduceCollectionViewCell.swift in Sources */,
 				90AD2C9C2845FECA00414C56 /* DetailsViewController.swift in Sources */,
+				900143582847708100AF6E68 /* PhoneNumberModel.swift in Sources */,
 				90BF9A2D282DF9FA0057C9BA /* AppDelegate.swift in Sources */,
 				90CC0F25283CEB2B00CB29BE /* NewsViewController.swift in Sources */,
 				90B567EC2845BCE300BAA893 /* NewTableViewCell.swift in Sources */,
@@ -604,6 +736,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;

@@ -19,6 +19,8 @@ class NewsCollectionViewCell: UICollectionViewCell {
 //        super.awakeFromNib()
 //
 //    }
+    
+    
     func configViews(news: PatientNewModel?) {
         let imageURL = news?.picture
         let title = news?.title
@@ -36,4 +38,14 @@ class NewsCollectionViewCell: UICollectionViewCell {
         dateLabel.text = date ?? ""
 
     }
+    
+    func setUpNew() {
+        newsView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
+        newsView.layer.shadowOpacity = 1
+        newsView.layer.shadowRadius = 20
+        newsView.layer.shadowOffset = CGSize(width: 0, height: 4)
+        newsView.layer.borderColor = UIColor(red: 0.93, green: 0.94, blue: 0.96, alpha: 1.00).cgColor
+        newsView.layer.borderWidth = 1
+    }
+
 }

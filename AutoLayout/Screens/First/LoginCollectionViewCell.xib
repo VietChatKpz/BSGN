@@ -6,6 +6,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -31,7 +39,7 @@
                                     <constraint firstAttribute="height" constant="64" id="pfg-jF-GXH"/>
                                     <constraint firstAttribute="width" constant="300" id="zeQ-8w-0ek"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="23"/>
                                 <color key="textColor" red="0.14117647058823529" green="0.16470588235294117" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -41,7 +49,7 @@
                                     <constraint firstAttribute="width" constant="300" id="LxO-Ev-koQ"/>
                                     <constraint firstAttribute="height" constant="40" id="Xuq-3T-jXU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
                                 <color key="textColor" red="0.21176470588235294" green="0.23921568627450979" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

@@ -6,10 +6,13 @@
 //
 
 import Foundation
-import Alamofire
 
 struct articleList: Decodable {
     
+}
+
+struct Promo {
+    var isSelected: Bool
 }
 
 

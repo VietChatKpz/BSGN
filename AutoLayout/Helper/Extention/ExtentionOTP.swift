@@ -77,7 +77,8 @@ class OTPStackView: UIStackView {
         textField.backgroundColor = textBackgroundColor
         textField.textAlignment = .center
         textField.adjustsFontSizeToFitWidth = false
-//        textField.font = UIFont(name: "Kefa", size: 40)
+//        textField.font = UIFont(name: "Inter", size: 40)
+        textField.font = UIFont(name: "NunitoSans-Bold", size: 20)
         textField.textColor = UIColor(red: 0.02, green: 0.05, blue: 0.13, alpha: 1.00)
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 2
@@ -136,18 +137,18 @@ class OTPStackView: UIStackView {
 //MARK: - TextField Handling
 extension OTPStackView: UITextFieldDelegate {
         
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-
-        let shoudEdit = textFieldsCollection.first(where: { $0.text?.isEmpty == true}) ?? textField
-        
-        if shoudEdit == textField {
-            textField.layer.borderColor = UIColor(red: 0.17, green: 0.53, blue: 0.40, alpha: 1.00).cgColor
-            return true
-        } else {
-            shoudEdit.becomeFirstResponder()
-            return false
-        }
-    }
+//    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+//
+//        let shoudEdit = textFieldsCollection.first(where: { $0.text?.isEmpty == true}) ?? textField
+//
+//        if shoudEdit == textField {
+//            textField.layer.borderColor = UIColor(red: 0.17, green: 0.53, blue: 0.40, alpha: 1.00).cgColor
+//            return true
+//        } else {
+//            shoudEdit.becomeFirstResponder()
+//            return false
+//        }
+//    }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if showsWarningColor {

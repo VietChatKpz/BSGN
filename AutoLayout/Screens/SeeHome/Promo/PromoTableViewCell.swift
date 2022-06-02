@@ -8,27 +8,43 @@
 import UIKit
 
 class PromoTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var promoImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabe: UILabel!
-    @IBOutlet weak var clickButton: UIButton!
+    @IBOutlet weak var checkImage: UIImageView!
     
-//    var checkAction: (() -> Void)?
+    
+    var checkAction: (() -> Void)?
+    var truyenFoodName: ((String) -> Void)?
+
+    var promo: Promo?{
+        didSet{
+            if let promo = promo{
+                // if else rut gon
+                checkImage.image = UIImage(named: promo.isSelected ? "checked" : "unchecked")
+            }
+        }
+    }
+
+
+    @objc func tapAction(){
+        checkAction?()
+        
+        
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction))
+        checkImage.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction))
+        checkImage.addGestureRecognizer(tapGesture)
     }
-
-//    @objc func tapAction(){
-//        checkAction?()
-//    }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     func configPromo(promo: promoAPI?) {

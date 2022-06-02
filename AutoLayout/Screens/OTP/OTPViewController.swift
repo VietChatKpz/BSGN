@@ -21,11 +21,13 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
     var second: Int = 60
     var timer = Timer()
     
+    
     let otpStackView = OTPStackView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//        Utility.logAllAvailableFonts()
         self.hideKeyBoard()
         
         maButton.layer.borderWidth = 1.0
@@ -34,10 +36,6 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         
         otpContainerView.addSubview(otpStackView)
         otpStackView.delegate = self
-//        otpStackView.heightAnchor.constraint(equalTo: otpContainerView.heightAnchor).isActive = true
-//        otpStackView.widthAnchor.constraint(equalTo: otpContainerView.widthAnchor).isActive = true
-//        otpStackView.centerXAnchor.constraint(equalTo: otpContainerView.centerXAnchor).isActive = true
-//        otpStackView.centerYAnchor.constraint(equalTo: otpContainerView.centerYAnchor).isActive = true
         otpStackView.topAnchor.constraint(equalTo: otpContainerView.topAnchor).isActive = true
         otpStackView.leftAnchor.constraint(equalTo: otpContainerView.leftAnchor).isActive = true
         otpStackView.rightAnchor.constraint(equalTo: otpContainerView.rightAnchor).isActive = true

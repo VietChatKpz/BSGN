@@ -22,7 +22,6 @@ class HomeViewController: UIViewController {
     }()
     
     var newFeed: PatientNewFeedModel?
-    var news: PatientNewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,13 +41,13 @@ class HomeViewController: UIViewController {
         newsCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         promoCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         introduceCollectionView.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
-        
+                
         avatarView.backgroundColor = UIColor.clear
         
         homeScrollView.refreshControl = refreshControl
         self.refreshControl.addTarget(self, action: #selector(fetchPatientNewFeed), for: .valueChanged)
         fetchPatientNewFeed()
-        
+                
     }
     
     @objc func fetchPatientNewFeed() {
@@ -112,6 +111,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let news = newFeed?.newList?[indexPath.row]
 //            print(news)
             cell.configViews(news: news)
+            cell.setUpNew()
             return cell
         }
         else if collectionView == promoCollectionView {
@@ -119,6 +119,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
             let promos = newFeed?.promoList?[indexPath.row]
             cell.configViews(promos: promos)
+            cell.setUpPromo()
             return cell
         }else {
             let cell = introduceCollectionView.dequeueReusableCell(withReuseIdentifier: "IntroCell", for: indexPath) as! IntroduceCollectionViewCell

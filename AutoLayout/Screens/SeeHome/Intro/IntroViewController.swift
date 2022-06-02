@@ -25,6 +25,10 @@ class IntroViewController: UIViewController {
         introTableView.register(UINib(nibName: "IntroTableViewCell", bundle: nil), forCellReuseIdentifier: "IntroCell")
         introTableView.separatorStyle = .none
         
+        let header = UIView(frame: CGRect(x: 0, y: 44, width: view.bounds.width, height: 300))
+        introTableView.tableHeaderView = header
+        header.backgroundColor = .blue
+        
         introTableView.refreshControl = refreshControl
         self.refreshControl.addTarget(self, action: #selector(fetchPatientNewFeed), for: .valueChanged)
         fetchPatientNewFeed()

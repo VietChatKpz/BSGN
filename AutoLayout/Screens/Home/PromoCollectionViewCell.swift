@@ -9,6 +9,7 @@ import UIKit
 
 class PromoCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var promoView: UIView!
     @IBOutlet weak var promoImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -36,4 +37,13 @@ class PromoCollectionViewCell: UICollectionViewCell {
         dateLabel.text = date ?? ""
     }
     
+    func setUpPromo() {
+        promoView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
+        promoView.layer.shadowOpacity = 1
+        
+        promoView.layer.shadowRadius = 20
+        promoView.layer.shadowOffset = CGSize(width: 0, height: 4)
+        promoView.layer.borderColor = UIColor(red: 0.93, green: 0.94, blue: 0.96, alpha: 1.00).cgColor
+        promoView.layer.borderWidth = 1
+    }    
 }

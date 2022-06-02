@@ -10,6 +10,7 @@ import UIKit
 class PromoViewController: UIViewController {
 
     @IBOutlet weak var promoTableView: UITableView!
+    var promos = [Promo]()
     
     lazy var refreshControl: UIRefreshControl = {
         let rfc = UIRefreshControl()
@@ -29,6 +30,10 @@ class PromoViewController: UIViewController {
         self.refreshControl.addTarget(self, action: #selector(fetchPatientNewFeed), for: .valueChanged)
         fetchPatientNewFeed()
         
+        let promo1 = Promo(isSelected: true)
+        let promo2 = Promo(isSelected: true)
+        
+        promos = [promo1, promo2]
     }
     
     @objc func fetchPatientNewFeed() {
@@ -69,13 +74,13 @@ extension PromoViewController: UITableViewDelegate, UITableViewDataSource {
         let promo = newFeed?.promoItems?[indexPath.row]
         cell.configPromo(promo: promo)
         
-//        cell.checkAction = {[weak self] in
-//            guard let strongSelf = self else { return }
-//
-////            strongSelf.newFeed?.promoItems?[indexPath.row].isSelected = !strongSelf.newFeed?.promoItems?[indexPath.row].isSelected
-//            strongSelf.promoTableView.reloadData()
-//        }
-        
+        cell.checkAction = {[weak self] in
+            // check self co bi nil khong, neu khong bi nil thi gan self cho strongSelf
+            guard let strongSelf = self else { return }
+
+            strongSelf.promos[indexPath.row].isSelected = !strongSelf.promos[indexPath.row].isSelected
+            tableView.reloadData()
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

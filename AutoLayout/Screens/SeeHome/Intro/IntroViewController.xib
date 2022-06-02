@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroViewController" customModule="AutoLayout" customModuleProvider="target">
             <connections>
@@ -37,11 +42,11 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bác sĩ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKP-CU-eMi">
-                                    <rect key="frame" x="181.5" y="12" width="51" height="20"/>
+                                    <rect key="frame" x="182.5" y="12" width="49" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="ewz-VH-Pz8"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
                                     <color key="textColor" red="0.14117647058823529" green="0.16470588235294117" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>

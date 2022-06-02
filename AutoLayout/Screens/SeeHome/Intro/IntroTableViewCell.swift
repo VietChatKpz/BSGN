@@ -31,13 +31,17 @@ class IntroTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func configIntro(intro: introAPI?) {
+        
+        let ratio = intro?.ratio_star ?? 0
+        let numberRiview = intro?.number_of_reviews ?? 0
+        
         let imageURL = intro?.avatar
         let name = (intro?.user_type_name ?? "") + " " + (intro?.full_name ?? "")
         let major = "Chuyên nghành: " + (intro?.majors_name ?? "")
-//        let star = (intro?.ratio_star ?? "") + " " + "(" + (intro?.number_of_reviews ?? "") + " đánh giá )"
+        let star = String(ratio) + " " + "(" + String(numberRiview) + " đánh giá )"
         
 //        configIntro(imageURL: imageURL, name: name, major: major)
-        configIntro(imageURL: imageURL, name: name, major: major, star: "")
+        configIntro(imageURL: imageURL, name: name, major: major, star: star)
     }
     
     private func configIntro(imageURL: String?, name: String?, major: String?, star: String?){
