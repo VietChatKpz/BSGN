@@ -120,6 +120,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let promos = newFeed?.promoList?[indexPath.row]
             cell.configViews(promos: promos)
             cell.setUpPromo()
+            
             return cell
         }else {
             let cell = introduceCollectionView.dequeueReusableCell(withReuseIdentifier: "IntroCell", for: indexPath) as! IntroduceCollectionViewCell

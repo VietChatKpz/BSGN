@@ -8,6 +8,7 @@ target 'AutoLayout' do
 pod 'Alamofire'
 pod 'SDWebImage'
 pod 'SDWebView'
+pod 'IQKeyboardManager'
   # Pods for AutoLayout
 
 end

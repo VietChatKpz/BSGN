@@ -26,6 +26,8 @@ class UserViewController: UIViewController {
     
     var newFeed: PatientNewFeedModel?
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,15 +35,14 @@ class UserViewController: UIViewController {
         if #available(iOS 14, *) {
             datePicker.preferredDatePickerStyle = UIDatePickerStyle.wheels
         }
-
+        setDatePicker()
+        
     }
-    
+        
     @objc func fetchPatientNewFeed() {
-//        self.showLoaderView()
         APIUtilities.requestHomePatientFeed(APIURL: "/hdhuy179/7883b8f11ea4b25cf6d3822c67049606/raw/Training_Intern_BasicApp_UserInfo"){ [weak self] patientNewFeed, error in
                         
             guard let self = self else { return}
-//            self.dismissLoaderView()
 
             guard let patientNewFeed = patientNewFeed, error == nil else {
                 return
@@ -97,6 +98,7 @@ class UserViewController: UIViewController {
     
     @objc func doneDateAction() {
         dateTF.text = ConvertHelper.stringFromDate(date: datePicker.date, format: "dd/MM/yyyy")
+        self.view.endEditing(true)
     }
     
     @objc func cancelAction() {
@@ -108,6 +110,6 @@ class UserViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func dateOnPress(_ sender: Any) {
-        setDatePicker()
+//        setDatePicker()
     }
 }

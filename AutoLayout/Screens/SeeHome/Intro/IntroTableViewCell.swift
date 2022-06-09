@@ -49,6 +49,10 @@ class IntroTableViewCell: UITableViewCell {
         nameLabel.text = name ?? ""
         majorLabel.text = major ?? ""
         starLabel.text = star ?? ""
+        
+        if imageURL == "" {
+            introImageView.image = UIImage(named: "doctor1")
+        }
     }
     
 }

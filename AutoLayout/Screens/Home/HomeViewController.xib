@@ -41,13 +41,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="428" height="163.33333333333334"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Họ tên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoa-k6-rGD">
-                                    <rect key="frame" x="16.000000000000004" y="59.999999999999993" width="45.333333333333343" height="20.666666666666664"/>
+                                    <rect key="frame" x="16.000000000000004" y="59.999999999999993" width="45.333333333333343" height="25.666666666666664"/>
                                     <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="15"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m8f-pP-VUh">
-                                    <rect key="frame" x="16" y="86.666666666666671" width="4" height="4"/>
+                                    <rect key="frame" x="16" y="91.666666666666671" width="4" height="4"/>
                                     <color key="backgroundColor" red="0.066666666666666666" green="1" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="4" id="BGV-dg-acQ"/>
@@ -60,19 +60,19 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đang trực tuyến" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIF-aQ-k1a">
-                                    <rect key="frame" x="25.999999999999993" y="80.333333333333329" width="86.333333333333314" height="16.666666666666671"/>
+                                    <rect key="frame" x="25.999999999999993" y="85.333333333333329" width="86.333333333333314" height="16.666666666666671"/>
                                     <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="12"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9A-AA-Ubx">
-                                    <rect key="frame" x="349.66666666666669" y="60" width="62.333333333333314" height="62.333333333333343"/>
+                                    <rect key="frame" x="370" y="60" width="42" height="42"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="i26-Uf-053">
-                                            <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="62.333333333333336"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppk-WA-dQP">
-                                            <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="62.333333333333336"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <connections>
                                                 <action selector="avatarOnPress:" destination="-1" eventType="touchUpInside" id="4zG-ze-b6E"/>
@@ -98,9 +98,10 @@
                                 <constraint firstItem="m8f-pP-VUh" firstAttribute="leading" secondItem="Qmi-EU-k55" secondAttribute="leading" constant="16" id="1tl-nd-Log"/>
                                 <constraint firstItem="qoa-k6-rGD" firstAttribute="top" secondItem="Qmi-EU-k55" secondAttribute="top" constant="60" id="2Qg-pM-Kyg"/>
                                 <constraint firstAttribute="width" secondItem="Qmi-EU-k55" secondAttribute="height" multiplier="375:143" id="9JA-PV-ELe"/>
-                                <constraint firstItem="l9A-AA-Ubx" firstAttribute="top" secondItem="Qmi-EU-k55" secondAttribute="top" constant="60" id="HQd-iv-bPa"/>
                                 <constraint firstItem="7pb-IV-FtX" firstAttribute="top" secondItem="Qmi-EU-k55" secondAttribute="top" id="IMQ-sH-BnD"/>
+                                <constraint firstItem="l9A-AA-Ubx" firstAttribute="bottom" secondItem="NIF-aQ-k1a" secondAttribute="bottom" id="LGN-V0-aKc"/>
                                 <constraint firstAttribute="trailing" secondItem="l9A-AA-Ubx" secondAttribute="trailing" constant="16" id="TDs-Fq-ykm"/>
+                                <constraint firstItem="l9A-AA-Ubx" firstAttribute="top" secondItem="qoa-k6-rGD" secondAttribute="top" id="ahz-7r-Wer"/>
                                 <constraint firstItem="NIF-aQ-k1a" firstAttribute="leading" secondItem="m8f-pP-VUh" secondAttribute="trailing" constant="6" id="b1j-ba-wpT"/>
                                 <constraint firstItem="NIF-aQ-k1a" firstAttribute="centerY" secondItem="m8f-pP-VUh" secondAttribute="centerY" id="dQK-8C-qUP"/>
                                 <constraint firstAttribute="bottom" secondItem="7pb-IV-FtX" secondAttribute="bottom" id="dop-cl-kbe"/>
@@ -108,7 +109,6 @@
                                 <constraint firstItem="qoa-k6-rGD" firstAttribute="leading" secondItem="Qmi-EU-k55" secondAttribute="leading" constant="16" id="gRR-eG-5pz"/>
                                 <constraint firstAttribute="trailing" secondItem="7pb-IV-FtX" secondAttribute="trailing" id="hFN-j4-Kdx"/>
                                 <constraint firstItem="7pb-IV-FtX" firstAttribute="leading" secondItem="Qmi-EU-k55" secondAttribute="leading" id="nvC-on-tZv"/>
-                                <constraint firstAttribute="bottom" secondItem="l9A-AA-Ubx" secondAttribute="bottom" constant="41" id="ouv-oe-ABE"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30K-dk-bZr">

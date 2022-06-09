@@ -30,7 +30,7 @@ class NewsViewController: UIViewController {
         newTableView.refreshControl = refreshControl
         self.refreshControl.addTarget(self, action: #selector(fetchPatientNewFeed), for: .valueChanged)
         fetchPatientNewFeed()
-
+        
     }
     
     @objc func fetchPatientNewFeed() {

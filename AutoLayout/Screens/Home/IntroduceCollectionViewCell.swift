@@ -42,6 +42,10 @@ class IntroduceCollectionViewCell: UICollectionViewCell {
         majorLabel.text = major ?? " "
         rateLabel.text = star ?? " "
         
+        if imageURLStr == "" {
+            introImage.image = UIImage(named: "doctor1")
+        }
+        
         introView.layer.borderWidth = 1.0
         introView.layer.borderColor = UIColor(red: 0.93, green: 0.94, blue: 0.96, alpha: 1.00).cgColor
     }
