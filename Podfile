@@ -9,6 +9,7 @@ pod 'Alamofire'
 pod 'SDWebImage'
 pod 'SDWebView'
 pod 'IQKeyboardManager'
+pod 'ToastViewSwift'
   # Pods for AutoLayout
 
 end

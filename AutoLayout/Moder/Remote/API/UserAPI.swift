@@ -33,32 +33,23 @@ class userAPI {
     convenience init(json: [String: Any]) {
         self.init()
         
-        for (key, value) in json {
-
-            if key == "name", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.name = jsonValue
-            }
-            if key == "last_name", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.last_name = jsonValue
-            }
-            if key == "birth_date", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.birth_date = jsonValue
-            }
-            if key == "sex", let wrapValue = value as? Int {
-                let jsonValue = wrapValue
-                self.sex = jsonValue
-            }
-            if key == "phone", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.phone = jsonValue
-            }
-            if key == "contact_email", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.contact_email = jsonValue
-            }
+        if let wrapValue = json["name"] as? String {
+            self.name = wrapValue
+        }
+        if let wrapValue = json["last_name"] as? String {
+            self.last_name = wrapValue
+        }
+        if let wrapValue = json["birth_date"] as? String {
+            self.birth_date = wrapValue
+        }
+        if let wrapValue = json["sex"] as? Int {
+            self.sex = wrapValue
+        }
+        if let wrapValue = json["phone"] as? String {
+            self.phone = wrapValue
+        }
+        if let wrapValue = json["contact_email"] as? String {
+            self.contact_email = wrapValue
         }
     }
 }

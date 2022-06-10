@@ -15,12 +15,6 @@ class NewsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//
-//    }
-    
-    
     func configViews(news: PatientNewModel?) {
         let imageURL = news?.picture
         let title = news?.title

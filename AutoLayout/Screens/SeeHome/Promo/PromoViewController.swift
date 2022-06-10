@@ -86,5 +86,10 @@ extension PromoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 102
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = DetailsViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        vc.linkURL = newFeed?.promoItems?[indexPath.row].link ?? ""
+    }
 }
 

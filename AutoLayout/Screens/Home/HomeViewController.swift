@@ -152,4 +152,5 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: 258/220*newsCollectionView.bounds.height, height: newsCollectionView.bounds.height)
         }
     }
+    
 }

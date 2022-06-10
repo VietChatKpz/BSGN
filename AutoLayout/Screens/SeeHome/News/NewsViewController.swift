@@ -80,6 +80,10 @@ extension NewsViewController: UITableViewDataSource{
         return cell
 
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = DetailsViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        vc.linkURL = newFeed?.newItem?[indexPath.row].link ?? ""
+    }
     
 }

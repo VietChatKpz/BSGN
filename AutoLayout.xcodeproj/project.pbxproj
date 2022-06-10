@@ -78,6 +78,7 @@
 		90CC0F2A283CEB3800CB29BE /* PromoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CC0F28283CEB3800CB29BE /* PromoViewController.xib */; };
 		90CC0F2D283CEB4400CB29BE /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F2B283CEB4400CB29BE /* IntroViewController.swift */; };
 		90CC0F2E283CEB4400CB29BE /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CC0F2C283CEB4400CB29BE /* IntroViewController.xib */; };
+		90EAB2A12852E252009641A5 /* LocationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EAB2A02852E252009641A5 /* LocationAPI.swift */; };
 		90F27624283F3002006689EB /* PromoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F27622283F3002006689EB /* PromoTableViewCell.swift */; };
 		90F27625283F3002006689EB /* PromoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F27623283F3002006689EB /* PromoTableViewCell.xib */; };
 		90F27628283F32A3006689EB /* PromoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F27627283F32A3006689EB /* PromoAPI.swift */; };
@@ -162,6 +163,7 @@
 		90CC0F28283CEB3800CB29BE /* PromoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoViewController.xib; sourceTree = "<group>"; };
 		90CC0F2B283CEB4400CB29BE /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		90CC0F2C283CEB4400CB29BE /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+		90EAB2A02852E252009641A5 /* LocationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAPI.swift; sourceTree = "<group>"; };
 		90F27622283F3002006689EB /* PromoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTableViewCell.swift; sourceTree = "<group>"; };
 		90F27623283F3002006689EB /* PromoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoTableViewCell.xib; sourceTree = "<group>"; };
 		90F27627283F32A3006689EB /* PromoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoAPI.swift; sourceTree = "<group>"; };
@@ -459,6 +461,7 @@
 				90F27629283F7A60006689EB /* NewAPI.swift */,
 				90F2762B283F8223006689EB /* IntroAPI.swift */,
 				900143552847560700AF6E68 /* UserAPI.swift */,
+				90EAB2A02852E252009641A5 /* LocationAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 				90C69A76283DD9C900CD3286 /* PatientIntroModel.swift in Sources */,
 				90C69A78283E1B6A00CD3286 /* Ultilities.swift in Sources */,
 				90CC0F1C283CBBBD00CB29BE /* ExtentionOTP.swift in Sources */,
+				90EAB2A12852E252009641A5 /* LocationAPI.swift in Sources */,
 				9009BF112831F91B0080A0D9 /* OTPViewController.swift in Sources */,
 				9009BF0D2831F8AC0080A0D9 /* LoginViewController.swift in Sources */,
 				90BF9A42282E0A4F0057C9BA /* LoginCollectionViewCell.swift in Sources */,

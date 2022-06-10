@@ -18,17 +18,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewsCollectionViewCell" customModule="AutoLayout" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="290" height="244"/>
+            <rect key="frame" x="0.0" y="0.0" width="355" height="281"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="290" height="244"/>
+                <rect key="frame" x="0.0" y="0.0" width="355" height="281"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MH7-r5-VF1">
-                        <rect key="frame" x="0.0" y="0.0" width="290" height="244"/>
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="281"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="d8X-s6-nSt">
-                                <rect key="frame" x="0.0" y="0.0" width="290" height="150.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="184.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="d8X-s6-nSt" secondAttribute="height" multiplier="258:134" id="aBZ-t7-Zap"/>
                                 </constraints>
@@ -39,7 +39,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jio Health khởi động chương trình Doctor Tour 2021" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kII-Dh-Irz">
-                                <rect key="frame" x="12" y="162.5" width="266" height="40"/>
+                                <rect key="frame" x="12" y="196.5" width="331" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="AJg-1D-Sep"/>
                                 </constraints>
@@ -48,7 +48,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ưu đãi hot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPN-WW-nfN">
-                                <rect key="frame" x="12" y="206.5" width="62.5" height="18"/>
+                                <rect key="frame" x="12" y="240.5" width="62.5" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="dwV-pg-5FE"/>
                                 </constraints>
@@ -57,7 +57,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3H-Y2-QUy">
-                                <rect key="frame" x="80.5" y="213.5" width="4" height="4"/>
+                                <rect key="frame" x="80.5" y="247.5" width="4" height="4"/>
                                 <color key="backgroundColor" red="0.85098039215686272" green="0.85882352941176465" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="4" id="jlJ-VR-xla"/>
@@ -70,7 +70,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28/6/2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCQ-CV-d9z">
-                                <rect key="frame" x="90.5" y="206.5" width="62" height="18"/>
+                                <rect key="frame" x="90.5" y="240.5" width="62" height="18"/>
                                 <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="13"/>
                                 <color key="textColor" red="0.58823529411764708" green="0.60784313725490191" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -107,7 +107,7 @@
                 <constraint firstAttribute="bottom" secondItem="MH7-r5-VF1" secondAttribute="bottom" id="PZz-8s-6Mn"/>
                 <constraint firstItem="MH7-r5-VF1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QQQ-fW-GrM"/>
             </constraints>
-            <size key="customSize" width="290" height="244"/>
+            <size key="customSize" width="355" height="281"/>
             <connections>
                 <outlet property="dateLabel" destination="rCQ-CV-d9z" id="oF8-RI-f5b"/>
                 <outlet property="nameLabel" destination="NPN-WW-nfN" id="Agi-BY-yMA"/>
@@ -115,7 +115,7 @@
                 <outlet property="newsView" destination="MH7-r5-VF1" id="BGH-g5-gLb"/>
                 <outlet property="titleLabel" destination="kII-Dh-Irz" id="t6K-vJ-gB9"/>
             </connections>
-            <point key="canvasLocation" x="314.49275362318843" y="136.60714285714286"/>
+            <point key="canvasLocation" x="361.59420289855075" y="124.21875"/>
         </collectionViewCell>
     </objects>
     <resources>

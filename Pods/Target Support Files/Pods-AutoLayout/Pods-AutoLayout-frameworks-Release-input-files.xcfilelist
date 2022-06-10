@@ -3,3 +3,4 @@ ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SDWebView/SDWebView.framework
+${BUILT_PRODUCTS_DIR}/ToastViewSwift/ToastViewSwift.framework

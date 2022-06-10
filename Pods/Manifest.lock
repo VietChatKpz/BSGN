@@ -5,12 +5,14 @@ PODS:
     - SDWebImage/Core (= 5.12.5)
   - SDWebImage/Core (5.12.5)
   - SDWebView (1.0.4)
+  - ToastViewSwift (1.0.5)
 
 DEPENDENCIES:
   - Alamofire
   - IQKeyboardManager
   - SDWebImage
   - SDWebView
+  - ToastViewSwift
 
 SPEC REPOS:
   trunk:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - IQKeyboardManager
     - SDWebImage
     - SDWebView
+    - ToastViewSwift
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
   SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
   SDWebView: c4eb484530471bc843d457a39f7b59eda5806ca2
+  ToastViewSwift: 18aa7c783b02cc55547cde7679f3771692297aae
 
-PODFILE CHECKSUM: 52cf5c84bb40f02cca2043fade8a8033a6aa1659
+PODFILE CHECKSUM: 6b65d7532b405afdb7c974b3e27bb665f2d46cbc
 
 COCOAPODS: 1.11.2

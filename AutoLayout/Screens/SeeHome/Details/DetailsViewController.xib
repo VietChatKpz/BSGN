@@ -15,6 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="AutoLayout" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="r8c-0Z-ICG" id="C5Z-79-Nb1"/>
                 <outlet property="copyButton" destination="yed-ac-d2r" id="fQO-Ft-m6z"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="webView" destination="CQi-HF-TzI" id="b82-EG-enB"/>
@@ -91,6 +92,14 @@
                                 <wkPreferences key="preferences"/>
                             </wkWebViewConfiguration>
                         </wkWebView>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="r8c-0Z-ICG">
+                            <rect key="frame" x="177" y="401.5" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="YfZ-Vd-wPK"/>
+                                <constraint firstAttribute="height" constant="60" id="eAD-HD-jFC"/>
+                            </constraints>
+                            <color key="color" red="0.17254901960784313" green="0.52549019607843139" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -102,11 +111,13 @@
                         <constraint firstAttribute="trailing" secondItem="CQi-HF-TzI" secondAttribute="trailing" id="Hy8-gU-HXh"/>
                         <constraint firstItem="CQi-HF-TzI" firstAttribute="top" secondItem="Hth-Ro-uHC" secondAttribute="bottom" id="UoT-AF-qWN"/>
                         <constraint firstAttribute="trailing" secondItem="Hth-Ro-uHC" secondAttribute="trailing" id="abc-rI-jje"/>
+                        <constraint firstItem="r8c-0Z-ICG" firstAttribute="centerX" secondItem="CQi-HF-TzI" secondAttribute="centerX" id="d1V-IG-31c"/>
                         <constraint firstItem="CQi-HF-TzI" firstAttribute="leading" secondItem="hCx-gJ-DZ7" secondAttribute="leading" id="do7-Lx-MaZ"/>
                         <constraint firstItem="vVC-ku-7Lw" firstAttribute="leading" secondItem="hCx-gJ-DZ7" secondAttribute="leading" id="fEU-P6-dpg"/>
                         <constraint firstAttribute="bottom" secondItem="CQi-HF-TzI" secondAttribute="bottom" id="g6i-J8-dPU"/>
                         <constraint firstItem="CQi-HF-TzI" firstAttribute="top" secondItem="Hth-Ro-uHC" secondAttribute="bottom" id="gAJ-Mc-7BV"/>
                         <constraint firstItem="CQi-HF-TzI" firstAttribute="leading" secondItem="hCx-gJ-DZ7" secondAttribute="leading" id="scJ-7D-2AW"/>
+                        <constraint firstItem="r8c-0Z-ICG" firstAttribute="centerY" secondItem="CQi-HF-TzI" secondAttribute="centerY" id="vhV-TT-tqK"/>
                     </constraints>
                 </view>
             </subviews>

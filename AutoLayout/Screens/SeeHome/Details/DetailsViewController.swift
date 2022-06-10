@@ -7,11 +7,13 @@
 
 import UIKit
 import WebKit
+import ToastViewSwift
 
 class DetailsViewController: UIViewController {
 
     @IBOutlet weak var copyButton: UIButton!
     @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var linkURL = ""
     var copyURL = ""
@@ -23,6 +25,20 @@ class DetailsViewController: UIViewController {
         let request = URLRequest(url: URL(string: urlStr)!)
         self.webView.load(request)
         
+        self.webView.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
+        
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "loading" {
+            if webView.isLoading {
+                activityIndicator.startAnimating()
+                activityIndicator.isHidden = false
+            }else {
+                activityIndicator.stopAnimating()
+                activityIndicator.isHidden = true
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,6 +51,8 @@ class DetailsViewController: UIViewController {
     @IBAction func copyOnPress(_ sender: Any) {
         copyURL = linkURL
         UIPasteboard.general.string = copyURL
+        let toast = Toast.text("Đã sao chép URL")
+        toast.show()
     }
     
 }
