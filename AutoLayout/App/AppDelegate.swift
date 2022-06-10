@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         let navigation = UINavigationController()
-        let vc = HomeViewController()
+        let vc = FirstViewController()
         
         navigation.isNavigationBarHidden = true
         navigation.viewControllers = [vc]

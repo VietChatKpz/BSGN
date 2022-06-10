@@ -36,7 +36,6 @@ class DetailsViewController: UIViewController {
                 activityIndicator.isHidden = false
             }else {
                 activityIndicator.stopAnimating()
-                activityIndicator.isHidden = true
             }
         }
     }

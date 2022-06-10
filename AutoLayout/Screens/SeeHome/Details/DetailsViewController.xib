@@ -92,7 +92,7 @@
                                 <wkPreferences key="preferences"/>
                             </wkWebViewConfiguration>
                         </wkWebView>
-                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="r8c-0Z-ICG">
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="r8c-0Z-ICG">
                             <rect key="frame" x="177" y="401.5" width="60" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="60" id="YfZ-Vd-wPK"/>
