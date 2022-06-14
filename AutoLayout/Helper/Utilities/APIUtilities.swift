@@ -27,6 +27,21 @@ final class APIUtilities {
         
         jsonResponseObject(tailStrURL: tailStrURL!, method: .get, headers: [:], completionHandler: completionHandler)
     }
+
+    static func requestUser(completionHandler: ((userAPI?, APIError?)-> Void)?) {
+        let taiURL = "/hdhuy179/7883b8f11ea4b25cf6d3822c67049606/raw/Training_Intern_BasicApp_UserInfo"
+        
+        jsonResponseObject(tailStrURL: taiURL, method: .get, headers: [:], completionHandler: completionHandler)
+
+    }
+    //MARK: Viết riêng request...
+//    static func requestHomePatientFeed(APIURL: String?, completionHandler: ((PatientNewFeedModel?, APIError?)-> Void)?){
+////            let tailStrURL = "/hdhuy179/ef03ed850ad56f0136fe3c5916b3280b/raw/Training_Intern_BasicApp_Promotion"
+////        let tailStrURL = "/hdhuy179/f967ffb777610529b678f0d5c823352a/raw"
+//        let tailStrURL = APIURL
+//
+//        jsonResponseObject(tailStrURL: tailStrURL!, method: .get, headers: [:], completionHandler: completionHandler)
+//    }
     //B3:
     static private func jsonResponseObject<T: JsonInitObject>(tailStrURL: String, method: HTTPMethod, headers: HTTPHeaders, completionHandler: ((T?, APIError?) -> Void)?) {
         jsonResponse(tailStrURL: tailStrURL, isPublicAPI: false, method: method, headers: headers) { response, serverCode, serverMessage in

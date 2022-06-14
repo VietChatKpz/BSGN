@@ -7,7 +7,7 @@
 
 import Foundation
 
-class userAPI {
+class userAPI: NSObject, JsonInitObject {
     var name: String?
     var last_name: String?
     var birth_date: String?
@@ -30,7 +30,7 @@ class userAPI {
         self.contact_email = contact_email
     }
 
-    convenience init(json: [String: Any]) {
+    required convenience init(json: [String: Any]) {
         self.init()
 
         if let wrapValue = json["name"] as? String {

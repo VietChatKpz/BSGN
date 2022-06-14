@@ -27,8 +27,7 @@ class UserViewController: UIViewController {
     
     let dateLabel = UILabel()
     
-    var newFeed: PatientNewFeedModel?
-    
+    var user: userAPI?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,25 +38,34 @@ class UserViewController: UIViewController {
         setDatePicker()
         fetchPatientNewFeed()
         
+        
     }
     
     @objc func fetchPatientNewFeed() {
-        APIUtilities.requestHomePatientFeed(APIURL: "/hdhuy179/7883b8f11ea4b25cf6d3822c67049606/raw/Training_Intern_BasicApp_UserInfo"){ [weak self] patientNewFeed, error in
+        APIUtilities.requestUser { [weak self] patientNewFeed, error in
             
-            guard let self = self else { return}
-            
+            guard let self = self else {return}
             guard let patientNewFeed = patientNewFeed, error == nil else {
                 return
             }
-            
-            self.newFeed = patientNewFeed
-            
+            self.user = patientNewFeed
         }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print(newFeed?.userItem?[1].name ?? "")
+
+        nameTextField.text = user?.name ?? ""
+        fullNameTextField.text = user?.last_name ?? ""
+        dateTF.text = user?.birth_date ?? ""
+        phoneTF.text = user?.phone ?? ""
+        emailTF.text = user?.contact_email ?? ""
+        if user?.sex == 1 {
+            print(user?.sex)
+            segmentedControl.selectedSegmentIndex = 0
+        }else {
+            segmentedControl.selectedSegmentIndex = 1
+        }
     }
     
 //    func setUp(name: String?) {
