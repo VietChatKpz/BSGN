@@ -49,7 +49,7 @@ class HomeViewController: UIViewController {
         fetchPatientNewFeed()
                 
     }
-    
+
     @objc func fetchPatientNewFeed() {
 //        self.showLoaderView()
         APIUtilities.requestHomePatientFeed(APIURL: "/hdhuy179/f967ffb777610529b678f0d5c823352a/raw"){ [weak self] patientNewFeed, error in
@@ -73,7 +73,7 @@ class HomeViewController: UIViewController {
             }
         }
     }
-    
+
     @IBAction func newsOnPress(_ sender: Any) {
         let vc = NewsViewController()
         navigationController?.pushViewController(vc, animated: true)

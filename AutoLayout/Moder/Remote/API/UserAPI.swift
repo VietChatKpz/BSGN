@@ -14,7 +14,7 @@ class userAPI {
     var sex: Int?
     var phone: String?
     var contact_email: String?
-    
+
     convenience init(name: String?,
                      last_name: String?,
                      birth_date: String?,
@@ -29,10 +29,10 @@ class userAPI {
         self.phone = phone
         self.contact_email = contact_email
     }
-    
+
     convenience init(json: [String: Any]) {
         self.init()
-        
+
         if let wrapValue = json["name"] as? String {
             self.name = wrapValue
         }
@@ -53,3 +53,5 @@ class userAPI {
         }
     }
 }
+
+

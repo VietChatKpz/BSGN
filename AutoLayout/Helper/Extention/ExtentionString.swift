@@ -19,16 +19,32 @@ extension String {
                 results.append(self[endIndex..<startIndex])
                 startIndex = endIndex
             }
-
+            
             return results.map { String($0) }.reversed()
         }
-
+        
         while startIndex < self.endIndex {
             let endIndex = self.index(startIndex, offsetBy: length, limitedBy: self.endIndex) ?? self.endIndex
             results.append(self[startIndex..<endIndex])
             startIndex = endIndex
         }
-
+        
         return results.map { String($0) }
+    }
+}
+
+extension UIViewController {
+    var safeAreaInsets: UIEdgeInsets {
+        if #available(iOS 11.0, *) {
+            let window = UIApplication.shared.keyWindow
+            return window?.safeAreaInsets ?? .zero
+        }
+        
+        if #available(iOS 13.0, *) {
+            let window = UIApplication.shared.windows[0]
+            return window.safeAreaInsets
+        }
+        
+        return .zero
     }
 }

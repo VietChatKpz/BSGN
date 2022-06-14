@@ -8,7 +8,7 @@
 import UIKit
 
 class OTPViewController: UIViewController, UITextFieldDelegate {
-
+    
     
     @IBOutlet weak var otpContainerView: UIView!
     @IBOutlet weak var maButton: UIButton!
@@ -16,6 +16,8 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var resetLabel: UILabel!
+    @IBOutlet weak var otpView: UIView!
+    @IBOutlet weak var bottomView: UIView!
     
     var text = String()
     var second: Int = 60
@@ -26,9 +28,9 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        Utility.logAllAvailableFonts()
-        self.hideKeyBoard()
+        
+        //        Utility.logAllAvailableFonts()
+//        self.hideKeyBoard()
         
         maButton.layer.borderWidth = 1.0
         maButton.layer.borderColor = UIColor(red: 0.85, green: 0.86, blue: 0.88, alpha: 1.00).cgColor
@@ -40,7 +42,7 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         otpStackView.leftAnchor.constraint(equalTo: otpContainerView.leftAnchor).isActive = true
         otpStackView.rightAnchor.constraint(equalTo: otpContainerView.rightAnchor).isActive = true
         otpStackView.bottomAnchor.constraint(equalTo: otpContainerView.bottomAnchor).isActive = true
-        
+                
     }
     
     func createTime() {
@@ -61,12 +63,45 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        registerObserver()
         phoneLabel.text = "Vui lòng nhập mã gồm 4 chữ số đã được gửi đến bạn vào số điện thoại" + " " + "+84" + " " + "\(text)"
         createTime()
     }
+    private func registerObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc private func keyboardWillShow(notification: NSNotification) {
+        
+        let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue ?? .zero
+        let duration = (notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double) ?? 0
+        
+        UIView.animate(withDuration: duration) {[weak self] in
+            guard let self = self else { return}
+            
+            self.nextButton.transform = CGAffineTransform(translationX: 0, y: -keyboardSize.height + self.safeAreaInsets.bottom)
+        }
+    }
+    
+    @objc private func keyboardWillHide(notification: NSNotification) {
+        let duration = (notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double) ?? 0
+        
+        UIView.animate(withDuration: duration) {[weak self] in
+            guard let self = self else { return}
+            
+            self.nextButton.transform = .identity
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
     
     @IBAction func secondButton(_ sender: Any) {
-        if resetLabel.text == "Gửi lại" {
+        //if resetLabel.text == "Gửi lại" {
+        if second == 0 {
             createTime()
             second = 60
             resetLabel.textColor = UIColor(red: 0.85, green: 0.86, blue: 0.88, alpha: 1.00)
@@ -79,7 +114,7 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func nextAction(_ sender: Any) {
-//        print("Final OTP : ",otpStackView.getOTP())
+        //        print("Final OTP : ",otpStackView.getOTP())
         if otpStackView.getOTP() == "111111" {
             falseLabel.isHidden = true
             let vc = HomeViewController()
@@ -92,9 +127,8 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
 }
 
 extension OTPViewController: OTPDelegate {
-
+    
     func didChangeValidity() {
         nextButton.backgroundColor = UIColor(red: 0.17, green: 0.53, blue: 0.40, alpha: 1.00)
     }
-
 }

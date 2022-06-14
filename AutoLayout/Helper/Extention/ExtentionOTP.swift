@@ -82,7 +82,7 @@ class OTPStackView: UIStackView {
         textField.textColor = UIColor(red: 0.02, green: 0.05, blue: 0.13, alpha: 1.00)
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 2
-        textField.layer.borderColor = inactiveFieldBorderColor.cgColor
+        textField.layer.borderColor = UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00).cgColor
         textField.keyboardType = .numberPad
         textField.autocorrectionType = .yes
         textField.textContentType = .oneTimeCode
@@ -160,7 +160,7 @@ extension OTPStackView: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         checkForValidity()
-        textField.layer.borderColor = inactiveFieldBorderColor.cgColor
+        textField.layer.borderColor = UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00).cgColor
     }
     
     //switches between OTPTextfields

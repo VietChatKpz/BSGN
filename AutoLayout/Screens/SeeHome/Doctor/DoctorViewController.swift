@@ -7,7 +7,7 @@
 
 import UIKit
 
-class IntroViewController: UIViewController {
+class DoctorViewController: UIViewController {
 
     @IBOutlet weak var introTableView: UITableView!
     lazy var refreshControl: UIRefreshControl = {
@@ -22,7 +22,7 @@ class IntroViewController: UIViewController {
 
         introTableView.delegate = self
         introTableView.dataSource = self
-        introTableView.register(UINib(nibName: "IntroTableViewCell", bundle: nil), forCellReuseIdentifier: "IntroCell")
+        introTableView.register(UINib(nibName: "DoctorTableViewCell", bundle: nil), forCellReuseIdentifier: "IntroCell")
         introTableView.separatorStyle = .none
         
         introTableView.refreshControl = refreshControl
@@ -56,13 +56,13 @@ class IntroViewController: UIViewController {
     }
 }
 
-extension IntroViewController: UITableViewDelegate, UITableViewDataSource {
+extension DoctorViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return newFeed?.introItem?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = introTableView.dequeueReusableCell(withIdentifier: "IntroCell", for: indexPath) as! IntroTableViewCell
+        let cell = introTableView.dequeueReusableCell(withIdentifier: "IntroCell", for: indexPath) as! DoctorTableViewCell
         
         let intro = newFeed?.introItem?[indexPath.row]
         cell.configIntro(intro: intro)

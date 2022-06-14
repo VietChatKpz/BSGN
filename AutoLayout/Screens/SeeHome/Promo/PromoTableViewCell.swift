@@ -40,6 +40,8 @@ class PromoTableViewCell: UITableViewCell {
         checkImage.isUserInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction))
         checkImage.addGestureRecognizer(tapGesture)
+        promoImage.layer.borderWidth = 1.0
+        promoImage.layer.borderColor = UIColor(red: 0.93, green: 0.94, blue: 0.96, alpha: 1.00).cgColor
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

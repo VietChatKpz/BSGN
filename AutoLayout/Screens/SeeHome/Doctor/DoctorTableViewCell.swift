@@ -7,7 +7,7 @@
 
 import UIKit
 
-class IntroTableViewCell: UITableViewCell {
+class DoctorTableViewCell: UITableViewCell {
 
     @IBOutlet weak var introView: UIView!
     @IBOutlet weak var introImageView: UIImageView!

@@ -8,7 +8,7 @@
 import UIKit
 
 class UserViewController: UIViewController {
-
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var fullNameTextField: UITextField!
     @IBOutlet weak var dateTF: UITextField!
@@ -21,48 +21,55 @@ class UserViewController: UIViewController {
     @IBOutlet weak var mauTF: UITextField!
     @IBOutlet var datePicker: UIDatePicker!
     @IBOutlet weak var userScrollView: UIScrollView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var namView: UIView!
+    @IBOutlet weak var nuView: UIView!
     
     let dateLabel = UILabel()
     
     var newFeed: PatientNewFeedModel?
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         hideKeyBoard()
         if #available(iOS 14, *) {
             datePicker.preferredDatePickerStyle = UIDatePickerStyle.wheels
         }
         setDatePicker()
+        fetchPatientNewFeed()
         
     }
-        
+    
     @objc func fetchPatientNewFeed() {
         APIUtilities.requestHomePatientFeed(APIURL: "/hdhuy179/7883b8f11ea4b25cf6d3822c67049606/raw/Training_Intern_BasicApp_UserInfo"){ [weak self] patientNewFeed, error in
-                        
+            
             guard let self = self else { return}
-
+            
             guard let patientNewFeed = patientNewFeed, error == nil else {
                 return
             }
-
+            
             self.newFeed = patientNewFeed
-
+            
         }
     }
-
-    func setUp(user: userAPI?) {
-        let name = user?.name
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print(newFeed?.userItem?[1].name ?? "")
+    }
+    
+//    func setUp(name: String?) {
+//        nameTextField.text = name
+//    }
+//
+//    func setUp1(user: userAPI){
+//        let name = user.name
+//
+//        setUp(name: name)
+//    }
         
-        configUser(name: name)
-    }
-    
-    private func configUser(name: String?) {
-        nameTextField.text = name ?? ""
-    }
-    
     func setDatePicker() {
         // set kiểu ngày tháng cho datePicker
         datePicker.datePickerMode = .date
@@ -104,12 +111,28 @@ class UserViewController: UIViewController {
     @objc func cancelAction() {
         self.view.endEditing(true)
     }
-
     
+    @IBAction func segmentButton(_ sender: Any) {
+        if segmentedControl.selectedSegmentIndex == 0
+        {
+            print("1")
+            namView.backgroundColor = .brown
+            nuView.backgroundColor = .clear
+//            namView.isHidden = false
+//            nuView.isHidden = true
+        }else {
+            nuView.backgroundColor = .clear
+            namView.backgroundColor = .brown
+            print("2")
+//            namView.isHidden = true
+//            nuView.isHidden = false
+        }
+    }
+        
     @IBAction func backAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func dateOnPress(_ sender: Any) {
-//        setDatePicker()
+        //        setDatePicker()
     }
 }

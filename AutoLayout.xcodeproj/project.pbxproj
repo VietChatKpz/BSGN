@@ -36,8 +36,8 @@
 		900143562847560700AF6E68 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900143552847560700AF6E68 /* UserAPI.swift */; };
 		900143582847708100AF6E68 /* PhoneNumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900143572847708100AF6E68 /* PhoneNumberModel.swift */; };
 		9001435A2847710B00AF6E68 /* ExtentionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900143592847710B00AF6E68 /* ExtentionString.swift */; };
-		9009BF092831F68C0080A0D9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009BF072831F68C0080A0D9 /* FirstViewController.swift */; };
-		9009BF0A2831F68C0080A0D9 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009BF082831F68C0080A0D9 /* FirstViewController.xib */; };
+		9009BF092831F68C0080A0D9 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009BF072831F68C0080A0D9 /* IntroViewController.swift */; };
+		9009BF0A2831F68C0080A0D9 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009BF082831F68C0080A0D9 /* IntroViewController.xib */; };
 		9009BF0D2831F8AC0080A0D9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009BF0B2831F8AC0080A0D9 /* LoginViewController.swift */; };
 		9009BF0E2831F8AC0080A0D9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009BF0C2831F8AC0080A0D9 /* LoginViewController.xib */; };
 		9009BF112831F91B0080A0D9 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009BF0F2831F91B0080A0D9 /* OTPViewController.swift */; };
@@ -76,16 +76,16 @@
 		90CC0F26283CEB2B00CB29BE /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CC0F24283CEB2B00CB29BE /* NewsViewController.xib */; };
 		90CC0F29283CEB3800CB29BE /* PromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F27283CEB3800CB29BE /* PromoViewController.swift */; };
 		90CC0F2A283CEB3800CB29BE /* PromoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CC0F28283CEB3800CB29BE /* PromoViewController.xib */; };
-		90CC0F2D283CEB4400CB29BE /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F2B283CEB4400CB29BE /* IntroViewController.swift */; };
-		90CC0F2E283CEB4400CB29BE /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CC0F2C283CEB4400CB29BE /* IntroViewController.xib */; };
+		90CC0F2D283CEB4400CB29BE /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F2B283CEB4400CB29BE /* DoctorViewController.swift */; };
+		90CC0F2E283CEB4400CB29BE /* DoctorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CC0F2C283CEB4400CB29BE /* DoctorViewController.xib */; };
 		90EAB2A12852E252009641A5 /* LocationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EAB2A02852E252009641A5 /* LocationAPI.swift */; };
 		90F27624283F3002006689EB /* PromoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F27622283F3002006689EB /* PromoTableViewCell.swift */; };
 		90F27625283F3002006689EB /* PromoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F27623283F3002006689EB /* PromoTableViewCell.xib */; };
 		90F27628283F32A3006689EB /* PromoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F27627283F32A3006689EB /* PromoAPI.swift */; };
 		90F2762A283F7A60006689EB /* NewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F27629283F7A60006689EB /* NewAPI.swift */; };
 		90F2762C283F8223006689EB /* IntroAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F2762B283F8223006689EB /* IntroAPI.swift */; };
-		90F2762F283F859F006689EB /* IntroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F2762D283F859F006689EB /* IntroTableViewCell.swift */; };
-		90F27630283F859F006689EB /* IntroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F2762E283F859F006689EB /* IntroTableViewCell.xib */; };
+		90F2762F283F859F006689EB /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F2762D283F859F006689EB /* DoctorTableViewCell.swift */; };
+		90F27630283F859F006689EB /* DoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F2762E283F859F006689EB /* DoctorTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,8 +119,8 @@
 		900143552847560700AF6E68 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		900143572847708100AF6E68 /* PhoneNumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberModel.swift; sourceTree = "<group>"; };
 		900143592847710B00AF6E68 /* ExtentionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionString.swift; sourceTree = "<group>"; };
-		9009BF072831F68C0080A0D9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		9009BF082831F68C0080A0D9 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		9009BF072831F68C0080A0D9 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		9009BF082831F68C0080A0D9 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		9009BF0B2831F8AC0080A0D9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9009BF0C2831F8AC0080A0D9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		9009BF0F2831F91B0080A0D9 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
@@ -161,16 +161,16 @@
 		90CC0F24283CEB2B00CB29BE /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
 		90CC0F27283CEB3800CB29BE /* PromoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoViewController.swift; sourceTree = "<group>"; };
 		90CC0F28283CEB3800CB29BE /* PromoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoViewController.xib; sourceTree = "<group>"; };
-		90CC0F2B283CEB4400CB29BE /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
-		90CC0F2C283CEB4400CB29BE /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+		90CC0F2B283CEB4400CB29BE /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
+		90CC0F2C283CEB4400CB29BE /* DoctorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorViewController.xib; sourceTree = "<group>"; };
 		90EAB2A02852E252009641A5 /* LocationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAPI.swift; sourceTree = "<group>"; };
 		90F27622283F3002006689EB /* PromoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTableViewCell.swift; sourceTree = "<group>"; };
 		90F27623283F3002006689EB /* PromoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoTableViewCell.xib; sourceTree = "<group>"; };
 		90F27627283F32A3006689EB /* PromoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoAPI.swift; sourceTree = "<group>"; };
 		90F27629283F7A60006689EB /* NewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAPI.swift; sourceTree = "<group>"; };
 		90F2762B283F8223006689EB /* IntroAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroAPI.swift; sourceTree = "<group>"; };
-		90F2762D283F859F006689EB /* IntroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroTableViewCell.swift; sourceTree = "<group>"; };
-		90F2762E283F859F006689EB /* IntroTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroTableViewCell.xib; sourceTree = "<group>"; };
+		90F2762D283F859F006689EB /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
+		90F2762E283F859F006689EB /* DoctorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorTableViewCell.xib; sourceTree = "<group>"; };
 		E171CCB9DEBC95CE621DFADA /* Pods-AutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayout.debug.xcconfig"; path = "Target Support Files/Pods-AutoLayout/Pods-AutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,20 +251,20 @@
 				90909946283231F90065A318 /* Home */,
 				9009BF172831F9A90080A0D9 /* OTP */,
 				9009BF162831F99A0080A0D9 /* Login */,
-				9009BF152831F97F0080A0D9 /* First */,
+				9009BF152831F97F0080A0D9 /* Intro */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		9009BF152831F97F0080A0D9 /* First */ = {
+		9009BF152831F97F0080A0D9 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
-				9009BF072831F68C0080A0D9 /* FirstViewController.swift */,
-				9009BF082831F68C0080A0D9 /* FirstViewController.xib */,
+				9009BF072831F68C0080A0D9 /* IntroViewController.swift */,
+				9009BF082831F68C0080A0D9 /* IntroViewController.xib */,
 				90BF9A40282E0A4F0057C9BA /* LoginCollectionViewCell.swift */,
 				90BF9A41282E0A4F0057C9BA /* LoginCollectionViewCell.xib */,
 			);
-			path = First;
+			path = Intro;
 			sourceTree = "<group>";
 		};
 		9009BF162831F99A0080A0D9 /* Login */ = {
@@ -414,7 +414,7 @@
 			children = (
 				90AD2C992845FEA800414C56 /* Details */,
 				908ACBCF284202EC006E8E56 /* User */,
-				90CC0F22283CEB1400CB29BE /* Intro */,
+				90CC0F22283CEB1400CB29BE /* Doctor */,
 				90CC0F21283CEB0B00CB29BE /* Promo */,
 				90CC0F20283CEAFC00CB29BE /* News */,
 			);
@@ -443,15 +443,15 @@
 			path = Promo;
 			sourceTree = "<group>";
 		};
-		90CC0F22283CEB1400CB29BE /* Intro */ = {
+		90CC0F22283CEB1400CB29BE /* Doctor */ = {
 			isa = PBXGroup;
 			children = (
-				90CC0F2B283CEB4400CB29BE /* IntroViewController.swift */,
-				90CC0F2C283CEB4400CB29BE /* IntroViewController.xib */,
-				90F2762D283F859F006689EB /* IntroTableViewCell.swift */,
-				90F2762E283F859F006689EB /* IntroTableViewCell.xib */,
+				90CC0F2B283CEB4400CB29BE /* DoctorViewController.swift */,
+				90CC0F2C283CEB4400CB29BE /* DoctorViewController.xib */,
+				90F2762D283F859F006689EB /* DoctorTableViewCell.swift */,
+				90F2762E283F859F006689EB /* DoctorTableViewCell.xib */,
 			);
-			path = Intro;
+			path = Doctor;
 			sourceTree = "<group>";
 		};
 		90F27626283F3276006689EB /* API */ = {
@@ -547,7 +547,7 @@
 				9001430128470AD000AF6E68 /* NunitoSans-BlackItalic.ttf in Resources */,
 				9001430328470AD000AF6E68 /* NunitoSans-Regular.ttf in Resources */,
 				90BF9A43282E0A4F0057C9BA /* LoginCollectionViewCell.xib in Resources */,
-				9009BF0A2831F68C0080A0D9 /* FirstViewController.xib in Resources */,
+				9009BF0A2831F68C0080A0D9 /* IntroViewController.xib in Resources */,
 				90CC0F26283CEB2B00CB29BE /* NewsViewController.xib in Resources */,
 				900143522847134600AF6E68 /* Inter-SemiBold.ttf in Resources */,
 				9001434D2847134600AF6E68 /* Inter-Bold.ttf in Resources */,
@@ -565,7 +565,7 @@
 				90BF9A36282DF9FC0057C9BA /* Assets.xcassets in Resources */,
 				9001430628470AD000AF6E68 /* OFL.txt in Resources */,
 				9001430828470AD000AF6E68 /* NunitoSans-SemiBold.ttf in Resources */,
-				90F27630283F859F006689EB /* IntroTableViewCell.xib in Resources */,
+				90F27630283F859F006689EB /* DoctorTableViewCell.xib in Resources */,
 				9001430928470AD000AF6E68 /* NunitoSans-Black.ttf in Resources */,
 				9001434C2847134600AF6E68 /* Inter-Thin.ttf in Resources */,
 				9001434E2847134600AF6E68 /* Inter-Regular.ttf in Resources */,
@@ -578,7 +578,7 @@
 				900142FD28470AD000AF6E68 /* NunitoSans-LightItalic.ttf in Resources */,
 				900142FE28470AD000AF6E68 /* NunitoSans-BoldItalic.ttf in Resources */,
 				9001430528470AD000AF6E68 /* NunitoSans-Italic.ttf in Resources */,
-				90CC0F2E283CEB4400CB29BE /* IntroViewController.xib in Resources */,
+				90CC0F2E283CEB4400CB29BE /* DoctorViewController.xib in Resources */,
 				900143512847134600AF6E68 /* Inter-Black.ttf in Resources */,
 				9090995228324BD60065A318 /* PromoCollectionViewCell.xib in Resources */,
 				90F27625283F3002006689EB /* PromoTableViewCell.xib in Resources */,
@@ -655,15 +655,15 @@
 				90F2762A283F7A60006689EB /* NewAPI.swift in Sources */,
 				90C69A72283DD9AC00CD3286 /* PatientNewModel.swift in Sources */,
 				907AA5B728333DDD00BFB8FF /* Home.swift in Sources */,
-				90F2762F283F859F006689EB /* IntroTableViewCell.swift in Sources */,
+				90F2762F283F859F006689EB /* DoctorTableViewCell.swift in Sources */,
 				90CC0F29283CEB3800CB29BE /* PromoViewController.swift in Sources */,
 				9001435A2847710B00AF6E68 /* ExtentionString.swift in Sources */,
 				9090995128324BD60065A318 /* PromoCollectionViewCell.swift in Sources */,
 				9001435428471D5E00AF6E68 /* Fonts.swift in Sources */,
-				90CC0F2D283CEB4400CB29BE /* IntroViewController.swift in Sources */,
+				90CC0F2D283CEB4400CB29BE /* DoctorViewController.swift in Sources */,
 				9090994D28324BC00065A318 /* NewsCollectionViewCell.swift in Sources */,
 				90BF9A45282E0C810057C9BA /* Login.swift in Sources */,
-				9009BF092831F68C0080A0D9 /* FirstViewController.swift in Sources */,
+				9009BF092831F68C0080A0D9 /* IntroViewController.swift in Sources */,
 				909099492832320B0065A318 /* HomeViewController.swift in Sources */,
 				90F2762C283F8223006689EB /* IntroAPI.swift in Sources */,
 				9090995528324BE70065A318 /* IntroduceCollectionViewCell.swift in Sources */,
@@ -820,7 +820,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -849,7 +849,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

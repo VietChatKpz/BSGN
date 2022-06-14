@@ -18,6 +18,8 @@ class NewTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        newImage.layer.borderWidth = 1.0
+        newImage.layer.borderColor = UIColor(red: 0.93, green: 0.94, blue: 0.96, alpha: 1.00).cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -7,12 +7,22 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class IntroViewController: UIViewController {
 
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var LogincollectionView: UICollectionView!
     @IBOutlet weak var myPage: UIPageControl!
-            
+     
+    var currentPage = 0 {
+        didSet {
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return}
+                
+                self.updateUIWith(currentPage: self.currentPage)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,6 +39,9 @@ class FirstViewController: UIViewController {
         myPage.currentPage = 0
         myPage.numberOfPages = arrLogin.count
     }
+    func updateUIWith(currentPage: Int) {
+        myPage.currentPage = currentPage
+    }
 
     @IBAction func loginButton(_ sender: Any) {
         let loginVC = LoginViewController()
@@ -42,7 +55,7 @@ class FirstViewController: UIViewController {
     
 }
 
-extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension IntroViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrLogin.count
@@ -55,15 +68,18 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        myPage.currentPage = indexPath.row
-    }
-    
 }
-extension FirstViewController: UICollectionViewDelegateFlowLayout{
+extension IntroViewController: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: LogincollectionView.frame.width, height: LogincollectionView.frame.height)
     }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        var currentPage = Int(scrollView.contentOffset.x/UIScreen.main.bounds.width)
+        
+        currentPage = min(currentPage, arrLogin.count - 1)
+        currentPage = max(currentPage, 0)
+        
+        self.currentPage = currentPage
+    }
 }
-
