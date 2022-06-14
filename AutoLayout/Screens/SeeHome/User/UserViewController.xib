@@ -599,7 +599,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nơi thường trú của bạn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OO5-pR-pTV">
-                                                    <rect key="frame" x="0.0" y="20" width="380" height="24"/>
+                                                    <rect key="frame" x="0.0" y="20" width="344" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="MIM-jb-NvL"/>
                                                     </constraints>
@@ -628,7 +628,7 @@
                                                 <constraint firstItem="ViM-KS-vy1" firstAttribute="top" secondItem="OO5-pR-pTV" secondAttribute="top" id="5ZQ-wt-0b4"/>
                                                 <constraint firstAttribute="height" constant="54" id="8af-uq-4Lu"/>
                                                 <constraint firstItem="OO5-pR-pTV" firstAttribute="leading" secondItem="2Ky-Ke-7w6" secondAttribute="leading" id="BUz-L3-FsN"/>
-                                                <constraint firstAttribute="trailing" secondItem="OO5-pR-pTV" secondAttribute="trailing" id="Bk4-zV-xUA"/>
+                                                <constraint firstAttribute="trailing" secondItem="OO5-pR-pTV" secondAttribute="trailing" constant="36" id="Bk4-zV-xUA"/>
                                                 <constraint firstItem="j5X-lj-Mei" firstAttribute="leading" secondItem="2Ky-Ke-7w6" secondAttribute="leading" id="EKB-ib-kDp"/>
                                                 <constraint firstItem="I61-ET-jag" firstAttribute="leading" secondItem="2Ky-Ke-7w6" secondAttribute="leading" id="FKE-Sb-67x"/>
                                                 <constraint firstAttribute="trailing" secondItem="ViM-KS-vy1" secondAttribute="trailing" id="UGz-CI-Od3"/>

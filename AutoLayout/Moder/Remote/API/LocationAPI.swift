@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LocationAPI {
+class LocationAPI: NSObject, JsonInitObject {
     var province_name: String?
     var district_name: String?
     var ward_name: String?
@@ -16,9 +16,12 @@ class LocationAPI {
                      district_name: String?,
                      ward_name: String?) {
         self.init()
+        self.province_name = province_name
+        self.district_name = district_name
+        self.ward_name = ward_name
     }
     
-    convenience init(json: [String: Any]){
+    required convenience init(json: [String: Any]){
         self.init()
         
         if let wrapValue = json["province_name"] as? String {

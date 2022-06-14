@@ -26,4 +26,5 @@ struct Promo {
 
 //API:
 //UserInfo: https://gist.githubusercontent.com/hdhuy179/7883b8f11ea4b25cf6d3822c67049606/raw/Training_Intern_BasicApp_UserInfo
-//Location: https://gist.githubusercontent.com/hdhuy179/7883b8f11ea4b25cf6d3822c67049606/raw?province_code={id}&district_code={id}&ward_code={id}
+//Location: https://gist.githubusercontent.com/hdhuy179/7883b8f11ea4b25cf6d3822c67049606/raw/province_code=79&district_code=763&ward_code=26866
+

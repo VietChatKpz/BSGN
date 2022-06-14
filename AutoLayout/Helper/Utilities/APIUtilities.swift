@@ -19,6 +19,10 @@ final class APIUtilities {
     static let responseCodeKey = "code"
     static let responseMessageKey = "message"
     
+    static var textProvi = ""
+    static var textDis = ""
+    static var war = ""
+    
     //B4:
     static func requestHomePatientFeed(APIURL: String?, completionHandler: ((PatientNewFeedModel?, APIError?)-> Void)?){
 //            let tailStrURL = "/hdhuy179/ef03ed850ad56f0136fe3c5916b3280b/raw/Training_Intern_BasicApp_Promotion"
@@ -34,6 +38,13 @@ final class APIUtilities {
         jsonResponseObject(tailStrURL: taiURL, method: .get, headers: [:], completionHandler: completionHandler)
 
     }
+    
+    static func requestLocation(completionHandler: ((LocationAPI?, APIError?)-> Void)?) {
+        let taiURL = "/hdhuy179/7883b8f11ea4b25cf6d3822c67049606/raw/province_code=\(textProvi)&district_code=\(textDis)&ward_code=\(war)"
+        
+        jsonResponseObject(tailStrURL: taiURL, method: .get, headers: [:], completionHandler: completionHandler)
+    }
+
     //MARK: Viết riêng request...
 //    static func requestHomePatientFeed(APIURL: String?, completionHandler: ((PatientNewFeedModel?, APIError?)-> Void)?){
 ////            let tailStrURL = "/hdhuy179/ef03ed850ad56f0136fe3c5916b3280b/raw/Training_Intern_BasicApp_Promotion"

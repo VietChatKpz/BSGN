@@ -28,6 +28,8 @@ class UserViewController: UIViewController {
     let dateLabel = UILabel()
     
     var user: userAPI?
+    var location: LocationAPI?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,9 +39,11 @@ class UserViewController: UIViewController {
         }
         setDatePicker()
         fetchPatientNewFeed()
-        
-        
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
     
     @objc func fetchPatientNewFeed() {
         APIUtilities.requestUser { [weak self] patientNewFeed, error in
@@ -51,33 +55,40 @@ class UserViewController: UIViewController {
             self.user = patientNewFeed
         }
     }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
         nameTextField.text = user?.name ?? ""
         fullNameTextField.text = user?.last_name ?? ""
         dateTF.text = user?.birth_date ?? ""
         phoneTF.text = user?.phone ?? ""
         emailTF.text = user?.contact_email ?? ""
         if user?.sex == 1 {
-            print(user?.sex)
             segmentedControl.selectedSegmentIndex = 0
         }else {
             segmentedControl.selectedSegmentIndex = 1
         }
+        mauTF.text = user?.blood_name ?? ""
+        streetTF.text = user?.full_address ?? ""
+
+        APIUtilities.textProvi = user?.province_code ?? ""
+        APIUtilities.textDis = user?.district_code ?? ""
+        APIUtilities.war = user?.ward_code ?? ""
+        
+        locationFeed()
+        
     }
     
-//    func setUp(name: String?) {
-//        nameTextField.text = name
-//    }
-//
-//    func setUp1(user: userAPI){
-//        let name = user.name
-//
-//        setUp(name: name)
-//    }
-        
+    @objc func locationFeed(){
+        APIUtilities.requestLocation { [weak self] patientNewFeed, error in
+
+            guard let self = self else {return}
+            guard let patientNewFeed = patientNewFeed, error == nil else {
+                return
+            }
+            self.location = patientNewFeed
+        }
+    }
+            
     func setDatePicker() {
         // set kiểu ngày tháng cho datePicker
         datePicker.datePickerMode = .date
