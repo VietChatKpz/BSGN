@@ -7,7 +7,7 @@
 
 import Foundation
 
-class promoAPI {
+class PromoAPI: NSObject, JsonInitObject {
     
     var id: Int?
     var category_id: Int?
@@ -71,82 +71,20 @@ class promoAPI {
         self.isSelected = isSelected
     }
     
-    convenience init(json: [String: Any]) {
+    required convenience init(json: [String: Any]) {
         self.init()
         
-        for (key, value) in json {
-            if key == "id", let wrapValue = value as? Int{
-                let jsonValue = wrapValue
-                self.id = jsonValue
-            }
-            if key == "category_id", let wrapValue = value as? Int {
-                let jsonValue = wrapValue
-                self.category_id = jsonValue
-            }
-            if key == "code", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.code = jsonValue
-            }
-            if key == "name", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.name = jsonValue
-            }
-            if key == "slug", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.slug = jsonValue
-            }
-            if key == "content", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.content = jsonValue
-            }
-            if key == "picture", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.picture = jsonValue
-            }
-            if key == "from_date", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.from_date = jsonValue
-            }
-            if key == "to_date", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.to_date = jsonValue
-            }
-            if key == "amount", let wrapValue = value as? Int {
-                let jsonValue = wrapValue
-                self.amount = jsonValue
-            }
-            if key == "type", let wrapValue = value as? Int {
-                let jsonValue = wrapValue
-                self.type = jsonValue
-            }
-            if key == "kind", let wrapValue = value as? Int {
-                let jsonValue = wrapValue
-                self.kind = jsonValue
-            }
-            if key == "created_at", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.created_at = jsonValue
-            }
-            if key == "category_name", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.category_name = jsonValue
-            }
-            if key == "link", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.link = jsonValue
-            }
-            if key == "type_name", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.type_name = jsonValue
-            }
-            if key == "amount_text", let wrapValue = value as? String {
-                let jsonValue = wrapValue
-                self.amount_text = jsonValue
-            }
-            if key == "is_bookmark", let wrapValue = value as? Bool {
-                let jsonValue = wrapValue
-                self.is_bookmark = jsonValue
-            }
+        if let wrapValue = json["picture"] as? String {
+            self.picture = wrapValue
+        }
+        if let wrapValue = json["name"] as? String {
+            self.name = wrapValue
+        }
+        if let wrapValue = json["created_at"] as? String {
+            self.created_at = wrapValue
+        }
+        if let wrapValue = json["link"] as? String {
+            self.link = wrapValue
         }
     }
 }

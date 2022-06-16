@@ -19,16 +19,16 @@ extension String {
                 results.append(self[endIndex..<startIndex])
                 startIndex = endIndex
             }
-            
+
             return results.map { String($0) }.reversed()
         }
-        
+
         while startIndex < self.endIndex {
             let endIndex = self.index(startIndex, offsetBy: length, limitedBy: self.endIndex) ?? self.endIndex
             results.append(self[startIndex..<endIndex])
             startIndex = endIndex
         }
-        
+
         return results.map { String($0) }
     }
 }

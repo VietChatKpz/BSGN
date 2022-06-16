@@ -9,9 +9,9 @@ import UIKit
 
 class DoctorTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var introView: UIView!
     @IBOutlet weak var introImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var majorLabel: UILabel!
     @IBOutlet weak var starLabel: UILabel!
     
@@ -30,7 +30,7 @@ class DoctorTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func configIntro(intro: introAPI?) {
+    func configIntro(intro: DoctorAPI?) {
         
         let ratio = intro?.ratio_star ?? 0
         let numberRiview = intro?.number_of_reviews ?? 0

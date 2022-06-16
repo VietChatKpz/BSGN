@@ -67,76 +67,56 @@ class PatientPromoModel {
     
     convenience init(json: [String: Any]){
         self.init()
-        
-        for (key, value) in json {
-            if key == "id", let srapValue = value as? Int {
-                let jsonValue = srapValue
-                self.id = jsonValue
-            }
-            if key == "category_id", let srapValue = value as? Int {
-                let jsonValue = srapValue
-                self.category_id = jsonValue
-            }
-            if key == "code", let srapValue = value as? String {
-                let jsonValue = srapValue
-                self.code = jsonValue
-            }
-            if key == "name", let srapValue = value as? String {
-                let jsonValue = srapValue
-                self.name = jsonValue
-            }
-            if key == "slug", let srapValue = value as? String {
-                let jsonValue = srapValue
-                self.slug = jsonValue
-            }
-            if key == "content", let srapValue = value as? String {
-                let jsonValue = srapValue
-                self.content = jsonValue
-            }
-            if key == "picture", let srapValue = value as? String {
-                let jsonValue = srapValue
-                self.picture = jsonValue
-            }
-            if key == "from_date", let srapValue = value as? String {
-                let jsonValue = srapValue
-                self.from_date = jsonValue
-            }
-            if key == "to_date", let srapValue = value as? String {
-                let jsonValue = srapValue
-                self.to_date = jsonValue
-            }
-            if key == "amount", let srapValue = value as? Int {
-                let jsonValue = srapValue
-                self.amount = jsonValue
-            }
-            if key == "type", let srapValue = value as? Int {
-                let jsonValue = srapValue
-                self.type = jsonValue
-            }
-            if key == "kind", let srapValue = value as? Int {
-                let jsonValue = srapValue
-                self.kind = jsonValue
-            }
-            if key == "created_at", let srapValue = value as? String {
-                let jsonValue = srapValue
-                self.created_at = jsonValue
-            }
-            if key == "category_name", let srapValue = value as? String {
-                let jsonValue = srapValue
-                self.category_name = jsonValue
-            }
-            if key == "amount_text", let srapValue = value as? String {
-                let jsonValue = srapValue
-                self.amount_text = jsonValue
-            }
-            if key == "link", let srapValue = value as? String {
-                let jsonValue = srapValue
-                self.link = jsonValue
-            }
-            if key == "is_bookmark", let srapValue = value as? Bool {
-                let jsonValue = srapValue
-                self.is_bookmark = jsonValue
-            }
+        if let wrapValue = json["id"] as? Int {
+            self.id = wrapValue
+        }
+        if let wrapValue = json["category_id"] as? Int {
+            self.category_id = wrapValue
+        }
+        if let wrapValue = json["code"] as? String {
+            self.code = wrapValue
+        }
+        if let wrapValue = json["name"] as? String {
+            self.name = wrapValue
+        }
+        if let wrapValue = json["slug"] as? String {
+            self.slug = wrapValue
+        }
+        if let wrapValue = json["content"] as? String {
+            self.content = wrapValue
+        }
+        if let wrapValue = json["picture"] as? String {
+            self.picture = wrapValue
+        }
+        if let wrapValue = json["from_date"] as? String {
+            self.from_date = wrapValue
+        }
+        if let wrapValue = json["to_date"] as? String {
+            self.to_date = wrapValue
+        }
+        if let wrapValue = json["amount"] as? Int {
+            self.amount = wrapValue
+        }
+        if let wrapValue = json["type"] as? Int {
+            self.type = wrapValue
+        }
+        if let wrapValue = json["kind"] as? Int {
+            self.kind = wrapValue
+        }
+        if let wrapValue = json["created_at"] as? String {
+            self.created_at = wrapValue
+        }
+        if let wrapValue = json["category_name"] as? String {
+            self.category_name = wrapValue
+        }
+        if let wrapValue = json["amount_text"] as? String {
+            self.amount_text = wrapValue
+        }
+        if let wrapValue = json["link"] as? String {
+            self.link = wrapValue
+        }
+        if let wrapValue = json["is_bookmark"] as? Bool {
+            self.is_bookmark = wrapValue
         }
     }
 }

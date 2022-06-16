@@ -1,30 +1,26 @@
 //
-//  NewTableViewCell.swift
+//  NewDefaultTableViewCell.swift
 //  AutoLayout
 //
-//  Created by Nguyễn Đình Việt on 31/05/2022.
+//  Created by Nguyễn Đình Việt on 16/06/2022.
 //
 
 import UIKit
 
-class NewTableViewCell: UITableViewCell {
+class NewDefaultTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var newImage: UIImageView!
+    @IBOutlet weak var newImg: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        newImage.layer.borderWidth = 1.0
-        newImage.layer.borderColor = UIColor(red: 0.93, green: 0.94, blue: 0.96, alpha: 1.00).cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+        // Configure the view for the selected state
     }
     func configNew(new: NewAPI?) {
         let imageURL = new?.picture
@@ -35,9 +31,8 @@ class NewTableViewCell: UITableViewCell {
     }
     
     private func configNew(imageURL: String?, name: String?, date: String?) {
-        Ultilities.loadImage(newImage, strURL: imageURL ?? "", placeHolder: nil)
+        Ultilities.loadImage(newImg, strURL: imageURL ?? "", placeHolder: nil)
         nameLabel.text = name ?? ""
         dateLabel.text = date ?? ""
     }
-    
 }

@@ -52,7 +52,7 @@ class HomeViewController: UIViewController {
 
     @objc func fetchPatientNewFeed() {
 //        self.showLoaderView()
-        APIUtilities.requestHomePatientFeed(APIURL: "/hdhuy179/f967ffb777610529b678f0d5c823352a/raw"){ [weak self] patientNewFeed, error in
+        APIUtilities.requestHomePatientFeed{ [weak self] patientNewFeed, error in
                         
             guard let self = self else { return}
 //            self.dismissLoaderView()
@@ -73,7 +73,11 @@ class HomeViewController: UIViewController {
             }
         }
     }
-
+    @IBAction func doctorOnPress(_ sender: Any) {
+        let vc = DoctorViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     @IBAction func newsOnPress(_ sender: Any) {
         let vc = NewsViewController()
         navigationController?.pushViewController(vc, animated: true)
@@ -82,10 +86,6 @@ class HomeViewController: UIViewController {
         let vc = PromoViewController()
         navigationController?.pushViewController(vc, animated: true)
         
-    }
-    @IBAction func introOnPress(_ sender: Any) {
-        let vc = IntroViewController()
-        navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func avatarOnPress(_ sender: Any) {
         let vc = UserViewController()

@@ -42,6 +42,8 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         otpStackView.leftAnchor.constraint(equalTo: otpContainerView.leftAnchor).isActive = true
         otpStackView.rightAnchor.constraint(equalTo: otpContainerView.rightAnchor).isActive = true
         otpStackView.bottomAnchor.constraint(equalTo: otpContainerView.bottomAnchor).isActive = true
+        
+        
                 
     }
     
@@ -63,8 +65,18 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        let phoneNumber = text.split(by: 3, fromEnd: false).joined(separator: " ")
+        let fontText = UIFont(name: "NunitoSans-Regular", size: 14)
+        let fontNumber = UIFont(name: "NunitoSans-Bold", size: 14)
+        let headColor = UIColor(red: 0.09, green: 0.10, blue: 0.12, alpha: 1.00)
+        let tailColor = UIColor(red: 0.21, green: 0.24, blue: 0.31, alpha: 1.00)
+        
         registerObserver()
-        phoneLabel.text = "Vui lòng nhập mã gồm 4 chữ số đã được gửi đến bạn vào số điện thoại" + " " + "+84" + " " + "\(text)"
+        let attributedNoti = NSMutableAttributedString()
+            .attrStr(text: "Vui lòng nhập mã gồm 6 chữ số đã được gửi đến bạn vào số điện thoại ", font: fontText, textColor: headColor, alignment: nil)
+            .attrStr(text: "+84 \(phoneNumber)", font: fontNumber, textColor: tailColor, alignment: nil)
+        phoneLabel.attributedText = attributedNoti
+        //phoneLabel.text = "Vui lòng nhập mã gồm 4 chữ số đã được gửi đến bạn vào số điện thoại" + " " + "+84" + " " + "\(phoneNumber)"
         createTime()
     }
     private func registerObserver() {

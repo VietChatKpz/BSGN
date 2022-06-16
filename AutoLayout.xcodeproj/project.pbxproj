@@ -42,7 +42,11 @@
 		9009BF0E2831F8AC0080A0D9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009BF0C2831F8AC0080A0D9 /* LoginViewController.xib */; };
 		9009BF112831F91B0080A0D9 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009BF0F2831F91B0080A0D9 /* OTPViewController.swift */; };
 		9009BF122831F91B0080A0D9 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009BF102831F91B0080A0D9 /* OTPViewController.xib */; };
+		903155FE285AC6C000F9570F /* NewDefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903155FC285AC6C000F9570F /* NewDefaultTableViewCell.swift */; };
+		903155FF285AC6C000F9570F /* NewDefaultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 903155FD285AC6C000F9570F /* NewDefaultTableViewCell.xib */; };
 		903B61232834F55400E72DBA /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B61222834F55400E72DBA /* Extention.swift */; };
+		904FC7DA2859C2C900F712CC /* UserCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC7D92859C2C900F712CC /* UserCustomView.swift */; };
+		904FC7DC2859C2D400F712CC /* UserCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904FC7DB2859C2D400F712CC /* UserCustomView.xib */; };
 		907AA5B728333DDD00BFB8FF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907AA5B628333DDD00BFB8FF /* Home.swift */; };
 		908ACBD228420325006E8E56 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908ACBD028420325006E8E56 /* UserViewController.swift */; };
 		908ACBD328420325006E8E56 /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 908ACBD128420325006E8E56 /* UserViewController.xib */; };
@@ -70,8 +74,8 @@
 		90C69A74283DD9BA00CD3286 /* PatientPromoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C69A73283DD9BA00CD3286 /* PatientPromoModel.swift */; };
 		90C69A76283DD9C900CD3286 /* PatientIntroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C69A75283DD9C900CD3286 /* PatientIntroModel.swift */; };
 		90C69A78283E1B6A00CD3286 /* Ultilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C69A77283E1B6A00CD3286 /* Ultilities.swift */; };
-		90CC0F1C283CBBBD00CB29BE /* ExtentionOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F1B283CBBBD00CB29BE /* ExtentionOTP.swift */; };
-		90CC0F1E283CBD1900CB29BE /* ExtentionOTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F1D283CBD1900CB29BE /* ExtentionOTPTextField.swift */; };
+		90CC0F1C283CBBBD00CB29BE /* OTPStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F1B283CBBBD00CB29BE /* OTPStackView.swift */; };
+		90CC0F1E283CBD1900CB29BE /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F1D283CBD1900CB29BE /* OTPTextField.swift */; };
 		90CC0F25283CEB2B00CB29BE /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F23283CEB2B00CB29BE /* NewsViewController.swift */; };
 		90CC0F26283CEB2B00CB29BE /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CC0F24283CEB2B00CB29BE /* NewsViewController.xib */; };
 		90CC0F29283CEB3800CB29BE /* PromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC0F27283CEB3800CB29BE /* PromoViewController.swift */; };
@@ -83,7 +87,7 @@
 		90F27625283F3002006689EB /* PromoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F27623283F3002006689EB /* PromoTableViewCell.xib */; };
 		90F27628283F32A3006689EB /* PromoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F27627283F32A3006689EB /* PromoAPI.swift */; };
 		90F2762A283F7A60006689EB /* NewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F27629283F7A60006689EB /* NewAPI.swift */; };
-		90F2762C283F8223006689EB /* IntroAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F2762B283F8223006689EB /* IntroAPI.swift */; };
+		90F2762C283F8223006689EB /* DoctorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F2762B283F8223006689EB /* DoctorAPI.swift */; };
 		90F2762F283F859F006689EB /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F2762D283F859F006689EB /* DoctorTableViewCell.swift */; };
 		90F27630283F859F006689EB /* DoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F2762E283F859F006689EB /* DoctorTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -125,7 +129,11 @@
 		9009BF0C2831F8AC0080A0D9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		9009BF0F2831F91B0080A0D9 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		9009BF102831F91B0080A0D9 /* OTPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
+		903155FC285AC6C000F9570F /* NewDefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDefaultTableViewCell.swift; sourceTree = "<group>"; };
+		903155FD285AC6C000F9570F /* NewDefaultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewDefaultTableViewCell.xib; sourceTree = "<group>"; };
 		903B61222834F55400E72DBA /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		904FC7D92859C2C900F712CC /* UserCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCustomView.swift; sourceTree = "<group>"; };
+		904FC7DB2859C2D400F712CC /* UserCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCustomView.xib; sourceTree = "<group>"; };
 		907AA5B628333DDD00BFB8FF /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		908ACBD028420325006E8E56 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		908ACBD128420325006E8E56 /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
@@ -155,8 +163,8 @@
 		90C69A73283DD9BA00CD3286 /* PatientPromoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientPromoModel.swift; sourceTree = "<group>"; };
 		90C69A75283DD9C900CD3286 /* PatientIntroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientIntroModel.swift; sourceTree = "<group>"; };
 		90C69A77283E1B6A00CD3286 /* Ultilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultilities.swift; sourceTree = "<group>"; };
-		90CC0F1B283CBBBD00CB29BE /* ExtentionOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionOTP.swift; sourceTree = "<group>"; };
-		90CC0F1D283CBD1900CB29BE /* ExtentionOTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionOTPTextField.swift; sourceTree = "<group>"; };
+		90CC0F1B283CBBBD00CB29BE /* OTPStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPStackView.swift; sourceTree = "<group>"; };
+		90CC0F1D283CBD1900CB29BE /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 		90CC0F23283CEB2B00CB29BE /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		90CC0F24283CEB2B00CB29BE /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
 		90CC0F27283CEB3800CB29BE /* PromoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoViewController.swift; sourceTree = "<group>"; };
@@ -168,7 +176,7 @@
 		90F27623283F3002006689EB /* PromoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoTableViewCell.xib; sourceTree = "<group>"; };
 		90F27627283F32A3006689EB /* PromoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoAPI.swift; sourceTree = "<group>"; };
 		90F27629283F7A60006689EB /* NewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAPI.swift; sourceTree = "<group>"; };
-		90F2762B283F8223006689EB /* IntroAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroAPI.swift; sourceTree = "<group>"; };
+		90F2762B283F8223006689EB /* DoctorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAPI.swift; sourceTree = "<group>"; };
 		90F2762D283F859F006689EB /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
 		90F2762E283F859F006689EB /* DoctorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorTableViewCell.xib; sourceTree = "<group>"; };
 		E171CCB9DEBC95CE621DFADA /* Pods-AutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayout.debug.xcconfig"; path = "Target Support Files/Pods-AutoLayout/Pods-AutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
@@ -381,10 +389,12 @@
 			isa = PBXGroup;
 			children = (
 				903B61222834F55400E72DBA /* Extention.swift */,
-				90CC0F1B283CBBBD00CB29BE /* ExtentionOTP.swift */,
-				90CC0F1D283CBD1900CB29BE /* ExtentionOTPTextField.swift */,
+				90CC0F1B283CBBBD00CB29BE /* OTPStackView.swift */,
+				90CC0F1D283CBD1900CB29BE /* OTPTextField.swift */,
 				900143572847708100AF6E68 /* PhoneNumberModel.swift */,
 				900143592847710B00AF6E68 /* ExtentionString.swift */,
+				904FC7D92859C2C900F712CC /* UserCustomView.swift */,
+				904FC7DB2859C2D400F712CC /* UserCustomView.xib */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -428,6 +438,8 @@
 				90CC0F24283CEB2B00CB29BE /* NewsViewController.xib */,
 				90B567EA2845BCE300BAA893 /* NewTableViewCell.swift */,
 				90B567EB2845BCE300BAA893 /* NewTableViewCell.xib */,
+				903155FC285AC6C000F9570F /* NewDefaultTableViewCell.swift */,
+				903155FD285AC6C000F9570F /* NewDefaultTableViewCell.xib */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -459,7 +471,7 @@
 			children = (
 				90F27627283F32A3006689EB /* PromoAPI.swift */,
 				90F27629283F7A60006689EB /* NewAPI.swift */,
-				90F2762B283F8223006689EB /* IntroAPI.swift */,
+				90F2762B283F8223006689EB /* DoctorAPI.swift */,
 				900143552847560700AF6E68 /* UserAPI.swift */,
 				90EAB2A02852E252009641A5 /* LocationAPI.swift */,
 			);
@@ -554,6 +566,7 @@
 				9009BF0E2831F8AC0080A0D9 /* LoginViewController.xib in Resources */,
 				908ACBD328420325006E8E56 /* UserViewController.xib in Resources */,
 				9001434A2847134600AF6E68 /* Inter-Medium.ttf in Resources */,
+				904FC7DC2859C2D400F712CC /* UserCustomView.xib in Resources */,
 				90BF9A39282DF9FC0057C9BA /* LaunchScreen.storyboard in Resources */,
 				900143502847134600AF6E68 /* Inter-ExtraLight.ttf in Resources */,
 				90B567ED2845BCE300BAA893 /* NewTableViewCell.xib in Resources */,
@@ -564,6 +577,7 @@
 				9001430B28470AD000AF6E68 /* NunitoSans-ExtraLightItalic.ttf in Resources */,
 				90BF9A36282DF9FC0057C9BA /* Assets.xcassets in Resources */,
 				9001430628470AD000AF6E68 /* OFL.txt in Resources */,
+				903155FF285AC6C000F9570F /* NewDefaultTableViewCell.xib in Resources */,
 				9001430828470AD000AF6E68 /* NunitoSans-SemiBold.ttf in Resources */,
 				90F27630283F859F006689EB /* DoctorTableViewCell.xib in Resources */,
 				9001430928470AD000AF6E68 /* NunitoSans-Black.ttf in Resources */,
@@ -640,10 +654,11 @@
 				90C69A70283DD83F00CD3286 /* PatientNewFeedModel.swift in Sources */,
 				908ACBD228420325006E8E56 /* UserViewController.swift in Sources */,
 				900143562847560700AF6E68 /* UserAPI.swift in Sources */,
-				90CC0F1E283CBD1900CB29BE /* ExtentionOTPTextField.swift in Sources */,
+				90CC0F1E283CBD1900CB29BE /* OTPTextField.swift in Sources */,
 				90C69A76283DD9C900CD3286 /* PatientIntroModel.swift in Sources */,
 				90C69A78283E1B6A00CD3286 /* Ultilities.swift in Sources */,
-				90CC0F1C283CBBBD00CB29BE /* ExtentionOTP.swift in Sources */,
+				904FC7DA2859C2C900F712CC /* UserCustomView.swift in Sources */,
+				90CC0F1C283CBBBD00CB29BE /* OTPStackView.swift in Sources */,
 				90EAB2A12852E252009641A5 /* LocationAPI.swift in Sources */,
 				9009BF112831F91B0080A0D9 /* OTPViewController.swift in Sources */,
 				9009BF0D2831F8AC0080A0D9 /* LoginViewController.swift in Sources */,
@@ -654,6 +669,7 @@
 				903B61232834F55400E72DBA /* Extention.swift in Sources */,
 				90F2762A283F7A60006689EB /* NewAPI.swift in Sources */,
 				90C69A72283DD9AC00CD3286 /* PatientNewModel.swift in Sources */,
+				903155FE285AC6C000F9570F /* NewDefaultTableViewCell.swift in Sources */,
 				907AA5B728333DDD00BFB8FF /* Home.swift in Sources */,
 				90F2762F283F859F006689EB /* DoctorTableViewCell.swift in Sources */,
 				90CC0F29283CEB3800CB29BE /* PromoViewController.swift in Sources */,
@@ -665,7 +681,7 @@
 				90BF9A45282E0C810057C9BA /* Login.swift in Sources */,
 				9009BF092831F68C0080A0D9 /* IntroViewController.swift in Sources */,
 				909099492832320B0065A318 /* HomeViewController.swift in Sources */,
-				90F2762C283F8223006689EB /* IntroAPI.swift in Sources */,
+				90F2762C283F8223006689EB /* DoctorAPI.swift in Sources */,
 				9090995528324BE70065A318 /* IntroduceCollectionViewCell.swift in Sources */,
 				90AD2C9C2845FECA00414C56 /* DetailsViewController.swift in Sources */,
 				900143582847708100AF6E68 /* PhoneNumberModel.swift in Sources */,

@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         let navigation = UINavigationController()
-        let vc = UserViewController()
+        let vc = IntroViewController()
         
         navigation.isNavigationBarHidden = true
         navigation.viewControllers = [vc]
@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         IQKeyboardManager.shared().isEnabled = true
+        
         
         return true
     }

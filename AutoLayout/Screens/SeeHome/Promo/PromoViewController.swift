@@ -9,16 +9,15 @@ import UIKit
 
 class PromoViewController: UIViewController {
 
+    @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var promoTableView: UITableView!
-    var promos = [Promo]()
     
     lazy var refreshControl: UIRefreshControl = {
         let rfc = UIRefreshControl()
         
         return rfc
     }()
-    var newFeed: PatientNewFeedModel?
-    
+    var promoList: [PromoAPI]?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,24 +29,25 @@ class PromoViewController: UIViewController {
         self.refreshControl.addTarget(self, action: #selector(fetchPatientNewFeed), for: .valueChanged)
         fetchPatientNewFeed()
         
-        let promo1 = Promo(isSelected: true)
-        let promo2 = Promo(isSelected: true)
-        
-        promos = [promo1, promo2]
+        firstView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
+        firstView.layer.shadowOpacity = 1
+        firstView.layer.shadowRadius = 30
+        firstView.layer.shadowOffset = CGSize(width: 0, height: 0)
+                
     }
     
     @objc func fetchPatientNewFeed() {
 //        self.showLoaderView()
-        APIUtilities.requestHomePatientFeed(APIURL: "/hdhuy179/ef03ed850ad56f0136fe3c5916b3280b/raw/Training_Intern_BasicApp_Promotion") { [weak self] patientNewFeed, error in
+        APIUtilities.requestPromo { [weak self] patientPromo, error in
             guard let self = self else { return}
 //            self.dismissLoaderView()
             self.refreshControl.endRefreshing()
 
-            guard let patientNewFeed = patientNewFeed, error == nil else {
+            guard let patientPromo = patientPromo, error == nil else {
                 return
             }
 
-            self.newFeed = patientNewFeed
+            self.promoList = patientPromo
 
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return}
@@ -65,22 +65,15 @@ class PromoViewController: UIViewController {
 
 extension PromoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newFeed?.promoItems?.count ?? 0
+        return promoList?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = promoTableView.dequeueReusableCell(withIdentifier: "PromoCell", for: indexPath) as! PromoTableViewCell
         
-        let promo = newFeed?.promoItems?[indexPath.row]
+        let promo = promoList?[indexPath.row]
         cell.configPromo(promo: promo)
         
-        cell.checkAction = {[weak self] in
-            // check self co bi nil khong, neu khong bi nil thi gan self cho strongSelf
-            guard let strongSelf = self else { return }
-
-            strongSelf.promos[indexPath.row].isSelected = !strongSelf.promos[indexPath.row].isSelected
-            tableView.reloadData()
-        }
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -89,7 +82,7 @@ extension PromoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = DetailsViewController()
         self.navigationController?.pushViewController(vc, animated: true)
-        vc.linkURL = newFeed?.promoItems?[indexPath.row].link ?? ""
+        vc.linkURL = promoList?[indexPath.row].link ?? ""
     }
 }
 

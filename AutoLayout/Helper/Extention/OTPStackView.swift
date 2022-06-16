@@ -84,8 +84,9 @@ class OTPStackView: UIStackView {
         textField.layer.borderWidth = 2
         textField.layer.borderColor = UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00).cgColor
         textField.keyboardType = .numberPad
-        textField.autocorrectionType = .yes
+        textField.autocorrectionType = .no
         textField.textContentType = .oneTimeCode
+        textField.spellCheckingType = .no
     }
     
     //checks if all the OTPfields are filled

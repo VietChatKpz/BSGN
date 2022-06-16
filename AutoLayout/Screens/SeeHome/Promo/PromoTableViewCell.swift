@@ -12,34 +12,11 @@ class PromoTableViewCell: UITableViewCell {
     @IBOutlet weak var promoImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabe: UILabel!
-    @IBOutlet weak var checkImage: UIImageView!
-    
-    
-    var checkAction: (() -> Void)?
-    var truyenFoodName: ((String) -> Void)?
-
-    var promo: Promo?{
-        didSet{
-            if let promo = promo{
-                // if else rut gon
-                checkImage.image = UIImage(named: promo.isSelected ? "checked" : "unchecked")
-            }
-        }
-    }
-
-
-    @objc func tapAction(){
-        checkAction?()
-        
-        
-    }
-    
+    @IBOutlet weak var checkImage: UIImageView!    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         checkImage.isUserInteractionEnabled = true
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction))
-        checkImage.addGestureRecognizer(tapGesture)
         promoImage.layer.borderWidth = 1.0
         promoImage.layer.borderColor = UIColor(red: 0.93, green: 0.94, blue: 0.96, alpha: 1.00).cgColor
     }
@@ -48,7 +25,7 @@ class PromoTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
     }
-    func configPromo(promo: promoAPI?) {
+    func configPromo(promo: PromoAPI?) {
         let imageURL = promo?.picture
         let title = promo?.name
         let date = promo?.created_at

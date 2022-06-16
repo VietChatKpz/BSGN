@@ -10,12 +10,13 @@ import UIKit
 class DoctorViewController: UIViewController {
 
     @IBOutlet weak var introTableView: UITableView!
+    
     lazy var refreshControl: UIRefreshControl = {
         let rfc = UIRefreshControl()
         
         return rfc
     }()
-    var newFeed: PatientNewFeedModel?
+    var doctorList: [DoctorAPI]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,23 +34,23 @@ class DoctorViewController: UIViewController {
 
     @objc func fetchPatientNewFeed() {
 //        self.showLoaderView()
-        APIUtilities.requestHomePatientFeed(APIURL: "/hdhuy179/9ac0a89969b46fb67bc7d1a8b94d180e/raw") { [weak self] patientNewFeed, error in
+        APIUtilities.requestDoctor { [weak self] patientDoctor, error in
             guard let self = self else { return}
 //            self.dismissLoaderView()
             self.refreshControl.endRefreshing()
 
-            guard let patientNewFeed = patientNewFeed, error == nil else {
+            guard let patientDoctor = patientDoctor, error == nil else {
                 return
             }
 
-            self.newFeed = patientNewFeed
+            self.doctorList = patientDoctor
 
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return}
 
                 self.introTableView.reloadData()
             }
-        }
+        } 
     }
     @IBAction func backAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
@@ -58,13 +59,13 @@ class DoctorViewController: UIViewController {
 
 extension DoctorViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newFeed?.introItem?.count ?? 0
+        return doctorList?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = introTableView.dequeueReusableCell(withIdentifier: "IntroCell", for: indexPath) as! DoctorTableViewCell
         
-        let intro = newFeed?.introItem?[indexPath.row]
+        let intro = doctorList?[indexPath.row]
         cell.configIntro(intro: intro)
         return cell
     }

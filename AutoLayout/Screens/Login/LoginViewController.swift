@@ -58,11 +58,17 @@ extension LoginViewController: UITextFieldDelegate {
             nextButton.backgroundColor = UIColor(red: 0.17, green: 0.53, blue: 0.40, alpha: 0.3)
         }
     }
+//    open override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+//            if action == #selector(UIResponderStandardEditActions.paste(_:)) {
+//                return false
+//            }
+//            return super.canPerformAction(action, withSender: sender)
+//        }
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-        if action == #selector(UIResponderStandardEditActions.paste(_:)) {
-                        
-                    return false
-                }
-                return super.canPerformAction(action, withSender: sender)
-    }
+            OperationQueue.main.addOperation({
+                UIMenuController.shared.setMenuVisible(false, animated: false)
+            })
+            return super.canPerformAction(action, withSender: sender)
+        }
+    
 }

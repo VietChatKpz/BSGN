@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="KGk-i7-Jjw" customClass="NewDefaultTableViewCell" customModule="AutoLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="507" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="507" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIm-Kz-MDX">
+                        <rect key="frame" x="0.0" y="0.0" width="507" height="234.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image2" translatesAutoresizingMaskIntoConstraints="NO" id="3Bw-AV-GK4">
+                                <rect key="frame" x="0.0" y="0.0" width="258" height="137.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Bw-AV-GK4" secondAttribute="height" multiplier="375:200" id="WZD-PD-MCj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jio Health khởi động chương trình Doctor Tour 2021" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIb-Bv-bX8">
+                                <rect key="frame" x="16" y="149.5" width="475" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="KW0-DA-e3T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="18"/>
+                                <color key="textColor" red="0.094117647058823528" green="0.098039215686274508" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 tháng 6, 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiE-Kt-mwz">
+                                <rect key="frame" x="16" y="209.5" width="94" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="W0U-XS-Rfl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="12"/>
+                                <color key="textColor" red="0.49019607843137253" green="0.51764705882352935" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dJ-bK-eum">
+                                <rect key="frame" x="16" y="233.5" width="475" height="1"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dZ3-an-2Fq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AIb-Bv-bX8" secondAttribute="trailing" constant="16" id="4Cf-TC-gH1"/>
+                            <constraint firstItem="6dJ-bK-eum" firstAttribute="top" secondItem="fiE-Kt-mwz" secondAttribute="bottom" constant="12" id="7Os-HP-19Z"/>
+                            <constraint firstItem="AIb-Bv-bX8" firstAttribute="leading" secondItem="NIm-Kz-MDX" secondAttribute="leading" constant="16" id="GBf-W0-Cph"/>
+                            <constraint firstItem="AIb-Bv-bX8" firstAttribute="top" secondItem="3Bw-AV-GK4" secondAttribute="bottom" constant="12" id="KTx-dc-dtM"/>
+                            <constraint firstItem="3Bw-AV-GK4" firstAttribute="top" secondItem="NIm-Kz-MDX" secondAttribute="top" id="Ncj-fw-bJ6"/>
+                            <constraint firstItem="6dJ-bK-eum" firstAttribute="leading" secondItem="NIm-Kz-MDX" secondAttribute="leading" constant="16" id="Ncl-DU-YfD"/>
+                            <constraint firstAttribute="trailing" secondItem="3Bw-AV-GK4" secondAttribute="trailing" id="U78-xw-u2f"/>
+                            <constraint firstAttribute="bottom" secondItem="6dJ-bK-eum" secondAttribute="bottom" id="UGN-oS-UbB"/>
+                            <constraint firstItem="fiE-Kt-mwz" firstAttribute="top" secondItem="AIb-Bv-bX8" secondAttribute="bottom" constant="4" id="W9k-o2-my6"/>
+                            <constraint firstItem="fiE-Kt-mwz" firstAttribute="leading" secondItem="AIb-Bv-bX8" secondAttribute="leading" id="ZKc-Sq-zxa"/>
+                            <constraint firstItem="3Bw-AV-GK4" firstAttribute="leading" secondItem="NIm-Kz-MDX" secondAttribute="leading" id="eAR-oE-Koq"/>
+                            <constraint firstAttribute="trailing" secondItem="6dJ-bK-eum" secondAttribute="trailing" constant="16" id="xYL-Y9-h1t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NIm-Kz-MDX" secondAttribute="bottom" id="V7e-Hu-639"/>
+                    <constraint firstItem="NIm-Kz-MDX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kJW-xJ-XC2"/>
+                    <constraint firstAttribute="trailing" secondItem="NIm-Kz-MDX" secondAttribute="trailing" id="vDr-Hu-UaT"/>
+                    <constraint firstItem="NIm-Kz-MDX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vt8-Rd-GAJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="fiE-Kt-mwz" id="FH3-8S-qFa"/>
+                <outlet property="nameLabel" destination="AIb-Bv-bX8" id="pBd-3h-9Hv"/>
+                <outlet property="newImg" destination="3Bw-AV-GK4" id="Mzr-NX-BYV"/>
+            </connections>
+            <point key="canvasLocation" x="-173.18840579710147" y="156.02678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Image2" width="258" height="134"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

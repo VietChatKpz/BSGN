@@ -7,7 +7,7 @@
 
 import Foundation
 
-class userAPI: NSObject, JsonInitObject {
+class UserAPI: NSObject, JsonInitObject {
     var name: String?
     var last_name: String?
     var birth_date: String?
