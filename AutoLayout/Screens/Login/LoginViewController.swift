@@ -52,18 +52,14 @@ extension LoginViewController: UITextFieldDelegate {
         
     }
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        if phoneTextField.text?.count == 10 || phoneTextField.text?.count == 9 {
+        var phoneNumber = (phoneTextField.text ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+        if (phoneNumber.first == "0" && phoneNumber.count == 10) || (phoneNumber.first != "0" && phoneNumber.count == 9) {
+            
             nextButton.backgroundColor = UIColor(red: 0.17, green: 0.53, blue: 0.40, alpha: 1.00)
         }else {
             nextButton.backgroundColor = UIColor(red: 0.17, green: 0.53, blue: 0.40, alpha: 0.3)
         }
     }
-//    open override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-//            if action == #selector(UIResponderStandardEditActions.paste(_:)) {
-//                return false
-//            }
-//            return super.canPerformAction(action, withSender: sender)
-//        }
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
             OperationQueue.main.addOperation({
                 UIMenuController.shared.setMenuVisible(false, animated: false)

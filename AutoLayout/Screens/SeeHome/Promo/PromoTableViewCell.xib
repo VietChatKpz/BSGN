@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -60,7 +59,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WYZ-eE-oxe" firstAttribute="leading" secondItem="1XN-Mf-Fce" secondAttribute="leading" constant="16" id="Ddo-fQ-QgR"/>
                             <constraint firstItem="naI-ie-OXF" firstAttribute="leading" secondItem="ZqM-9K-RTJ" secondAttribute="leading" id="K2o-rE-M45"/>
@@ -75,6 +74,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="1XN-Mf-Fce" secondAttribute="trailing" id="O5Y-Gt-jXL"/>
                     <constraint firstItem="1XN-Mf-Fce" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="b9D-34-dH8"/>
@@ -83,6 +83,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="checkImage" destination="Vsg-6L-EdQ" id="RcP-63-cTR"/>
                 <outlet property="dateLabe" destination="naI-ie-OXF" id="ron-jG-2ub"/>
@@ -94,8 +95,5 @@
     </objects>
     <resources>
         <image name="checked" width="16" height="16"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

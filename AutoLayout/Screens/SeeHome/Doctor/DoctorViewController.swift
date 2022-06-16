@@ -29,7 +29,8 @@ class DoctorViewController: UIViewController {
         introTableView.refreshControl = refreshControl
         self.refreshControl.addTarget(self, action: #selector(fetchPatientNewFeed), for: .valueChanged)
         fetchPatientNewFeed()
-        
+//        introTableView.estimatedRowHeight = 500
+//        introTableView.rowHeight = UITableView.automaticDimension
     }
 
     @objc func fetchPatientNewFeed() {
@@ -69,7 +70,8 @@ extension DoctorViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configIntro(intro: intro)
         return cell
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 118
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        
+//        return 118
+//    }
 }

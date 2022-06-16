@@ -34,7 +34,7 @@
                             <rect key="frame" x="0.0" y="812" width="428" height="80"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-Do-wBr">
-                                    <rect key="frame" x="16" y="16" width="190" height="48"/>
+                                    <rect key="frame" x="16" y="16" width="174.33333333333334" height="48"/>
                                     <color key="backgroundColor" red="0.17254901959999999" green="0.52549019610000003" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="48" id="SKC-mu-Eep"/>
@@ -53,7 +53,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrq-c2-3zs">
-                                    <rect key="frame" x="222" y="16" width="190" height="48"/>
+                                    <rect key="frame" x="206.33333333333337" y="16" width="205.66666666666663" height="48"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="48" id="cyM-74-dw8"/>
@@ -81,7 +81,7 @@
                                 <constraint firstItem="GN7-Do-wBr" firstAttribute="leading" secondItem="d2t-Oj-qOk" secondAttribute="leading" constant="16" id="LYI-Uw-oq8"/>
                                 <constraint firstAttribute="bottom" secondItem="GN7-Do-wBr" secondAttribute="bottom" constant="16" id="UKR-O0-ph7"/>
                                 <constraint firstItem="Yrq-c2-3zs" firstAttribute="bottom" secondItem="GN7-Do-wBr" secondAttribute="bottom" id="Y6Q-6M-MpE"/>
-                                <constraint firstItem="Yrq-c2-3zs" firstAttribute="width" secondItem="GN7-Do-wBr" secondAttribute="width" id="Yg3-3y-vLb"/>
+                                <constraint firstItem="Yrq-c2-3zs" firstAttribute="width" secondItem="GN7-Do-wBr" secondAttribute="width" multiplier="177:150" id="Yg3-3y-vLb"/>
                                 <constraint firstItem="Yrq-c2-3zs" firstAttribute="top" secondItem="GN7-Do-wBr" secondAttribute="top" id="ZGy-cz-OuL"/>
                                 <constraint firstItem="Yrq-c2-3zs" firstAttribute="leading" secondItem="GN7-Do-wBr" secondAttribute="trailing" constant="16" id="kIG-s9-JHK"/>
                             </constraints>
