@@ -16,18 +16,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="269" id="KGk-i7-Jjw" customClass="DoctorTableViewCell" customModule="AutoLayout" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="183" height="168"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="320" id="KGk-i7-Jjw" customClass="DoctorTableViewCell" customModule="AutoLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="219"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="183" height="168"/>
+                <rect key="frame" x="0.0" y="0.0" width="200" height="219"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3y3-5b-rll">
-                        <rect key="frame" x="0.0" y="0.0" width="183" height="168"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="219"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EjP-V1-zoB">
-                                <rect key="frame" x="0.0" y="8" width="183" height="152"/>
+                                <rect key="frame" x="0.0" y="8" width="200" height="203"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OvA-y2-Z9Y">
                                         <rect key="frame" x="12" y="12" width="77" height="80"/>
@@ -37,28 +37,28 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BS. Đoàn Văn Quang" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvX-PY-VdQ">
-                                        <rect key="frame" x="105" y="12" width="62" height="82"/>
+                                        <rect key="frame" x="105" y="12" width="79" height="93.5"/>
                                         <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Chuyên ngành: Đa khoa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtC-xl-vSm">
-                                        <rect key="frame" x="105" y="100" width="62" height="11.5"/>
+                                        <rect key="frame" x="105" y="111.5" width="79" height="53.5"/>
                                         <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="13"/>
                                         <color key="textColor" red="0.58823529411764708" green="0.60784313725490191" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctg-wG-VYp">
-                                        <rect key="frame" x="105" y="123.5" width="66" height="16.5"/>
+                                        <rect key="frame" x="105" y="177" width="83" height="14"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stroke 1" translatesAutoresizingMaskIntoConstraints="NO" id="9zm-xE-SpH">
-                                                <rect key="frame" x="0.0" y="0.0" width="14" height="16.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="14" height="14"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="14" id="3uo-f9-3Xq"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14K-rK-8RU">
-                                                <rect key="frame" x="20" y="0.0" width="30" height="16.5"/>
+                                                <rect key="frame" x="20" y="0.0" width="30" height="14"/>
                                                 <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -67,7 +67,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="14K-rK-8RU" firstAttribute="top" secondItem="9zm-xE-SpH" secondAttribute="top" id="2gb-5G-djc"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="98l-Su-NHa"/>
+                                            <constraint firstAttribute="height" constant="14" id="98l-Su-NHa"/>
                                             <constraint firstItem="9zm-xE-SpH" firstAttribute="top" secondItem="ctg-wG-VYp" secondAttribute="top" id="cq8-mP-vL5"/>
                                             <constraint firstItem="14K-rK-8RU" firstAttribute="bottom" secondItem="9zm-xE-SpH" secondAttribute="bottom" id="czr-5h-UpV"/>
                                             <constraint firstItem="9zm-xE-SpH" firstAttribute="leading" secondItem="ctg-wG-VYp" secondAttribute="leading" id="qbi-jL-Av6"/>
@@ -118,7 +118,7 @@
                 <outlet property="nameLabel" destination="vvX-PY-VdQ" id="f4c-uA-OSZ"/>
                 <outlet property="starLabel" destination="14K-rK-8RU" id="nX0-ZI-iCC"/>
             </connections>
-            <point key="canvasLocation" x="-132.60869565217394" y="154.01785714285714"/>
+            <point key="canvasLocation" x="-120.28985507246378" y="171.09375"/>
         </tableViewCell>
     </objects>
     <resources>

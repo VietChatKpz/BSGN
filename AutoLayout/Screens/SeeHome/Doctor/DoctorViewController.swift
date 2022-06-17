@@ -71,7 +71,7 @@ extension DoctorViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        
+//        let vc = DoctorTableViewCell()
 //        return 118
 //    }
 }

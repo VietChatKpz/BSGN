@@ -29,6 +29,8 @@ class DoctorTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        print(nameLabel.frame.height)
+        print(majorLabel.frame.height)
     }
     func configIntro(intro: DoctorAPI?) {
         
