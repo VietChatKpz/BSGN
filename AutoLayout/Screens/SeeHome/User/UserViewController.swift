@@ -184,3 +184,10 @@ class UserViewController: UIViewController {
         //        setDatePicker()
     }
 }
+
+//MARK: Dùng Tag
+/*
+ Gọi view.superView.subView
+ Dùng for duyệt tag
+ if let lb = subview as! UILabel...
+ */

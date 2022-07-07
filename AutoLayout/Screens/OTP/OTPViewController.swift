@@ -134,6 +134,7 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         }
         else {
             falseLabel.isHidden = false
+            otpStackView.clearOTP()
         }
     }
 }

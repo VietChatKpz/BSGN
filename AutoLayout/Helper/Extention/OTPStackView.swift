@@ -41,7 +41,11 @@ class OTPStackView: UIStackView {
         setupStackView()
         addOTPFields()
     }
-    
+    func clearOTP() {
+        textFieldsCollection.forEach({
+            $0.text = ""
+        })
+    }
     //Customisation and setting stackView
     private final func setupStackView() {
 //        self.backgroundColor = .clear
